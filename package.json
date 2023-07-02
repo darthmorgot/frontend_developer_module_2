@@ -1,0 +1,33 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "Личный проект «Pink» от HTML Academy, Профессия «Фронтенд-разработчик 2», Модуль 2. HTML и CSS. Адаптивная вёрстка и автоматизация",
+  "scripts": {
+    "dev": "cross-env BUILD_TYPE=development webpack --config webpack.config/webpack.config.js",
+    "build": "cross-env BUILD_TYPE=production webpack --config webpack.config/webpack.config.js",
+    "start": "cross-env BUILD_TYPE=development webpack serve --config webpack.config/webpack.config.js"
+  },
+  "author": "Master",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "private": true,
+  "browserslist": [
+    "defaults"
+  ],
+  "type": "module",
+  "engines": {
+    "node": "18"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
