@@ -26,6 +26,22 @@
     "node": "18"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.44.0",
+    "postcss": "^8.4.24",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^8.5.1",
+    "pug": "^3.0.2",
+    "pug-plugin": "^4.9.7",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "stylelint": "^15.9.0",
+    "stylelint-config-standard-scss": "^10.0.0",
+    "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
