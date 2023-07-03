@@ -21,7 +21,6 @@
   "browserslist": [
     "defaults"
   ],
-  "type": "module",
   "engines": {
     "node": "18"
   },
