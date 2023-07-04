@@ -1,0 +1,11 @@
+mixin slider-toggles(item)
+  ol(class=item).slider__toggles.toggles
+    li.toggles__item
+      button.toggles__btn.toggles__btn--active(type="button")
+        span.visually-hidden Слайд 1
+    li.toggles__item
+      button.toggles__btn(type="button")
+        span.visually-hidden Слайд 2
+    li.toggles__item
+      button.toggles__btn(type="button")
+        span.visually-hidden Слайд 3
