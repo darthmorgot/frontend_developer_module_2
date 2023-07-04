@@ -6,20 +6,100 @@ block variables
   - var namePage = 'Home'
 
 block content
-  main.main.main-container
-    h1.visually-hidden Интернет-магазин Device
-    div.logo
-    h2.visually-hidden Слайдер
-    div.slider__item.slider__item--active
-      div.slider__left
-        img(src=require('../img/test.png') width="560" height="560" alt="Test picture")
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut facere laudantium nesciunt placeat quia similique voluptate. Accusamus alias cum doloribus eius excepturi inventore praesentium vitae, voluptas? Aliquam animi aperiam cum dolor eveniet maiores praesentium, quia recusandae tempore tenetur? Adipisci aliquam aliquid aspernatur beatae ea earum eligendi est impedit maiores nesciunt, nihil optio placeat quas quia quisquam quo tempore veniam! Ad adipisci assumenda blanditiis consequatur deleniti dolores dolorum ducimus eaque eos eum in molestias nam nemo nisi officia optio, perferendis perspiciatis possimus quod rem repellendus rerum sed tempore unde vel. Alias debitis, eaque fuga in itaque nesciunt quasi quia quidem recusandae!
-    ul
-      li
-        a(href="#") Home
-      li
-        a(href="#") Catalog
-      li
-        a(href="#") Contacts
-      li
-        a(href="#") About us
+  main.main
+    h1.visually-hidden Мобильное приложение Pink
+
+  section.application
+    h2.visually-hidden Скачать мобильное приложение Pink
+    div.application__banner
+      h3.application__slogan Взгляните на жизнь иначе!
+    div.application__download.container
+      a.application__button.button(href="#") Скачать приложение
+      div.application__available-systems
+        img.application__brand-system(src=require("Images/brands/apple.png") width="47" height="56" alt="Бренд Apple")
+        img.application__brand-system(src=require("Images/brands/android.png") width="43" height="47" alt="Бренд " +
+        "Android")
+        img.application__brand-system(src=require("Images/brands/microsoft.png") width="44" height="41" alt="Бренд " +
+        "Microsoft")
+      p.application__description Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+
+  section.advantages.container
+    h2.visually-hidden Наши преимущества
+    div.advantages__slogan
+      p.advantages__slogan-text Устали от серости мегаполиса?
+      p.advantages__slogan-text Нам есть, что вам предложить!
+    ul.advantages__list
+      li.advantages__item
+        h3.advantages__title Поднимает настроение
+        p.advantages__description Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+      li.advantages__item
+        h3.advantages__title Меняет мир вокруг
+        p.advantages__description Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+      li.advantages__item
+        h3.advantages__title Заводит новых друзей
+        p.advantages__description Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+    img.advantages__image(src=require("Images/content/advantages.png") width="157" height="320" alt="Всем привет")
+
+  section.reviews.container
+    h2.visually-hidden Отзывы о нас
+    div.reviews__slider.slider
+      blockquote.slider__item
+        p.slider__text «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+        cite.slider__author-name Николай Петров
+        span.slider__author-info 25 лет, водитель трамвая
+      div.slider__arrows
+        button.slider__arrow.slider__arrow--prev(type="button")
+          span.visually-hidden Назад
+        button.slider__arrow.slider__arrow--next(type="button")
+          span.visually-hidden Вперед
+      +slider-toggles("reviews__toggles")
+
+  section.price.container
+    h2.visually-hidden Наши тарифы
+    div.price__slider.slider
+      table.price__table
+        tr
+          th
+          th База 1,99 USD
+          th Стандарт 3,99 USD
+          th Анлим 9,99 USD
+        tr
+          td Розовый фильтр
+          td
+            span.visually-hidden Опция включена
+          td
+            span.visually-hidden Опция включена
+          td
+            span.visually-hidden Опция включена
+        tr
+          td Смайлики
+          td
+            span.visually-hidden Опция недоступна
+          td
+            span.visually-hidden Опция включена
+          td
+            span.visually-hidden Опция включена
+        tr
+          td Комментарии
+          td
+            span.visually-hidden Опция недоступна
+          td
+            span.visually-hidden Опция недоступна
+          td
+            span.visually-hidden Опция включена
+      +slider-toggles("price__toggles")
+
+  section.contacts.container
+    h2.visually-hidden Контакты
+    span.contacts__slogan Остались вопросы? Свяжитесь с нами!
+    ul.contacts__list
+      li.contacts__item
+        h3.contacts__title Звоните:
+        a.contacts__phone(href="tel: +78125556666") +7 (812) 555-66-66
+      li.contacts__item
+        h3.contacts__title Пишите:
+        a.contacts__mail(href="mailto:mail@htmlacademy.ru") mail@htmlacademy.ru
+      li.contacts__item
+        h3.contacts__title Приезжайте в гости:
+        address.contacts__address ул. Большая Конюшенная, 19/8
+    img.map__image(src=require("Images/content/map.jpg") width="320" height="200" alt="Карта")
