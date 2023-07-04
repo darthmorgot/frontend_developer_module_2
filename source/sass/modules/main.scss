@@ -30,25 +30,4 @@ img {
   object-fit: contain;
 }
 
-.main {
-  width: 1200px;
-  margin: 0 auto;
-
-  h1, h2 {
-    text-align: center;
-  }
-
-  .logo {
-    width: 120px;
-    height: 100px;
-    margin: 0 auto;
-    background: url("Images/htmlacademy.svg") no-repeat center center;
-  }
-
-  .slider__left {
-    img {
-      display: block;
-      margin: 0 auto;
-    }
-  }
-}
+  .main {}
