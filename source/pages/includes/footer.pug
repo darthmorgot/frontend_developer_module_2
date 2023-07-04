@@ -1,0 +1,21 @@
+footer.footer.container
+  case namePage
+    when 'Home': a.footer__logo.logo: img(src=require('Images/logo/logo-footer-tablet.svg') width="145" height="40"
+      alt="Логотип мобильного приложения Pink.")
+    when 'Catalog': a.footer__logo.logo(href="../index.html"): img(src=require('Images/logo/logo-footer-tablet.svg')
+      width="145" height="40" alt="Логотип мобильного приложения Pink.")
+    when 'Contest': a.footer__logo.logo(href="../index.html"): img(src=require('Images/logo/logo-footer-tablet.svg')
+      width="145" height="40" alt="Логотип мобильного приложения Pink.")
+  ul.footer__social.social-list
+    li.social-list__item
+      a.social-list__link.social-list__link--twitter(href="https://twitter.com/htmlacademy_ru")
+        span.visually-hidden Мы в Твиттере
+    li.social-list__item
+      a.social-list__link.social-list__link--fb(href="https://www.facebook.com/htmlacademy")
+        span.visually-hidden Мы в Фейсбуке
+    li.social-list__item
+      a.social-list__link.social-list__link--youtube(href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g")
+        span.visually-hidden Мы на Youtube
+  div.footer__copyright.copyright
+    span.copyright__text Разработано:
+    a.copyright__link(href="https://htmlacademy.ru/intensive/adaptive") HTML Academy
