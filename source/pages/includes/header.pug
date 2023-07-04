@@ -1,0 +1,29 @@
+header.header
+  case namePage
+    when 'Home': a.header__logo.logo: img(src=require('Images/logo/logo-header-mobile.svg') width="74" height="23"
+      alt="Логотип мобильного приложения Pink.")
+    when 'Catalog': a.header__logo.logo(href="../index.html"): img(src=require('Images/logo/logo-header-mobile.svg')
+      width="74" height="23" alt="Логотип мобильного приложения Pink.")
+    when 'Contest': a.header__logo.logo(href="../index.html"): img(src=require('Images/logo/logo-header-mobile.svg')
+      width="74" height="23" alt="Логотип мобильного приложения Pink.")
+  nav.header__nav.nav
+    button.nav__toggle(type="button")
+      span.visually-hidden Открыть меню
+    ul.nav__list
+      li.nav__item
+        case namePage
+          when 'Home': a.nav__link.nav__link--current Главная
+          when 'Catalog': a.nav__link(href="../index.html") Главная
+          when 'Contest': a.nav__link(href="../index.html") Главная
+      li.nav__item
+        case namePage
+          when 'Home': a.nav__link(href="pages/catalog.html") Фотографии
+          when 'Catalog': a.nav__link.nav__link--current Фотографии
+          when 'Contest': a.nav__link(href="catalog.html") Фотографии
+      li.nav__item
+        case namePage
+          when 'Home': a.nav__link(href="pages/contest.html") Конкурс
+          when 'Catalog': a.nav__link(href="contest.html") Конкурс
+          when 'Contest': a.nav__link.nav__link--current Конкурс
+      li.nav__item
+        a.nav__link(href="https://htmlacademy.ru") HTML Academy
