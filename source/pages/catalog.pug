@@ -7,4 +7,133 @@ block variables
 
 block content
   main.main.main-container
-    h1.visually-hidden Каталог Pink
+
+    section.invitation
+      div.invitation__banner
+        h1 Фотографии пользователей
+        div.invitation__description.container
+          p.invitation__text Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+
+    section.catalog
+      h2.visually-hidden Каталог фотографий
+      div.catalog__panorama.panorama
+        h2.panorama__title Панорама дня
+        figure.panorama__card
+          a.panorama__link(href="#")
+            img.panorama__image(src=require("Images/content/mobile/panorama-mobile.jpg") width="320" height="137"
+              alt="Вид " +
+            "на подвесной мост.")
+          blockquote.panorama__description.container
+            span.panorama__author Анна
+            span.panorama__publication-time (5 минут назад)
+            p.panorama__text Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            button.panorama__button.catalog__button(type="button") Нравится:
+              span.panorama__counter 215
+
+      div.catalog__gallery.gallery.container
+        h2.visually-hidden Галерея фотографий
+        ul.gallery__list
+          li.gallery__item
+            figure.gallery__card
+              a.gallery__link(href="#")
+                img.gallery__image(src=require("Images/content/mobile/photo-1-mobile.jpg") width="280" height="180"
+                  alt="Фотосъемка белой машины.")
+              blockquote.gallery__description
+                span.gallery__author Левон
+                span.gallery__publication-time (5 часов назад)
+                p.gallery__text Вчера он на луну летал, сегодня в руки к нам попал.
+                button.gallery__button.catalog__button(type="button") Нравится:
+                  span.gallery__counter 356
+          li.gallery__item
+            figure.gallery__card
+              a.gallery__link(href="#")
+                img.gallery__image(src=require("Images/content/mobile/photo-2-mobile.jpg") width="280" height="180"
+                  alt="Барабанная установка.")
+              blockquote.gallery__description
+                span.gallery__author Антон
+                span.gallery__publication-time (12 часов назад)
+                p.gallery__text Соседи будут рады!
+                button.gallery__button.catalog__button(type="button") Нравится:
+                  span.gallery__counter 667
+          li.gallery__item
+            figure.gallery__card
+              a.gallery__link(href="#")
+                img.gallery__image(src=require("Images/content/mobile/photo-3-mobile.jpg") width="280" height="180"
+                  alt="Вид на небо сквозь прозрачную крышу.")
+              blockquote.gallery__description
+                span.gallery__author Борис
+                span.gallery__publication-time (20 часов назад)
+                p.gallery__text Здесь могла быть ваша цитата о высоком и вечном.
+                button.gallery__button.catalog__button(type="button") Нравится:
+                  span.gallery__counter 215
+          li.gallery__item
+            figure.gallery__card
+              a.gallery__link(href="#")
+                img.gallery__image(src=require("Images/content/mobile/photo-4-mobile.jpg") width="280" height="180"
+                  alt="Фестиваль Кубанская бахча.")
+              blockquote.gallery__description
+                span.gallery__author Сергей
+                span.gallery__publication-time (25 часов назад)
+                p.gallery__text Самая кубанская в мире!
+                button.gallery__button.catalog__button(type="button") Нравится:
+                  span.gallery__counter 4
+          li.gallery__item
+            figure.gallery__card
+              a.gallery__link(href="#")
+                img.gallery__image(src=require("Images/content/mobile/photo-5-mobile.jpg") width="280" height="180"
+                  alt="Вид на ноги и горы.")
+              blockquote.gallery__description
+                span.gallery__author Максим
+                span.gallery__publication-time (40 часов назад)
+                p.gallery__text Где снег-то?
+                button.gallery__button.catalog__button(type="button") Нравится:
+                  span.gallery__counter 150
+          li.gallery__item
+            figure.gallery__card
+              a.gallery__link(href="#")
+                img.gallery__image(src=require("Images/content/mobile/photo-6-mobile.jpg") width="280" height="180"
+                  alt="Вид на крыло самолета и закат.")
+              blockquote.gallery__description
+                span.gallery__author Надежда
+                span.gallery__publication-time (45 часов назад)
+                p.gallery__text Всем GM и взаимные лайки!
+                button.gallery__button.catalog__button(type="button") Нравится:
+                  span.gallery__counter 2560
+
+    section.uploading-images
+      h2.visually-hidden Форма загрузки фотографий
+      p.uploading-images__slogan Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+      form.uploading-images__form.form(action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data")
+        div.form__image.container
+          label.form__label
+            input.visually-hidden.form__input(type="file" name="image")
+            span.visually-hidden Выберите файл
+          div.form__input-image
+            img(src=require("Images/content/mobile/photo-7-mobile.jpg") width="280" height="374" alt="Зимняя лесная " +
+            "дорога")
+        div.form__editor.editor-tabs.container
+          h2.visually-hidden Редактор изображений
+          div.editor-tabs__panel
+            button.editor-tabs__switch.editor-tabs__switch--crop.editor-tabs__switch--active(type="button"
+              data-tab="tabs__item--crop")
+              span.visually-hidden Обрезать изображение
+            button.editor-tabs__switch.editor-tabs__switch--fill(type="button" data-tab="tabs__item--fill")
+              span.visually-hidden Заливка цветом
+            button.editor-tabs__switch.editor-tabs__switch--contrast(type="button" data-tab="tabs__item--contrast")
+              span.visually-hidden Установить контраст
+          div.editor-tabs__wrapper
+            div.editor-tabs__item.editor-tabs__item--.editor-tabs__item--active
+              label.editor-tabs__label
+                input.editor-tabs__input(type="range")
+                span.visually-hidden Ползунок обрезки изображения
+            div.editor-tabs__item.editor-tabs__item--warranty
+              label.editor-tabs__label
+                input.editor-tabs__input(type="range")
+                span.visually-hidden Ползунок заливки цветом
+            div.editor-tabs__item.editor-tabs__item--credit
+              label.editor-tabs__label
+                input.editor-tabs__input(type="range")
+                span.visually-hidden Ползунок установки контраста
+        div.form__buttons
+          button.form__button-submit(type="submit") Запостить
+          button.form__button-reset(type="reset") Отмена
