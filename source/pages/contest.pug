@@ -7,4 +7,13 @@ block variables
 
 block content
   main.main.main-container
-    h1.visually-hidden Конкурс Pink
+
+    section.invitation
+      div.invitation__banner
+        h1 Конкурс на самое безбашенное путешествие с Пинк
+        div.invitation__description.container
+          p.invitation__text Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+
+    section.contest-form
+      h2.visually-hidden Форма регистрации участника конкурса
+      form.contest-form__form.form(action="https://echo.htmlacademy.ru" method="get")
