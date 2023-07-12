@@ -1,7 +1,7 @@
 extends base
 
 block variables
-  - var title = 'Фотографии'
+  - var title = 'Pink - Фотографии'
   - var linkScripts = '../catalog.js'
   - var namePage = 'Catalog'
 
@@ -21,8 +21,7 @@ block content
         figure.panorama__card
           a.panorama__link(href="#")
             img.panorama__image(src=require("Images/content/mobile/panorama-mobile.jpg") width="320" height="137"
-              alt="Вид " +
-            "на подвесной мост.")
+              alt="Вид на подвесной мост.")
           blockquote.panorama__description.container
             span.panorama__author Анна
             span.panorama__publication-time (5 минут назад)
