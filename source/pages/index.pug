@@ -1,7 +1,7 @@
 extends base
 
 block variables
-  - var title = 'Главная страница'
+  - var title = 'Pink - Главная страница'
   - var linkScripts = '../index.js'
   - var namePage = 'Home'
 
@@ -14,13 +14,14 @@ block content
       div.application__banner
         h3.application__slogan Взгляните на жизнь иначе!
       div.application__download.container
-        a.application__button.button(href="#") Скачать приложение
+        a.application__button.button(href="https://www.apple.com/app-store/") Скачать приложение
         div.application__available-systems
-          img.application__brand-system(src=require("Images/brands/apple.png") width="47" height="56" alt="Бренд Apple")
-          img.application__brand-system(src=require("Images/brands/android.png") width="43" height="47" alt="Бренд " +
-          "Android")
-          img.application__brand-system(src=require("Images/brands/microsoft.png") width="44" height="41" alt="Бренд " +
-          "Microsoft")
+          a.application__link(href="https://www.apple.com/app-store/")
+            img.application__brand-system(src=require("Images/brands/apple.png") width="47" height="56" alt="App Store")
+          a.application__link(href="https://play.google.com")
+            img.application__brand-system(src=require("Images/brands/android.png") width="43" height="47" alt="Google Play")
+          a.application__link(href="http://www.windowsphone.com/store")
+            img.application__brand-system(src=require("Images/brands/microsoft.png") width="44" height="41" alt="Windows Phone Store")
         p.application__description Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
 
     section.advantages.container
@@ -48,6 +49,14 @@ block content
           p.slider__text «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           span.slider__author-name Николай Петров
           span.slider__author-info 25 лет, водитель трамвая
+        blockquote.slider__item
+          p.slider__text «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          span.slider__author-name Иван Сидоров
+          span.slider__author-info 37 лет, менеджер среднего звена
+        blockquote.slider__item
+          p.slider__text «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          span.slider__author-name Екатерина Великая
+          span.slider__author-info 43 лет, крупный руководитель
         div.slider__arrows
           button.slider__arrow.slider__arrow--prev(type="button")
             span.visually-hidden Назад
@@ -96,7 +105,7 @@ block content
       ul.contacts__list
         li.contacts__item
           h3.contacts__title Звоните:
-          a.contacts__phone(href="tel: +78125556666") +7 (812) 555-66-66
+          a.contacts__phone(href="tel:+78125556666") +7 (812) 555-66-66
         li.contacts__item
           h3.contacts__title Пишите:
           a.contacts__mail(href="mailto:mail@htmlacademy.ru") mail@htmlacademy.ru
