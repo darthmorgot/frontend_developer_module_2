@@ -1,0 +1,77 @@
+// common
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 1220px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  background: $white;
+  color: $black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.visually-hidden:not(:focus, :active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.button {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  text-transform: uppercase;
+}
