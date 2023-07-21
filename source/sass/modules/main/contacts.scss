@@ -1,0 +1,86 @@
+// Contacts
+.contacts {
+  padding-top: 42px;
+  text-align: center;
+
+  &__slogan {
+    display: block;
+    margin-bottom: 33px;
+    color: $ebony-clay;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 120%;
+  }
+
+  &__list {
+    position: relative;
+    padding: 0;
+    margin: 0 0 34px;
+    list-style: none;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -67px;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-top: 33px solid $white;
+      border-left: 160px solid transparent;
+      border-right: 160px solid transparent;
+      z-index: 1;
+    }
+  }
+
+  &__item {
+    margin-bottom: 18px;
+  }
+
+  &__item:nth-child(2) {
+    margin-bottom: 22px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin: 0;
+    color: $ebony-clay;
+    font-size: 18px;
+  }
+
+  &__phone,
+  &__mail,
+  &__address {
+    color: $cerise-red;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__address {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+
+  &__phone:hover,
+  &__mail:hover {
+    color: $ebony-clay;
+    text-decoration-line: underline;
+  }
+
+  &__phone:active,
+  &__mail:active {
+    opacity: 0.3;
+    text-decoration-line: none;
+  }
+
+  &__phone:focus,
+  &__mail:focus {
+    outline: 1px solid $cerise-red;
+  }
+}
