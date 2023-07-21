@@ -1,0 +1,161 @@
+// Price
+.price {
+  position: relative;
+  padding-top: 82px;
+  padding-bottom: 45px;
+  background-color: $concrete;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -19px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 19px solid $concrete;
+    border-left: 320px solid transparent;
+    z-index: 1;
+  }
+
+  &__slider {
+    overflow: hidden;
+  }
+
+  &__toggles {
+    width: 56px;
+    padding-bottom: 1px;
+  }
+
+  &__toggles li:nth-child(1) {
+    margin-right: 16px;
+  }
+
+  &__toggles li:nth-child(2) {
+    margin-right: 16px;
+  }
+}
+
+.table-price {
+  position: relative;
+  left: -258px;
+  width: 836px;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+
+  tr:nth-child(3) td {
+    padding-top: 15px;
+    padding-bottom: 14px;
+  }
+
+  tr:nth-child(4) td {
+    padding-top: 14px;
+    padding-bottom: 15px;
+  }
+
+  th,
+  td {
+    position: relative;
+    width: 278px;
+    border: 2px solid $mercury;
+    background: $white;
+  }
+
+  th {
+    padding-top: 13px;
+    padding-bottom: 29px;
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    background-color: $ebony-clay;
+    text-align: center;
+    border-top: none;
+  }
+
+  th:nth-child(2) {
+    border-left-color: $ebony-clay;
+  }
+
+  th:last-child {
+    border-right-color: $ebony-clay;
+  }
+
+  th > span {
+    display: block;
+    margin-top: -4px;
+    color: $white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  th::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 276px;
+    height: 2px;
+    background-color: $white;
+  }
+
+  td {
+    padding: 12px 0 15px 20px;
+  }
+
+  &__mobile-off {
+    display: none;
+  }
+
+  &__hit-ribbon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 74px;
+    height: 74px;
+    background: url("Images/backgrounds/hit-ribbon.png") no-repeat;
+    z-index: 10;
+  }
+
+  &__enable::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    width: 31px;
+    height: 21px;
+    background: url("Images/icons/icon-yes.svg") no-repeat;
+  }
+
+  tr:nth-child(3) &__enable::after,
+  tr:nth-child(4) &__enable::after {
+    top: 19px;
+  }
+
+  &__mobile-on {
+    color: $ebony-clay;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &__disable::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 19px;
+    width: 27px;
+    height: 27px;
+    background: url("Images/icons/icon-no.svg") no-repeat;
+  }
+
+  tr:nth-child(3) &__disable::after,
+  tr:nth-child(4) &__disable::after {
+    top: 16px;
+  }
+}
