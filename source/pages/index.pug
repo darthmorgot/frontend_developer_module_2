@@ -45,7 +45,7 @@ block content
     section.reviews.container
       h2.visually-hidden Отзывы о нас
       div.reviews__slider.slider
-        blockquote.slider__item
+        blockquote.slider__item.slider__item--active
           p.slider__text «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           span.slider__author-name Николай Петров
           span.slider__author-info 25 лет, водитель трамвая
@@ -62,42 +62,54 @@ block content
             span.visually-hidden Назад
           button.slider__arrow.slider__arrow--next(type="button")
             span.visually-hidden Вперед
-        +slider-toggles("reviews__toggles")
+        +slider-toggles("reviews__toggles", "first")
 
     section.price.container
       h2.visually-hidden Наши тарифы
-      div.price__slider.slider
-        table.price__table
+      div.price__slider
+        table.price__table.table-price
           tr
-            th
-            th База 1,99 USD
-            th Стандарт 3,99 USD
-            th Анлим 9,99 USD
+            th.table-price__mobile-off
+            th База
+              span 1,99 USD
+            th.table-price__hit-ribbon Стандарт
+              span 3,99 USD
+            th Анлим
+              span 9,99 USD
           tr
-            td Розовый фильтр
-            td
+            td.table-price__mobile-off Розовый фильтр
+            td.table-price__enable
+              span.table-price__mobile-on Розовый фильтр
               span.visually-hidden Опция включена
-            td
+            td.table-price__enable
+              span.table-price__mobile-on Розовый фильтр
               span.visually-hidden Опция включена
-            td
+            td.table-price__enable
+              span.table-price__mobile-on Розовый фильтр
               span.visually-hidden Опция включена
           tr
-            td Смайлики
-            td
+            td.table-price__mobile-off Смайлики
+            td.table-price__disable
+              span.table-price__mobile-on Смайлики
               span.visually-hidden Опция недоступна
-            td
+            td.table-price__enable
+              span.table-price__mobile-on Смайлики
               span.visually-hidden Опция включена
-            td
+            td.table-price__enable
+              span.table-price__mobile-on Смайлики
               span.visually-hidden Опция включена
           tr
-            td Комментарии
-            td
+            td.table-price__mobile-off Комментарии
+            td.table-price__disable
+              span.table-price__mobile-on Комментарии
               span.visually-hidden Опция недоступна
-            td
+            td.table-price__disable
+              span.table-price__mobile-on Комментарии
               span.visually-hidden Опция недоступна
-            td
+            td.table-price__enable
+              span.table-price__mobile-on Комментарии
               span.visually-hidden Опция включена
-        +slider-toggles("price__toggles")
+        +slider-toggles("price__toggles", "second")
 
     section.contacts.container
       h2.visually-hidden Контакты
@@ -112,4 +124,4 @@ block content
         li.contacts__item
           h3.contacts__title Приезжайте в гости:
           address.contacts__address ул. Большая Конюшенная, 19/8
-      img.map__image(src=require("Images/content/mobile/map-mobile.jpg") width="320" height="200" alt="Карта")
+      iframe(src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="320" height="200" allowfullscreen)
