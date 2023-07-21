@@ -1,0 +1,97 @@
+// Reviews
+.reviews {
+  position: relative;
+  padding: 41px 20px 56px;
+  margin-top: -43px;
+  background-color: $white;
+}
+
+.slider {
+  &__item {
+    display: none;
+    margin: 0 0 31px;
+    text-align: center;
+  }
+
+  &__item--active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin: 0;
+    color: $ebony-clay;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  &__author-name {
+    margin-bottom: 13px;
+    order: -1;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  &__author-info {
+    display: none;
+  }
+
+  &__arrows {
+    display: none;
+  }
+
+  &__toggles li:nth-child(1) {
+    margin-right: 16px;
+  }
+
+  &__toggles li:nth-child(2) {
+    margin-right: 19px;
+  }
+}
+
+.toggles {
+  display: flex;
+  align-items: center;
+  width: 61px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__btn {
+    display: block;
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    background-color: $ebony-clay-light;
+    border-radius: 50%;
+  }
+
+  &__btn--active {
+    width: 12px;
+    height: 12px;
+    border: 3px solid $ebony-clay;
+    background-color: $white;
+  }
+
+  &__btn:hover {
+    background-color: $ebony-clay-hover;
+  }
+
+  &__btn:active {
+    background-color: $ebony-clay-active;
+  }
+
+  &__btn:focus {
+    outline: 1px solid $cerise-red;
+  }
+
+  &__btn--active:hover,
+  &__btn--active:active {
+    background-color: $white;
+  }
+}
