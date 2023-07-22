@@ -1,0 +1,32 @@
+// Invitation
+.invitation {
+  &__banner {
+    height: 462px;
+    padding-top: 94px;
+    background: url("Images/backgrounds/back-mobile.jpg") no-repeat;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 77px;
+    color: $white;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__description {
+    padding: 44px 20px 60px;
+    background-color: $white;
+  }
+
+  &__text {
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: $ebony-clay;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
