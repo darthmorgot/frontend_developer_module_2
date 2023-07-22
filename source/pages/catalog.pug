@@ -8,13 +8,13 @@ block variables
 block content
   main.main.main-container
 
-    section.invitation
+    section.invitation.container
       div.invitation__banner
-        h1 Фотографии пользователей
-        div.invitation__description.container
+        h1.invitation__title Фотографии #[br] пользователей
+        div.invitation__description
           p.invitation__text Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
 
-    section.catalog
+    section.catalog.container
       h2.visually-hidden Каталог фотографий
       div.catalog__panorama.panorama
         h2.panorama__title Панорама дня
@@ -22,12 +22,12 @@ block content
           a.panorama__link(href="#")
             img.panorama__image(src=require("Images/content/mobile/panorama-mobile.jpg") width="320" height="137"
               alt="Вид на подвесной мост.")
-          blockquote.panorama__description.container
+          blockquote.panorama__description
             span.panorama__author Анна
             span.panorama__publication-time (5 минут назад)
-            p.panorama__text Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            p.panorama__text Прыгать или нет? Напишите в комментарии свой совет и #[br] смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             button.panorama__button.catalog__button(type="button") Нравится:
-              span.panorama__counter 215
+              span 215
 
       div.catalog__gallery.gallery.container
         h2.visually-hidden Галерея фотографий
@@ -42,7 +42,7 @@ block content
                 span.gallery__publication-time (5 часов назад)
                 p.gallery__text Вчера он на луну летал, сегодня в руки к нам попал.
                 button.gallery__button.catalog__button(type="button") Нравится:
-                  span.gallery__counter 356
+                  span 356
           li.gallery__item
             figure.gallery__card
               a.gallery__link(href="#")
@@ -53,7 +53,7 @@ block content
                 span.gallery__publication-time (12 часов назад)
                 p.gallery__text Соседи будут рады!
                 button.gallery__button.catalog__button(type="button") Нравится:
-                  span.gallery__counter 667
+                  span 667
           li.gallery__item
             figure.gallery__card
               a.gallery__link(href="#")
@@ -64,7 +64,7 @@ block content
                 span.gallery__publication-time (20 часов назад)
                 p.gallery__text Здесь могла быть ваша цитата о высоком и вечном.
                 button.gallery__button.catalog__button(type="button") Нравится:
-                  span.gallery__counter 215
+                  span 215
           li.gallery__item
             figure.gallery__card
               a.gallery__link(href="#")
@@ -75,7 +75,7 @@ block content
                 span.gallery__publication-time (25 часов назад)
                 p.gallery__text Самая кубанская в мире!
                 button.gallery__button.catalog__button(type="button") Нравится:
-                  span.gallery__counter 4
+                  span 4
           li.gallery__item
             figure.gallery__card
               a.gallery__link(href="#")
@@ -86,7 +86,7 @@ block content
                 span.gallery__publication-time (40 часов назад)
                 p.gallery__text Где снег-то?
                 button.gallery__button.catalog__button(type="button") Нравится:
-                  span.gallery__counter 150
+                  span 150
           li.gallery__item
             figure.gallery__card
               a.gallery__link(href="#")
@@ -97,7 +97,7 @@ block content
                 span.gallery__publication-time (45 часов назад)
                 p.gallery__text Всем GM и взаимные лайки!
                 button.gallery__button.catalog__button(type="button") Нравится:
-                  span.gallery__counter 2560
+                  span 2560
 
     section.uploading-images
       h2.visually-hidden Форма загрузки фотографий
