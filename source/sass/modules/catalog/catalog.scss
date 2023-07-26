@@ -68,6 +68,7 @@
 
   &__link:focus {
     outline: 1px solid $cerise-red;
+    outline-offset: 2px;
   }
 
   &__image {
@@ -134,5 +135,6 @@
 
   &__button:focus {
     outline: 1px solid $cerise-red;
+    outline-offset: 2px;
   }
 }
