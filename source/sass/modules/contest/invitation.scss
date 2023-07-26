@@ -1,0 +1,11 @@
+// Invitation for contest page
+.invitation {
+  &__title--padding-bottom {
+    margin-bottom: 44px;
+  }
+
+  &__text--side-padding {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
