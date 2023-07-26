@@ -82,5 +82,11 @@
   &__phone:focus,
   &__mail:focus {
     outline: 1px solid $cerise-red;
+    outline-offset: 2px;
+  }
+
+  iframe {
+    display: block;
+    border: none;
   }
 }
