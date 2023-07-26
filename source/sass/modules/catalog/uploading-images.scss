@@ -1,0 +1,213 @@
+// Uploading-images
+.uploading-images {
+  padding-top: 26px;
+  background-color: $white;
+
+  &__slogan {
+    margin-bottom: 42px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: $ebony-clay;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+.form {
+  padding: 20px 20px 29px;
+  background-color: $concrete;
+
+  &__image {
+    margin-bottom: 42px;
+  }
+
+  &__label {
+    display: block;
+    position: relative;
+    height: 374px;
+  }
+
+  &__input {
+    outline: none;
+    opacity: 0;
+  }
+
+  &__input:focus ~ &__input-image {
+    outline: 1px solid $cerise-red;
+    outline-offset: 2px;
+  }
+
+  &__input-image {
+    position: absolute;
+    top: 0;
+
+    img {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  &__buttons {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid $ebony-clay-active;
+  }
+
+  &__button {
+    display: block;
+    width: 280px;
+    padding: 15px 0 16px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    border-radius: 30px;
+  }
+
+  &__button:focus {
+    outline: 1px solid $cerise-red;
+    outline-offset: 2px;
+  }
+
+  &__button--submit {
+    color: $cerise-red;
+    border: 3px solid $cerise-red;
+  }
+
+  &__button--submit:hover {
+    background-color: $cerise-red;
+    color: $white;
+  }
+
+  &__button--submit:active {
+    color: $white-active;
+  }
+
+  &__button--reset {
+    color: $ebony-clay-active;
+    border: 3px solid $ebony-clay-active;
+  }
+
+  &__button--reset:hover {
+    color: $ebony-clay-light;
+    border-color: $ebony-clay-light;
+  }
+
+  &__button--reset:active {
+    background-color: $ebony-clay-light;
+    color: $white-active;
+    border-color: transparent;
+  }
+}
+
+.editor-tabs {
+  &__panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 194px;
+    margin: 0 auto 23px 37px;
+  }
+
+  &__switch {
+    padding: 0;
+
+    path {
+      fill: $ebony-clay-light;
+    }
+  }
+
+  &__switch:nth-child(2) {
+    padding-top: 1px;
+  }
+
+  &__switch:hover {
+    path {
+      fill: $ebony-clay-hover;
+    }
+  }
+
+  &__switch:active {
+    path {
+      fill: $ebony-clay-light;
+    }
+  }
+
+  &__switch--active,
+  &__switch--active:hover {
+    path {
+      fill: $cerise-red;
+    }
+  }
+
+  &__switch:focus {
+    outline: 1px solid $cerise-red;
+    outline-offset: 2px;
+  }
+
+  &__wrapper {
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__item--active {
+    display: block;
+  }
+
+  &__label:focus-within {
+    outline: 1px solid $cerise-red;
+    outline-offset: 2px;
+  }
+
+  &__input {
+    width: 240px;
+    appearance: none;
+    outline: none;
+    vertical-align: middle;
+  }
+
+  &__input::-webkit-slider-runnable-track {
+    height: 2px;
+    background-color: $ebony-clay;
+  }
+
+  &__input::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+    margin-top: -5px;
+    appearance: none;
+    border: 2px solid $cerise-red;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $white;
+  }
+
+  &__input::-webkit-slider-thumb:hover {
+    background-color: $cerise-red;
+  }
+
+  &__input::-moz-range-track {
+    height: 2px;
+    background-color: $ebony-clay;
+  }
+
+  &__input::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    margin-top: -5px;
+    appearance: none;
+    border: 2px solid $cerise-red;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $white;
+  }
+}
