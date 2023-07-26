@@ -51,6 +51,7 @@
   &__menu-open:focus,
   &__menu-close:focus {
     outline: 1px solid $cerise-red;
+    outline-offset: 2px;
   }
 
   &__list {
@@ -87,6 +88,7 @@
 
     &:focus {
       outline: 1px solid $cerise-red;
+      outline-offset: 2px;
     }
   }
 }
@@ -111,6 +113,7 @@
 
   &:focus {
     outline: 1px solid $cerise-red;
+    outline-offset: 2px;
   }
 }
 
