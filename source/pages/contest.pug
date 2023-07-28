@@ -16,15 +16,16 @@ block content
 
     section.contest-form.container
       h2.visually-hidden Форма регистрации участника конкурса
-      form.contest-form__form.contest-form(action="https://echo.htmlacademy.ru" method="get")
-        fieldset.contest-form__user-name
-          label(for="surname") Фамилия:
-          input#surname.contest-form__input(type="text" name="surname" placeholder="Укажите фамилию *" required)
-          label(for="name") Имя:
-          input#name.contest-form__input(type="text" name="name" placeholder="Введите ваше имя *" required)
-          label(for="patronymic") Отчество:
-          input#patronymic.contest-form__input(type="text" name="patronymic" placeholder="Ну и отчество тоже")
-        fieldset.contest-form__user-achievements.achievements
+      form.contest-form__form.user-form(action="https://echo.htmlacademy.ru" method="get")
+        fieldset.user-form__user-name
+          label.user-form__label(for="surname") Фамилия:
+          input#surname.user-form__input(type="text" name="surname" placeholder="Укажите фамилию *" required)
+          label.user-form__label(for="name") Имя:
+          input#name.user-form__input.user-form__input--pb(type="text" name="name" placeholder="Введите ваше имя *"
+            required)
+          label.user-form__label(for="patronymic") Отчество:
+          input#patronymic.user-form__input(type="text" name="patronymic" placeholder="Ну и отчество тоже")
+        fieldset.user-form__user-achievements.achievements
           legend Ваши безбашенные достижения в путешествии
           ul.achievements__list.list
             li.list__item
@@ -49,7 +50,7 @@ block content
                 span.list__name Накупил сувениров
             li.list__item
               label.list__label
-                input.visually-hidden.list__input(type="checkbox" name="tower")
+                input.visually-hidden.list__input(type="checkbox" name="tower" checked)
                 span.list__mark
                 span.list__name Удержал башню
             li.list__item
@@ -57,12 +58,12 @@ block content
                 input.visually-hidden.list__input(type="checkbox" name="hotel")
                 span.list__mark
                 span.list__name Разгромил отель
-        fieldset.contest-form__user-data
-          label(for="phone") Номер телефона
-          input#phone.contest-form__input(type="tel" name="phone" placeholder="Номер, пожалуйста")
-          label(for="mail") Адрес почты
-          input#mail.contest-form__input(type="email" name="mail" placeholder="Введите почту *" required)
-        fieldset.contest-form__user-application.application
+        fieldset.user-form__user-data
+          label.user-form__label(for="phone") Номер телефона
+          input#phone.user-form__input.user-form__input--pb(type="tel" name="phone" placeholder="Номер, пожалуйста")
+          label.user-form__label(for="mail") Адрес почты
+          input#mail.user-form__input(type="email" name="mail" placeholder="Введите почту *" required)
+        fieldset.user-form__user-application.application
           legend С каким приложением путешествовали?
           ul.application__list.list
             li.list__item
@@ -80,15 +81,15 @@ block content
                 input.visually-hidden.list__input(type="radio" name="application" value="windows-phone")
                 span.list__mark
                 span.list__name Windows Phone
-        fieldset.contest-form__user-emotions
-          label(for="emotions") Опишите свои эмоции
-          textarea#emotions.contest-form__textarea(name="emotions" placeholder="Можно прям в красках, не стесняясь в " +
+        fieldset.user-form__user-emotions
+          label.user-form__label(for="emotions") Опишите свои эмоции
+          textarea#emotions.user-form__textarea(name="emotions" placeholder="Можно прям в красках, не стесняясь в " +
           "выражениях" rows="5")
-        div.contest-form__button-wrapper
-          button.contest-form__button(type="submit") Отправить форму
-          span.contest-form__condition #[sup *] — обязательные поля
+        div.user-form__button-wrapper
+          button.user-form__button(type="submit") Отправить форму
+          span.user-form__condition #[strong *] — обязательные поля
 
-    section.popup.container
+    section.popup.container(hidden)
       div.popup__error.error
         h2.popup__title Что-то пошло не так!
         p.popup__message Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
