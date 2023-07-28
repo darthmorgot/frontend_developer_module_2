@@ -1,0 +1,239 @@
+// Contest-form
+.contest-form {
+  margin-top: -56px;
+  margin-bottom: 16px;
+  background-color: $white;
+}
+
+.user-form {
+  &__label {
+    display: block;
+    margin-left: 43px;
+    margin-bottom: 5px;
+    color: $cerise-red;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &__input,
+  &__textarea {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    border-radius: 1px;
+    border: 2px solid $mercury;
+    outline: none;
+  }
+
+  &__input {
+    margin-bottom: 17px;
+    padding: 21px 20px 20px;
+  }
+
+  &__input--pb {
+    padding-bottom: 19px;
+  }
+
+  &__input:last-child {
+    margin-bottom: 0;
+  }
+
+  &__input::placeholder,
+  &__textarea::placeholder {
+    color: $ebony-clay;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__input:hover,
+  &__textarea:hover {
+    border-color: $ebony-clay;
+  }
+
+  &__input:active,
+  &__textarea:active,
+  &__input:focus,
+  &__textarea:focus {
+    border-color: $cerise-red;
+  }
+
+  &__user-data {
+    label {
+      margin-left: 44px;
+    }
+  }
+
+  &__user-emotions {
+    margin-bottom: 48px;
+
+    label {
+      margin-left: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+
+  &__textarea {
+    padding: 13px 20px 34px;
+    color: $ebony-clay;
+    font-size: 18px;
+    line-height: 30px;
+    resize: none;
+  }
+
+  legend {
+    padding-top: 39px;
+    padding-left: 34px;
+    padding-right: 34px;
+    margin-bottom: 38px;
+    color: $cerise-red;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: $concrete;
+  }
+
+  &__button {
+    display: block;
+    width: 280px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    margin: 0 auto 34px;
+    color: $white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background-color: $jungle-green;
+  }
+
+  &__button:hover {
+    background-color: $eucalyptus;
+  }
+
+  &__button:active {
+    color: $white-active;
+  }
+
+  &__button:focus {
+    outline: 1px solid $cerise-red;
+    outline-offset: 2px;
+  }
+
+  &__button:disabled {
+    background-color: $mercury;
+  }
+
+  &__condition {
+    display: block;
+    padding-left: 2px;
+    color: $ebony-clay;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+
+    strong {
+      color: $cerise-red;
+    }
+  }
+}
+
+fieldset {
+  margin: 0 0 42px;
+  padding: 0;
+  border: none;
+}
+
+.achievements,
+.application {
+  margin-bottom: 32px;
+  background-color: $concrete;
+}
+
+.achievements {
+  padding-bottom: 42px;
+
+  li {
+    margin-bottom: 43px;
+  }
+}
+
+.application {
+  padding-bottom: 40px;
+
+  legend,
+  li {
+    margin-bottom: 34px;
+  }
+}
+
+.list {
+  margin: 0 0 0 20px;
+  padding: 0;
+  list-style: none;
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  &__mark {
+    width: 39px;
+    height: 39px;
+    margin-right: 20px;
+    border-radius: 1px;
+    border: 2px solid $mercury;
+    background: $white no-repeat 7px 9px;
+  }
+
+  &__name {
+    margin-top: -1px;
+    color: $ebony-clay;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__input[type="radio"] + &__mark {
+    width: 41px;
+    height: 41px;
+    margin-right: 29px;
+    border-radius: 50%;
+    background-position: center;
+  }
+
+  &__input[type="checkbox"]:checked + &__mark {
+    background-image: url("Images/icons/icon-checkbox-on.svg");
+  }
+
+  &__input[type="radio"]:checked + &__mark {
+    background-image: url("Images/icons/icon-radio-on.svg");
+  }
+
+  &__input:hover + &__mark {
+    border-color: $ebony-clay;
+  }
+
+  &__input:active + &__mark {
+    border-color: $cerise-red;
+  }
+
+  &__input:focus + &__mark {
+    outline: 1px solid $cerise-red;
+    outline-offset: 2px;
+  }
+
+  &__input:disabled + &__mark,
+  &__input:disabled ~ &__name {
+    opacity: 0.3;
+  }
+}
