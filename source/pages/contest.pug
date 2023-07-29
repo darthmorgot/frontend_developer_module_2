@@ -89,12 +89,14 @@ block content
           button.user-form__button(type="submit") Отправить форму
           span.user-form__condition #[strong *] — обязательные поля
 
-    section.popup.container(hidden)
+    section.popup.container
       div.popup__error.error
         h2.popup__title Что-то пошло не так!
         p.popup__message Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         button.popup__button(type="button") ОК
       div.popup__success.success
         h2.popup__title Ваша заявка отправлена
-        p.popup__message Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
-        a.popup__button(href="../index.html") Закрыть окно
+        p.popup__message Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
+          span время мы рассмотрим ее и оповестим вас.
+        div.popup__wrapper
+          a.popup__button(href="../index.html") Закрыть окно
