@@ -1,0 +1,85 @@
+// Popup
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  padding: 38px 20px 0;
+  background-color: $white;
+  box-shadow: 0 7px 15px 0 rgba(0 1 1 / 15%);
+  transform: translateY(-50%);
+
+  &__error,
+  &__success {
+    display: none;
+  }
+
+  &__title {
+    margin: 0 0 25px;
+    color: $black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__message {
+    margin: 0 0 41px;
+    color: $ebony-clay;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__wrapper {
+    padding: 50px 20px;
+    margin-right: -20px;
+    margin-left: -20px;
+    background-color: $concrete;
+  }
+
+  &__button {
+    display: block;
+    width: 280px;
+    padding: 16px 0 17px;
+    margin-bottom: 50px;
+    color: $white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background-color: $jungle-green;
+  }
+
+  &__button:hover {
+    background-color: $eucalyptus;
+  }
+
+  &__button:active {
+    color: $white-active;
+  }
+
+  &__button:focus {
+    outline: 1px solid $cerise-red;
+    outline-offset: 2px;
+  }
+}
+
+.success {
+  p {
+    margin-bottom: 34px;
+  }
+
+  span {
+    display: inline-block;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  a {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
