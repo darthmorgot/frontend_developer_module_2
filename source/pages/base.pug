@@ -5,11 +5,13 @@ doctype html
 html(lang="ru")
   head
     meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     title #{title}
-    link(rel="icon" type="image/png" href=require('Images/favicons/pink-favicon-32.png') sizes="32x32")
-    link(href=require('../sass/style.scss') rel='stylesheet')
+    link(rel="icon" type="image/png" href=require("Images/favicons/pink-favicon-32.png") sizes="32x32")
+    link(href=require("../sass/style.scss") rel="stylesheet")
   body
     include includes/header
     block content
     include includes/footer
     script(src=require(linkScripts))
+    script(src=require("../js/open-close-menu"))
