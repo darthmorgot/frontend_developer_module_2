@@ -1,6 +1,8 @@
 // basic
 $white: #ffffff;
+$white-transparent: rgba(255 255 255 / 15%);
 $black: #000000;
+$black-light: rgba(0 0 0 / 30%);
 
 // additional
 $white-active: rgba(255 255 255 / 30%);
@@ -15,3 +17,7 @@ $cerise-red-light: rgba(210 40 86 / 30%);
 $jungle-green: #2aab6d;
 $eucalyptus: #1c9b5e;
 $mercury: #e5e5e5;
+
+// viewports
+$tablet-width: 768px;
+$desktop-width: 1200px;
