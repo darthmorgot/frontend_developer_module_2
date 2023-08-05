@@ -29,18 +29,29 @@ block content
       div.advantages__slogan
         p.advantages__slogan-text Устали от серости мегаполиса?
         p.advantages__slogan-text Нам есть, что вам предложить!
-      ul.advantages__list
-        li.advantages__item
-          h3.advantages__title Поднимает настроение
-          p.advantages__description Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-        li.advantages__item
-          h3.advantages__title Меняет мир вокруг
-          p.advantages__description Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-        li.advantages__item
-          h3.advantages__title Заводит новых друзей
-          p.advantages__description Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-      img.advantages__image(src=require("Images/content/mobile/advantages-mobile.png") width="157" height="320"
-        alt="Всем привет")
+      div.advantages__wrapper
+        ul.advantages__list
+          li.advantages__item
+            h3.advantages__title Поднимает настроение
+            p.advantages__description Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          li.advantages__item
+            h3.advantages__title Меняет мир вокруг
+            p.advantages__description Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              span усилить эффект
+          li.advantages__item
+            h3.advantages__title Заводит новых друзей
+            p.advantages__description Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+        img.advantages__image.advantages__image--mobile(src=require("Images/content/mobile/advantages-mobile.png")
+          width="157" height="320" alt="Всем привет")
+        img.advantages__image.advantages__image--tablet(src=require("Images/content/tablet/advantages-tablet.png")
+          width="268" height="547" alt="Всем привет")
+
+    section.effect.container
+      h2.effect__slogan Эффект
+        span на 24 часа!
+      p.effect__description Британские ученые провели исследования
+        span и доказали, что положительный эффект от использования приложения длится целые сутки!
+      a.effect__link(href="#") Узнать больше об исследовании
 
     section.reviews.container
       h2.visually-hidden Отзывы о нас
