@@ -4,6 +4,12 @@
   padding: 41px 20px 56px;
   margin-top: -43px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-top: 100px;
+    padding-bottom: 55px;
+  }
 }
 
 .slider {
@@ -11,6 +17,10 @@
     display: none;
     margin: 0 0 31px;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 36px;
+    }
   }
 
   &__item--active {
@@ -23,6 +33,13 @@
     color: $ebony-clay;
     font-size: 14px;
     line-height: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 36px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 
   &__author-name {
@@ -31,10 +48,26 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: -1px;
+      color: $black;
+      text-align: center;
+      font-size: 20px;
+      order: 0;
+    }
   }
 
   &__author-info {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      color: $ebony-clay;
+      text-align: center;
+      font-size: 14px;
+      line-height: 30px;
+    }
   }
 
   &__arrows {
