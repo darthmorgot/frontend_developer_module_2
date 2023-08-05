@@ -5,7 +5,7 @@
   &__slogan {
     position: relative;
     padding-top: 41px;
-    padding-bottom: 62px;
+    padding-bottom: 81px;
     background-color: $white;
 
     &::after {
@@ -19,6 +19,23 @@
       border-bottom: 30px solid $concrete;
       border-left: 320px solid transparent;
       z-index: 1;
+
+      @media (min-width: $tablet-width) {
+        border-bottom: 53px solid $concrete;
+        border-left: 660px solid transparent;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 46px;
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
@@ -29,10 +46,26 @@
     font-size: 24px;
     font-weight: 300;
     line-height: 120%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: normal;
+    }
   }
 
   &__slogan-text:nth-child(1) {
     margin-bottom: 29px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: -1px;
+    }
+  }
+
+  &__slogan-text:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      padding-left: 39px;
+      padding-right: 40px;
+    }
   }
 
   &__list {
@@ -40,10 +73,19 @@
     padding: 51px 20px 10px;
     list-style: none;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      text-align: left;
+      padding: 23px 0 0 42px;
+    }
   }
 
   &__item {
     margin-bottom: 31px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 34px;
+    }
   }
 
   &__title {
@@ -56,10 +98,36 @@
     margin: 0;
     color: $ebony-clay;
     font-size: 14px;
+
+    @media (min-width: $tablet-width) {
+      span {
+        display: block;
+      }
+    }
   }
 
   &__image {
     display: block;
     margin: 0 auto;
+
+    &--mobile {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: -47px;
+      order: -1;
+      z-index: 1;
+    }
   }
 }
