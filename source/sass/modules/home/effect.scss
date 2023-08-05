@@ -1,0 +1,45 @@
+// Effect
+.effect {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: relative;
+    padding-top: 96px;
+    padding-left: 330px;
+    padding-bottom: 22px;
+    margin-top: -66px;
+    background: $white url("Images/backgrounds/back-watch-tablet.png") no-repeat 20px 54px;
+    z-index: 2;
+
+    &__slogan {
+      width: 168px;
+      margin: 0 0 10px;
+      color: $black;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 36px;
+
+      span {
+        display: block;
+      }
+    }
+
+    &__description {
+      margin: 0 0 9px;
+      color: $ebony-clay;
+      font-size: 14px;
+
+      span {
+        display: block;
+        padding-right: 38px;
+      }
+    }
+
+    &__link {
+      color: $cerise-red;
+      font-size: 14px;
+      text-decoration-line: underline;
+    }
+  }
+}
