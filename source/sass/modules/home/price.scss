@@ -16,6 +16,12 @@
     border-bottom: 19px solid $concrete;
     border-left: 320px solid transparent;
     z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      top: -40px;
+      border-bottom: 40px solid $concrete;
+      border-left: 660px solid transparent;
+    }
   }
 
   &__slider {
@@ -25,6 +31,10 @@
   &__toggles {
     width: 56px;
     padding-bottom: 1px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &__toggles li:nth-child(1) {
