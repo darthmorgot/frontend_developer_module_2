@@ -4,6 +4,13 @@
   padding-bottom: 40px;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-top: 36px;
+    padding-left: 18px;
+    padding-right: 19px;
+  }
+
   &__logo {
     display: block;
     width: 150px;
@@ -11,6 +18,11 @@
     margin-left: auto;
     margin-right: auto;
     padding-left: 2px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 73px 0 0;
+      padding-left: 0;
+    }
   }
 
   &__logo:hover {
@@ -39,12 +51,33 @@
   margin: 0 0 38px;
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    width: 178px;
+    margin: 0 90px 0 0;
+  }
+
+  &__item {
+    @media (min-width: $tablet-width) {
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
   &__item:first-child {
     margin-left: 71px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+    }
   }
 
   &__item:last-child {
     margin-right: 71px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+    }
   }
 
   &__link {
@@ -92,10 +125,19 @@
     color: $ebony-clay;
     font-size: 14px;
     line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      margin-right: 16px;
+    }
   }
 
   &__link {
     height: 34px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 1px;
+    }
   }
 
   &__link:hover {
