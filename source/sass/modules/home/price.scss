@@ -5,6 +5,10 @@
   padding-bottom: 45px;
   background-color: $concrete;
 
+  @media (min-width: $tablet-width) {
+    padding: 57px 22px 28px 20px;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -26,6 +30,10 @@
 
   &__slider {
     overflow: hidden;
+
+    @media (min-width: $tablet-width) {
+      overflow: visible;
+    }
   }
 
   &__toggles {
@@ -51,7 +59,11 @@
   left: -258px;
   width: 836px;
   margin-bottom: 40px;
-  border-collapse: collapse;
+  border-spacing: 0;
+
+  tr:nth-child(2) td {
+    border-top-color: $white;
+  }
 
   tr:nth-child(3) td {
     padding-top: 15px;
@@ -61,13 +73,14 @@
   tr:nth-child(4) td {
     padding-top: 14px;
     padding-bottom: 15px;
+    border-bottom-width: 2px;
   }
 
   th,
   td {
     position: relative;
     width: 278px;
-    border: 2px solid $mercury;
+    border: 1px solid $mercury;
     background: $white;
   }
 
@@ -86,10 +99,14 @@
 
   th:nth-child(2) {
     border-left-color: $ebony-clay;
+    border-left-width: 2px;
+    border-radius: 3px 0 0;
   }
 
   th:last-child {
     border-right-color: $ebony-clay;
+    border-right-width: 2px;
+    border-radius: 0 3px 0 0;
   }
 
   th > span {
@@ -116,8 +133,29 @@
     padding: 12px 0 15px 20px;
   }
 
+  td:nth-child(2) {
+    border-left-width: 2px;
+  }
+
+  td:nth-child(4) {
+    border-right-width: 2px;
+  }
+
+  td:not(:first-child)::after {
+    content: "";
+    position: absolute;
+  }
+
   &__mobile-off {
     display: none;
+  }
+
+  &__mobile-on {
+    color: $ebony-clay;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
   }
 
   &__hit-ribbon::before {
@@ -127,13 +165,11 @@
     left: -2px;
     width: 74px;
     height: 74px;
-    background: url("Images/backgrounds/hit-ribbon.png") no-repeat;
+    background: url("Images/backgrounds/hit-ribbon-mobile.png") no-repeat;
     z-index: 10;
   }
 
   &__enable::after {
-    content: "";
-    position: absolute;
     top: 17px;
     right: 17px;
     width: 31px;
@@ -146,17 +182,7 @@
     top: 19px;
   }
 
-  &__mobile-on {
-    color: $ebony-clay;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
-
   &__disable::after {
-    content: "";
-    position: absolute;
     top: 25px;
     right: 19px;
     width: 27px;
@@ -167,5 +193,145 @@
   tr:nth-child(3) &__disable::after,
   tr:nth-child(4) &__disable::after {
     top: 16px;
+  }
+
+  tr:last-child td:nth-child(2) {
+    border-radius: 0 0 0 3px;
+  }
+
+  tr:last-child td:nth-child(4) {
+    border-radius: 0 0 3px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .table-price {
+    position: static;
+    width: 620px;
+
+    th {
+      padding-top: 12px;
+      padding-bottom: 9px;
+    }
+
+    th:nth-child(odd),
+    td:nth-child(odd) {
+      width: 153px;
+    }
+
+    th:nth-child(even),
+    td:nth-child(even) {
+      width: 152px;
+    }
+
+    th:first-child {
+      background-color: $concrete;
+      border-left: none;
+      border-right: none;
+      border-bottom-width: 2px;
+
+      &::after {
+        content: "";
+        width: 153px;
+        background-color: $mercury;
+      }
+    }
+
+    th::after {
+      width: 152px;
+      background-color: $ebony-clay;
+    }
+
+    th:nth-child(2)::after {
+      left: -2px;
+    }
+
+    th:nth-child(4)::after {
+      width: 154px;
+    }
+
+    th > span {
+      margin-top: -3px;
+    }
+
+    td {
+      padding-left: 0;
+    }
+
+    td:first-child {
+      padding-left: 15px;
+    }
+
+    td:not(:first-child)::after {
+      content: "";
+      position: static;
+      display: block;
+      margin: 0 auto;
+    }
+
+    td:nth-child(1) {
+      border-left-width: 2px;
+    }
+
+    td:nth-child(2) {
+      border-left-width: 1px;
+    }
+
+    tr:nth-child(2) td:first-child {
+      padding-top: 8px;
+      padding-bottom: 7px;
+      border-radius: 3px 0 0;
+      border-top-color: $mercury;
+      border-top-width: 0;
+    }
+
+    tr:nth-child(2) td:not(:first-child) {
+      padding-top: 10px;
+      padding-bottom: 11px;
+    }
+
+    tr:nth-child(3) td:first-child {
+      padding-top: 8px;
+      padding-bottom: 7px;
+    }
+
+    tr:nth-child(3) td:not(:first-child) {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+
+    tr:last-child td:first-child {
+      padding-top: 8px;
+      padding-bottom: 7px;
+      border-radius: 0 0 0 3px;
+    }
+
+    tr:last-child td:not(:first-child) {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+
+    tr:last-child td:nth-child(2) {
+      border-radius: 0;
+    }
+
+    &__hit-ribbon::before {
+      left: 0;
+      width: 59px;
+      height: 61px;
+      background: url("Images/backgrounds/hit-ribbon-tablet.png") no-repeat;
+    }
+
+    &__mobile-off {
+      display: table-cell;
+      color: $ebony-clay;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    &__mobile-on {
+      display: none;
+    }
   }
 }
