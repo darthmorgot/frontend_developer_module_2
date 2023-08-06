@@ -40,6 +40,19 @@
       color: $cerise-red;
       font-size: 14px;
       text-decoration-line: underline;
+
+      &:hover {
+        color: $ebony-clay;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+
+      &:focus {
+        outline: 1px solid $cerise-red;
+        outline-offset: 2px;
+      }
     }
   }
 }
