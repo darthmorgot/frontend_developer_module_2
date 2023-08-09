@@ -3,6 +3,10 @@
   padding-top: 26px;
   background-color: $white;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+  }
+
   &__slogan {
     margin-bottom: 42px;
     padding-right: 20px;
@@ -11,21 +15,45 @@
     text-align: center;
     font-size: 14px;
     line-height: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 70px;
+      font-size: 18px;
+    }
   }
 }
 
 .form {
-  padding: 20px 20px 29px;
+  display: grid;
+  padding: 20px 20px 41px;
   background-color: $concrete;
 
-  &__image {
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0 48px;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  &__upload-image {
     margin-bottom: 42px;
+
+    @media (min-width: $tablet-width) {
+      grid-row: 1/3;
+      margin-bottom: 0;
+    }
   }
 
   &__label {
     display: block;
     position: relative;
     height: 374px;
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      height: 400px;
+    }
   }
 
   &__input {
@@ -41,10 +69,32 @@
   &__input-image {
     position: absolute;
     top: 0;
+  }
 
-    img {
+  &__image {
+    cursor: pointer;
+
+    &--mobile {
       display: block;
-      cursor: pointer;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
+    }
+  }
+
+  &__editor {
+    @media (min-width: $tablet-width) {
+      grid-column: 2/3;
+      grid-row: 1/2;
     }
   }
 
@@ -55,6 +105,14 @@
     padding-left: 20px;
     padding-right: 20px;
     border-top: 1px solid $ebony-clay-active;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      padding: 66px 0 0;
+      margin: 0 0 0 -1px;
+      border-top: none;
+    }
   }
 
   &__button {
@@ -66,6 +124,15 @@
     font-weight: 700;
     line-height: 18px;
     border-radius: 30px;
+
+    @media (min-width: $tablet-width) {
+      width: 260px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__button:last-child {
+    margin-bottom: 0;
   }
 
   &__button:focus {
@@ -111,6 +178,10 @@
     align-items: center;
     width: 194px;
     margin: 0 auto 23px 37px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &__switch {
@@ -150,13 +221,44 @@
   }
 
   &__wrapper {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &__item {
     display: none;
     padding-left: 20px;
     padding-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      padding: 0 18px 25px 52px;
+      border-bottom: 1px solid $ebony-clay-active;
+    }
+  }
+
+  &__item:first-child {
+    @media (min-width: $tablet-width) {
+      margin-top: 6px;
+      background: url("Images/icons/icon-crop.svg") no-repeat 1px 3px;
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      margin-top: 23px;
+      background: url("Images/icons/icon-fill.svg") no-repeat 0 4px;
+    }
+  }
+
+  &__item:last-child {
+    @media (min-width: $tablet-width) {
+      margin-top: 20px;
+      background: url("Images/icons/icon-contrast.svg") no-repeat  4px 6px;
+    }
   }
 
   &__item--active {
@@ -173,6 +275,10 @@
     appearance: none;
     outline: none;
     vertical-align: middle;
+
+    @media (min-width: $tablet-width) {
+      width: 202px;
+    }
   }
 
   &__input::-webkit-slider-runnable-track {
