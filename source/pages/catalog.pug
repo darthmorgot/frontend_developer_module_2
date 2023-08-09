@@ -22,8 +22,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link.catalog__link--panorama(href="#")
-                img.catalog__image(src=require("Images/content/mobile/panorama-mobile.jpg") width="320" height="137"
-                  alt="Вид на подвесной мост.")
+                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/panorama-mobile.jpg")
+                  width="320" height="137" alt="Вид на подвесной мост.")
+                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/panorama-tablet.jpg")
+                  width="660" height="509" alt="Вид на подвесной мост.")
               blockquote.catalog__description
                 span.catalog__author Анна
                 span.catalog__publication-time (5 минут назад)
@@ -33,8 +35,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                img.catalog__image(src=require("Images/content/mobile/photo-1-mobile.jpg") width="280" height="180"
+                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/photo-1-mobile.jpg") width="280" height="180"
                   alt="Фотосъемка белой машины.")
+                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-1-tablet.jpg")
+                  width="300" height="300" alt="Фотосъемка белой машины.")
               blockquote.catalog__description
                 span.catalog__author Левон
                 span.catalog__publication-time (5 часов назад)
@@ -44,8 +48,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                img.catalog__image(src=require("Images/content/mobile/photo-2-mobile.jpg") width="280" height="180"
+                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/photo-2-mobile.jpg") width="280" height="180"
                   alt="Барабанная установка.")
+                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-2-tablet.jpg")
+                  width="300" height="300" alt="Барабанная установка.")
               blockquote.catalog__description
                 span.catalog__author Антон
                 span.catalog__publication-time (12 часов назад)
@@ -55,8 +61,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                img.catalog__image(src=require("Images/content/mobile/photo-3-mobile.jpg") width="280" height="180"
+                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/photo-3-mobile.jpg") width="280" height="180"
                   alt="Вид на небо сквозь прозрачную крышу.")
+                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-3-tablet.jpg")
+                  width="300" height="300" alt="Вид на небо сквозь прозрачную крышу.")
               blockquote.catalog__description
                 span.catalog__author Борис
                 span.catalog__publication-time (20 часов назад)
@@ -66,8 +74,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                img.catalog__image(src=require("Images/content/mobile/photo-4-mobile.jpg") width="280" height="180"
+                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/photo-4-mobile.jpg") width="280" height="180"
                   alt="Фестиваль Кубанская бахча.")
+                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-4-tablet.jpg")
+                  width="300" height="300" alt="Фестиваль Кубанская бахча.")
               blockquote.catalog__description
                 span.catalog__author Сергей
                 span.catalog__publication-time (25 часов назад)
@@ -77,8 +87,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                img.catalog__image(src=require("Images/content/mobile/photo-5-mobile.jpg") width="280" height="180"
+                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/photo-5-mobile.jpg") width="280" height="180"
                   alt="Вид на ноги и горы.")
+                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-5-tablet.jpg")
+                  width="300" height="300" alt="Вид на ноги и горы.")
               blockquote.catalog__description
                 span.catalog__author Максим
                 span.catalog__publication-time (40 часов назад)
@@ -88,8 +100,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                img.catalog__image(src=require("Images/content/mobile/photo-6-mobile.jpg") width="280" height="180"
+                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/photo-6-mobile.jpg") width="280" height="180"
                   alt="Вид на крыло самолета и закат.")
+                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-6-tablet.jpg")
+                  width="300" height="300" alt="Вид на крыло самолета и закат.")
               blockquote.catalog__description
                 span.catalog__author Надежда
                 span.catalog__publication-time (45 часов назад)
@@ -101,13 +115,15 @@ block content
       h2.visually-hidden Форма загрузки фотографий
       p.uploading-images__slogan Затмите их всех! #[br] Выкладывайте все, что накопилось в телефоне!
       form.uploading-images__form.form(action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data")
-        div.form__image
+        div.form__upload-image
           label.form__label
             input.visually-hidden.form__input(type="file" name="image")
             span.visually-hidden Выберите файл
             div.form__input-image
-              img(src=require("Images/content/mobile/photo-7-mobile.jpg") width="280" height="374" alt="Зимняя лесная " +
-              "дорога")
+              img.form__image.form__image--mobile(src=require("Images/content/mobile/photo-7-mobile.jpg") width="280"
+                height="374" alt="Зимняя лесная дорога")
+              img.form__image.form__image--tablet(src=require("Images/content/desktop/photo-7-desktop.jpg") width="300"
+                height="400" alt="Зимняя лесная дорога")
         div.form__editor.editor-tabs
           h2.visually-hidden Редактор изображений
           div.editor-tabs__panel
@@ -136,11 +152,11 @@ block content
                 span.visually-hidden Ползунок обрезки изображения
             div.editor-tabs__item.editor-tabs__item--fill
               label.editor-tabs__label
-                input.editor-tabs__input(type="range" min="0" max="100" value="15.5" name="range" step="0.5")
+                input.editor-tabs__input(type="range" min="0" max="100" value="13.5" name="range" step="0.5")
                 span.visually-hidden Ползунок заливки цветом
             div.editor-tabs__item.editor-tabs__item--contrast
               label.editor-tabs__label
-                input.editor-tabs__input(type="range" min="0" max="100" value="50" name="range" step="0.5")
+                input.editor-tabs__input(type="range" min="0" max="100" value="51.5" name="range" step="0.5")
                 span.visually-hidden Ползунок установки контраста
         div.form__buttons
           button.form__button.form__button--submit(type="submit") Запостить
