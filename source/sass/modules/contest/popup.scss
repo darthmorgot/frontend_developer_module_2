@@ -5,14 +5,34 @@
   top: 50%;
   left: 0;
   right: 0;
-  padding: 38px 20px 0;
   background-color: $white;
   box-shadow: 0 7px 15px 0 rgba(0 1 1 / 15%);
   transform: translateY(-50%);
 
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    border-radius: 5px;
+  }
+
   &__error,
   &__success {
     display: none;
+    padding: 38px 20px 50px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 40px;
+      border-radius: 5px;
+    }
+  }
+
+  &__error {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 52px;
+    }
+  }
+
+  &__success {
+    background: linear-gradient(to top, $concrete 163px, $white 163px);
   }
 
   &__title {
@@ -22,6 +42,28 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 22px;
+    }
+
+    &--error {
+      @media (min-width: $tablet-width) {
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 1px;
+      }
+    }
+
+    &--success {
+      @media (min-width: $tablet-width) {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 1px;
+      }
+    }
   }
 
   &__message {
@@ -30,6 +72,28 @@
     text-align: center;
     font-size: 14px;
     line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      margin-bottom: 33px;
+    }
+
+    &--error {
+      @media (min-width: $tablet-width) {
+        padding-left: 55px;
+        padding-right: 55px;
+      }
+    }
+
+    &--success {
+      margin-bottom: 84px;
+
+      @media (min-width: $tablet-width) {
+        padding-left: 45px;
+        padding-right: 45px;
+        margin-bottom: 80px;
+      }
+    }
   }
 
   &__wrapper {
@@ -43,7 +107,6 @@
     display: block;
     width: 280px;
     padding: 16px 0 17px;
-    margin-bottom: 50px;
     color: $white;
     font-size: 18px;
     font-weight: 700;
@@ -51,6 +114,11 @@
     text-transform: uppercase;
     border-radius: 3px;
     background-color: $jungle-green;
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      margin: 0 auto;
+    }
   }
 
   &__button:hover {
@@ -68,14 +136,15 @@
 }
 
 .success {
-  p {
-    margin-bottom: 34px;
-  }
-
   span {
     display: inline-block;
     padding-left: 9px;
     padding-right: 9px;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+      padding: 0;
+    }
   }
 
   a {
