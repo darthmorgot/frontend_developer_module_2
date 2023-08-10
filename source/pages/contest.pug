@@ -10,9 +10,10 @@ block content
 
     section.invitation.container
       div.invitation__banner
-        h1.invitation__title.invitation__title--padding-bottom Конкурс на самое безбашенное #[br] путешествие с Пинк
-        div.invitation__description.container
+        h1.invitation__title.invitation__title--margin-bottom Конкурс на самое безбашенное #[br] путешествие с Пинк
+        div.invitation__description.invitation__description--padding-bottom
           p.invitation__text.invitation__text--side-padding Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            span Пожалуйста, заполните форму ниже:
 
     section.contest-form.container
       h2.visually-hidden Форма регистрации участника конкурса
@@ -21,10 +22,34 @@ block content
           label.user-form__label(for="surname") Фамилия:
           input#surname.user-form__input(type="text" name="surname" placeholder="Укажите фамилию *" required)
           label.user-form__label(for="name") Имя:
-          input#name.user-form__input.user-form__input--pb(type="text" name="name" placeholder="Введите ваше имя *"
+          input#name.user-form__input.user-form__input--tablet(type="text" name="name" placeholder="Введите ваше имя *"
             required)
           label.user-form__label(for="patronymic") Отчество:
           input#patronymic.user-form__input(type="text" name="patronymic" placeholder="Ну и отчество тоже")
+        fieldset.user-form__user-application.user-application
+          legend С каким приложением путешествовали?
+          ul.user-application__list.list
+            li.list__item
+              label.list__label
+                input.visually-hidden.list__input(type="radio" name="application" value="ios" checked)
+                span.list__mark
+                span.list__name Pink для iOS
+            li.list__item
+              label.list__label
+                input.visually-hidden.list__input(type="radio" name="application" value="android")
+                span.list__mark
+                span.list__name Pink на Android
+            li.list__item
+              label.list__label
+                input.visually-hidden.list__input(type="radio" name="application" value="windows-phone")
+                span.list__mark
+                span.list__name Windows Phone
+        fieldset.user-form__user-data
+          legend Контактная информация
+          label.user-form__label(for="phone") Номер телефона
+          input#phone.user-form__input(type="tel" name="phone" placeholder="Номер, пожалуйста")
+          label.user-form__label(for="mail") Адрес почты
+          input#mail.user-form__input(type="email" name="mail" placeholder="Введите почту *" required)
         fieldset.user-form__user-achievements.achievements
           legend Ваши безбашенные достижения в путешествии
           ul.achievements__list.list
@@ -58,31 +83,9 @@ block content
                 input.visually-hidden.list__input(type="checkbox" name="hotel")
                 span.list__mark
                 span.list__name Разгромил отель
-        fieldset.user-form__user-data
-          label.user-form__label(for="phone") Номер телефона
-          input#phone.user-form__input.user-form__input--pb(type="tel" name="phone" placeholder="Номер, пожалуйста")
-          label.user-form__label(for="mail") Адрес почты
-          input#mail.user-form__input(type="email" name="mail" placeholder="Введите почту *" required)
-        fieldset.user-form__user-application.user-application
-          legend С каким приложением путешествовали?
-          ul.user-application__list.list
-            li.list__item
-              label.list__label
-                input.visually-hidden.list__input(type="radio" name="application" value="ios" checked)
-                span.list__mark
-                span.list__name Pink для iOS
-            li.list__item
-              label.list__label
-                input.visually-hidden.list__input(type="radio" name="application" value="android")
-                span.list__mark
-                span.list__name Pink на Android
-            li.list__item
-              label.list__label
-                input.visually-hidden.list__input(type="radio" name="application" value="windows-phone")
-                span.list__mark
-                span.list__name Windows Phone
         fieldset.user-form__user-emotions
-          label.user-form__label(for="emotions") Опишите свои эмоции
+          legend Опишите свои эмоции
+          label.visually-hidden.user-form__label(for="emotions")
           textarea#emotions.user-form__textarea(name="emotions" placeholder="Можно прям в красках, не стесняясь в " +
           "выражениях" rows="5")
         div.user-form__button-wrapper
@@ -91,12 +94,10 @@ block content
 
     section.popup.container
       div.popup__error.error
-        h2.popup__title Что-то пошло не так!
-        p.popup__message Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        h2.popup__title.popup__title--error Что-то пошло не так!
+        p.popup__message.popup__message--error Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         button.popup__button(type="button") ОК
       div.popup__success.success
-        h2.popup__title Ваша заявка отправлена
-        p.popup__message Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
-          span время мы рассмотрим ее и оповестим вас.
-        div.popup__wrapper
-          a.popup__button(href="../index.html") Закрыть окно
+        h2.popup__title.popup__title--success Ваша заявка отправлена
+        p.popup__message.popup__message--success Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее #[span время мы рассмотрим ее и оповестим вас.]
+        a.popup__button(href="../index.html") Закрыть окно
