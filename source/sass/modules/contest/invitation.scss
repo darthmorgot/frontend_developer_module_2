@@ -1,11 +1,37 @@
 // Invitation for contest page
 .invitation {
-  &__title--padding-bottom {
+  &__title--margin-bottom {
     margin-bottom: 44px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 1px;
+      margin-bottom: 59px;
+    }
+  }
+
+  &__description--padding-bottom {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 72px;
+    }
+  }
+
+  &__text {
+    span {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
+    }
   }
 
   &__text--side-padding {
     padding-right: 0;
     padding-left: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 65px;
+      padding-right: 65px;
+    }
   }
 }
