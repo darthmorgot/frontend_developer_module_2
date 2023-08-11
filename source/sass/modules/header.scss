@@ -4,9 +4,19 @@
   right: 0;
   left: 0;
   z-index: 10;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }
 
 .nav {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: $black-light;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -18,6 +28,11 @@
       padding-bottom: 42px;
     }
 
+    @media (min-width: $desktop-width) {
+      padding-left: 130px;
+      background-color: transparent;
+    }
+
     &--close-menu {
       padding-top: 22px;
       padding-bottom: 21px;
@@ -27,6 +42,10 @@
         padding-top: 27px;
         padding-bottom: 43px;
       }
+
+      @media (min-width: $desktop-width) {
+        background-color: transparent;
+      }
     }
   }
 
@@ -35,6 +54,10 @@
 
     @media (min-width: $tablet-width) {
       align-self: flex-end;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
     }
 
     &--open {
@@ -78,10 +101,35 @@
     list-style: none;
     background-color: $ebony-clay;
     box-shadow: 0 1px 0 0 $black;
+
+    @media (min-width: $desktop-width) {
+      align-items: center;
+      margin-left: 155px;
+      background-color: transparent;
+      box-shadow: none;
+    }
   }
 
   &__item {
     box-shadow: 0 1px 0 0 $black inset, 0 2px 0 0 $white-transparent inset;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 79px;
+      box-shadow: none;
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media (min-width: $desktop-width) {
+      margin-top: -1px;
+    }
+  }
+
+  &__item:nth-child(3) {
+    @media (min-width: $desktop-width) {
+      margin-right: 80px;
+      margin-top: -1px;
+    }
   }
 
   &__link {
@@ -94,6 +142,19 @@
     text-transform: uppercase;
     text-align: center;
 
+    &--current {
+      @media (min-width: $desktop-width) {
+        border-bottom: 2px solid $white;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 17px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform: none;
+    }
+
     &:hover {
       color: $cerise-red;
     }
@@ -101,6 +162,10 @@
     &:active {
       color: $cerise-red;
       opacity: 0.3;
+
+      @media (min-width: $desktop-width) {
+        color: $white;
+      }
     }
 
     &:focus {
@@ -141,6 +206,10 @@
 
 .toggle {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .tablet-logo,

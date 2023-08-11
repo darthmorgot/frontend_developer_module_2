@@ -11,6 +11,12 @@
       height: 729px;
       background: $ebony-clay url("Images/backgrounds/back-tablet-index.jpg") no-repeat;
     }
+
+    @media (min-width: $desktop-width) {
+      height: 853px;
+      padding-left: 130px;
+      background: $ebony-clay url("Images/backgrounds/back-desktop-index.jpg") no-repeat;
+    }
   }
 
   &__slogan {
@@ -28,6 +34,12 @@
       padding-right: 28px;
       font-size: 40px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 143px;
+      font-size: 50px;
+      line-height: normal;
+    }
   }
 
   &__download {
@@ -41,6 +53,12 @@
       margin-top: -351px;
       margin-bottom: 114px;
       background-color: transparent;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 130px;
+      margin-top: -404px;
+      margin-bottom: 125px;
     }
   }
 
@@ -59,6 +77,12 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 45px;
       padding-left: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 16px;
+      margin-bottom: 66px;
+      font-size: 21px;
     }
   }
 
@@ -85,6 +109,11 @@
       padding-right: 50px;
       margin-bottom: 26px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 47px;
+      margin-bottom: 46px;
+    }
   }
 
   &__link:nth-child(1) {
@@ -99,6 +128,11 @@
     @media (min-width: $tablet-width) {
       padding-top: 2px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 7px;
+      margin-right: 3px;
+    }
   }
 
   &__link:nth-child(3) {
@@ -106,6 +140,11 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 2px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 9px;
+      margin-right: -2px;
     }
   }
 
