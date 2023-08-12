@@ -11,8 +11,18 @@
     margin-top: -66px;
     background: $white url("Images/backgrounds/back-watch-tablet.png") no-repeat 20px 54px;
     z-index: 2;
+  }
 
-    &__slogan {
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    padding-left: 500px;
+    padding-top: 129px;
+    padding-bottom: 112px;
+    background: $concrete url("Images/backgrounds/back-watch-desktop.png") no-repeat 131px 34px;
+  }
+
+  &__slogan {
+    @media (min-width: $tablet-width) {
       width: 168px;
       margin: 0 0 10px;
       color: $black;
@@ -25,7 +35,19 @@
       }
     }
 
-    &__description {
+    @media (min-width: $desktop-width) {
+      width: auto;
+      margin-bottom: 25px;
+      line-height: 30px;
+
+      span {
+        display: inline;
+      }
+    }
+  }
+
+  &__description {
+    @media (min-width: $tablet-width) {
       margin: 0 0 9px;
       color: $ebony-clay;
       font-size: 14px;
@@ -34,25 +56,51 @@
         display: block;
         padding-right: 38px;
       }
+
+      br {
+        display: none;
+      }
     }
 
-    &__link {
+    @media (min-width: $desktop-width) {
+      width: 534px;
+      margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 30px;
+
+      span {
+        display: inline;
+      }
+
+      br {
+        display: block;
+      }
+    }
+  }
+
+  &__link {
+    @media (min-width: $tablet-width) {
       color: $cerise-red;
       font-size: 14px;
       text-decoration-line: underline;
+    }
 
-      &:hover {
-        color: $ebony-clay;
-      }
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      line-height: 30px;
+    }
 
-      &:active {
-        opacity: 0.3;
-      }
+    &:hover {
+      color: $ebony-clay;
+    }
 
-      &:focus {
-        outline: 1px solid $cerise-red;
-        outline-offset: 2px;
-      }
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      outline: 1px solid $cerise-red;
+      outline-offset: 2px;
     }
   }
 }
