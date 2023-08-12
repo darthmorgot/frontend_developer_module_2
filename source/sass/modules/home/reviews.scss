@@ -10,6 +10,11 @@
     padding-top: 100px;
     padding-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 184px 130px 133px;
+    background: $white url("Images/backgrounds/back-quotes.png") no-repeat 561px 72px;
+  }
 }
 
 .slider {
@@ -20,6 +25,11 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 688px;
+      margin: 0 auto;
     }
   }
 
@@ -56,6 +66,11 @@
       font-size: 20px;
       order: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 2px;
+      font-size: 24px;
+    }
   }
 
   &__author-info {
@@ -68,10 +83,54 @@
       font-size: 14px;
       line-height: 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+    }
   }
 
   &__arrows {
     display: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 213px;
+      width: 940px;
+    }
+  }
+
+  &__arrow {
+    width: 22px;
+    height: 41px;
+    padding: 0;
+
+    path {
+      fill: $ebony-clay-light;
+    }
+
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__arrow:hover {
+    path {
+      fill: $ebony-clay-hover;
+    }
+  }
+
+  &__arrow:active,
+  &__arrow:disabled {
+    path {
+      fill: $ebony-clay-active;
+    }
+  }
+
+  &__arrow:focus {
+    outline: 1px solid $cerise-red;
+    outline-offset: 2px;
   }
 
   &__toggles li:nth-child(1) {
@@ -90,6 +149,10 @@
   padding: 0;
   margin: 0 auto;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 
   &__item:last-child {
     margin-right: 0;
