@@ -11,6 +11,11 @@
     padding-right: 19px;
   }
 
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    padding: 70px 129px 87px;
+  }
+
   &__logo {
     display: block;
     width: 150px;
@@ -54,6 +59,12 @@
   @media (min-width: $tablet-width) {
     width: 178px;
     margin: 0 90px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 1px;
+    margin-right: 67px;
+    width: 172px;
   }
 
   &__item {
@@ -129,6 +140,12 @@
     @media (min-width: $tablet-width) {
       padding-top: 0;
       margin-right: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 14px;
+      padding-bottom: 3px;
+      font-size: 18px;
     }
   }
 

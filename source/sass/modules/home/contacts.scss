@@ -3,6 +3,10 @@
   padding-top: 42px;
   text-align: center;
 
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+  }
+
   &__slogan {
     display: block;
     margin-bottom: 33px;
@@ -19,6 +23,13 @@
       font-size: 40px;
       line-height: normal;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 462px;
+      padding: 0;
+      margin: 0 auto 40px;
+      font-size: 50px;
+    }
   }
 
   &__list {
@@ -32,6 +43,12 @@
       flex-wrap: wrap;
       justify-content: space-around;
       margin-bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-content: center;
+      margin-bottom: 19px;
+      margin-left: 17px;
     }
 
     &::after {
@@ -53,6 +70,13 @@
         border-left: 330px solid transparent;
         border-right: 330px solid transparent;
       }
+
+      @media (min-width: $desktop-width) {
+        bottom: -122px;
+        border-top: 103px solid $white;
+        border-left: 600px solid transparent;
+        border-right: 600px solid transparent;
+      }
     }
   }
 
@@ -61,19 +85,33 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 42px;
+    }
+  }
 
-      &:first-child {
-        margin-left: 18px;
-      }
+  &__item:first-child {
+    @media (min-width: $tablet-width) {
+      margin-left: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 111px 0 0;
     }
   }
 
   &__item:nth-child(2) {
     margin-bottom: 22px;
+
+    @media (min-width: $desktop-width) {
+      order: 1;
+    }
   }
 
   &__item:last-child {
     margin-bottom: 0;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 94px 0 0;
+    }
   }
 
   &__title {
@@ -83,6 +121,10 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 4px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 21px;
     }
   }
 
@@ -138,6 +180,23 @@
     display: none;
 
     @media (min-width: $tablet-width) {
+      display: block;
+      border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &__map-desktop {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
       display: block;
       border: none;
     }

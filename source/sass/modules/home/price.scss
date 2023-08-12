@@ -9,6 +9,12 @@
     padding: 57px 22px 28px 20px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-bottom: 96px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -25,6 +31,12 @@
       top: -40px;
       border-bottom: 40px solid $concrete;
       border-left: 660px solid transparent;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -100px;
+      border-bottom: 100px solid $concrete;
+      border-left: 1200px solid transparent;
     }
   }
 
@@ -332,6 +344,93 @@
 
     &__mobile-on {
       display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .table-price {
+    width: 944px;
+    margin: 0 auto;
+
+    th {
+      padding-top: 16px;
+      padding-bottom: 20px;
+      padding-left: 2px;
+      font-size: 18px;
+    }
+
+    th > span {
+      margin-top: 1px;
+      font-size: 24px;
+    }
+
+    th:nth-child(odd),
+    td:nth-child(odd) {
+      width: 235px;
+    }
+
+    th:nth-child(even),
+    td:nth-child(even) {
+      width: 235px;
+    }
+
+    th::after {
+      width: 235px;
+    }
+
+    th:nth-child(2)::after {
+      width: 234px;
+    }
+
+    th:nth-child(4)::after {
+      width: 233px;
+    }
+
+    td:first-child {
+      padding-top: 23px;
+      padding-bottom: 25px;
+      padding-left: 22px;
+    }
+
+    tr:nth-child(2) td:first-child {
+      padding-top: 14px;
+      padding-bottom: 15px;
+    }
+
+    tr:nth-child(3) td:first-child {
+      padding-top: 14px;
+      padding-bottom: 15px;
+    }
+
+    tr:last-child td:first-child {
+      padding-top: 14px;
+      padding-bottom: 15px;
+    }
+
+    tr:nth-child(2) td:not(:first-child) {
+      padding-top: 18px;
+      padding-bottom: 19px;
+    }
+
+    tr:nth-child(3) td:not(:first-child) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    tr:last-child td:not(:first-child) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    &__hit-ribbon::before {
+      width: 74px;
+      height: 74px;
+      background: url("Images/backgrounds/hit-ribbon-mobile.png") no-repeat;
+    }
+
+    &__mobile-off {
+      font-size: 18px;
     }
   }
 }
