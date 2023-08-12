@@ -36,8 +36,7 @@ block content
             p.advantages__description Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
           li.advantages__item
             h3.advantages__title Меняет мир вокруг
-            p.advantages__description Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              span усилить эффект
+            p.advantages__description Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы #[span усилить эффект]
           li.advantages__item
             h3.advantages__title Заводит новых друзей
             p.advantages__description Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
@@ -45,12 +44,17 @@ block content
           width="157" height="320" alt="Всем привет")
         img.advantages__image.advantages__image--tablet(src=require("Images/content/tablet/advantages-tablet.png")
           width="268" height="547" alt="Всем привет")
+        img.advantages__image.advantages__image--desktop(src=require("Images/content/desktop/advantages-desktop-1.png")
+          width="308" height="382" alt="Черно-белая картинка")
+        img.advantages__image.advantages__image--desktop(src=require("Images/content/desktop/advantages-desktop-2.png")
+          width="308" height="382" alt="Картинка с розовым фильтром")
+        img.advantages__image.advantages__image--desktop(src=require("Images/content/desktop/advantages-desktop-3.png")
+          width="308" height="382" alt="Всем привет")
 
     section.effect.container
-      h2.effect__slogan Эффект
-        span на 24 часа!
+      h2.effect__slogan Эффект #[span на 24 часа!]
       p.effect__description Британские ученые провели исследования
-        span и доказали, что положительный эффект от использования приложения длится целые сутки!
+        span и доказали, #[br] что положительный эффект от использования приложения длится целые сутки!
       a.effect__link(href="#") Узнать больше об исследовании
 
     section.reviews.container
@@ -71,8 +75,16 @@ block content
         div.slider__arrows
           button.slider__arrow.slider__arrow--prev(type="button")
             span.visually-hidden Назад
+            svg(xmlns="http://www.w3.org/2000/svg" width="22" height="41" viewBox="0 0 22 41" fill="none" aria-hidden="true" focusable="false" role="img")
+              path(fill="#283645" d="m2.04 20.5 19.7-19.09A.82.82 0 0 0 22 .83a.8.8 0 0 0-.25-.59.86.86 0 0 0-.61-.24" +
+              ".88.88 0 0 0-.6.24L.24 19.91a.83.83 0 0 0-.25.59.81.81 0 0 0 .25.59l20.28 19.67a.9.9 0 0 0 1.09.1c.14-" +
+              ".1.25-.22.31-.38a.8.8 0 0 0-.18-.9L2.05 20.5Z")
           button.slider__arrow.slider__arrow--next(type="button")
             span.visually-hidden Вперед
+            svg(xmlns="http://www.w3.org/2000/svg" width="22" height="41" viewBox="0 0 22 41" fill="none" aria-hidden="true" focusable="false" role="img")
+              path(fill="#283645" d="m2.04 20.5 19.7-19.09A.82.82 0 0 0 22 .83a.8.8 0 0 0-.25-.59.86.86 0 0 0-.61-.24" +
+              ".88.88 0 0 0-.6.24L.24 19.91a.83.83 0 0 0-.25.59.81.81 0 0 0 .25.59l20.28 19.67a.9.9 0 0 0 1.09.1c.14-" +
+              ".1.25-.22.31-.38a.8.8 0 0 0-.18-.9L2.05 20.5Z")
         +slider-toggles("reviews__toggles", "first")
 
     section.price.container
@@ -138,4 +150,6 @@ block content
       iframe(class="contacts__map-mobile" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="320" height="200"
         allowfullscreen)
       iframe(class="contacts__map-tablet" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="660" height="374"
+        allowfullscreen)
+      iframe(class="contacts__map-desktop" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="1200" height="502"
         allowfullscreen)
