@@ -149,7 +149,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-bottom: 17px;
+      padding-bottom: 11px;
       font-weight: 400;
       line-height: 18px;
       text-transform: none;
@@ -209,6 +209,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    padding-bottom: 5px;
   }
 }
 
