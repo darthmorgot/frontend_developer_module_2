@@ -26,6 +26,8 @@ block content
                   width="320" height="137" alt="Вид на подвесной мост.")
                 img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/panorama-tablet.jpg")
                   width="660" height="509" alt="Вид на подвесной мост.")
+                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/panorama-desktop.jpg")
+                  width="1200" height="506" alt="Вид на подвесной мост.")
               blockquote.catalog__description
                 span.catalog__author Анна
                 span.catalog__publication-time (5 минут назад)
@@ -39,6 +41,8 @@ block content
                   alt="Фотосъемка белой машины.")
                 img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-1-tablet.jpg")
                   width="300" height="300" alt="Фотосъемка белой машины.")
+                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/photo-1-desktop.jpg")
+                  width="300" height="400" alt="Фотосъемка белой машины.")
               blockquote.catalog__description
                 span.catalog__author Левон
                 span.catalog__publication-time (5 часов назад)
@@ -52,6 +56,8 @@ block content
                   alt="Барабанная установка.")
                 img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-2-tablet.jpg")
                   width="300" height="300" alt="Барабанная установка.")
+                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/photo-2-desktop.jpg")
+                  width="300" height="400" alt="Барабанная установка.")
               blockquote.catalog__description
                 span.catalog__author Антон
                 span.catalog__publication-time (12 часов назад)
@@ -65,6 +71,8 @@ block content
                   alt="Вид на небо сквозь прозрачную крышу.")
                 img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-3-tablet.jpg")
                   width="300" height="300" alt="Вид на небо сквозь прозрачную крышу.")
+                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/photo-3-desktop.jpg")
+                  width="300" height="400" alt="Вид на небо сквозь прозрачную крышу.")
               blockquote.catalog__description
                 span.catalog__author Борис
                 span.catalog__publication-time (20 часов назад)
@@ -78,6 +86,8 @@ block content
                   alt="Фестиваль Кубанская бахча.")
                 img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-4-tablet.jpg")
                   width="300" height="300" alt="Фестиваль Кубанская бахча.")
+                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/photo-4-desktop.jpg")
+                  width="300" height="400" alt="Фестиваль Кубанская бахча.")
               blockquote.catalog__description
                 span.catalog__author Сергей
                 span.catalog__publication-time (25 часов назад)
@@ -91,6 +101,8 @@ block content
                   alt="Вид на ноги и горы.")
                 img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-5-tablet.jpg")
                   width="300" height="300" alt="Вид на ноги и горы.")
+                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/photo-5-desktop.jpg")
+                  width="300" height="400" alt="Вид на ноги и горы.")
               blockquote.catalog__description
                 span.catalog__author Максим
                 span.catalog__publication-time (40 часов назад)
@@ -104,6 +116,8 @@ block content
                   alt="Вид на крыло самолета и закат.")
                 img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-6-tablet.jpg")
                   width="300" height="300" alt="Вид на крыло самолета и закат.")
+                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/photo-6-desktop.jpg")
+                  width="300" height="400" alt="Вид на крыло самолета и закат.")
               blockquote.catalog__description
                 span.catalog__author Надежда
                 span.catalog__publication-time (45 часов назад)
@@ -118,7 +132,7 @@ block content
         div.form__upload-image
           label.form__label
             input.visually-hidden.form__input(type="file" name="image")
-            span.visually-hidden Выберите файл
+            span.visually-hidden Выберите фотографию для загрузки
             div.form__input-image
               img.form__image.form__image--mobile(src=require("Images/content/mobile/photo-7-mobile.jpg") width="280"
                 height="374" alt="Зимняя лесная дорога")
@@ -148,7 +162,7 @@ block content
           div.editor-tabs__wrapper
             div.editor-tabs__item.editor-tabs__item--crop.editor-tabs__item--active
               label.editor-tabs__label
-                input.editor-tabs__input(type="range" min="0" max="100" value="85.5" name="range" step="0.5")
+                input.editor-tabs__input(type="range" min="0" max="100" value="85" name="range" step="0.5")
                 span.visually-hidden Ползунок обрезки изображения
             div.editor-tabs__item.editor-tabs__item--fill
               label.editor-tabs__label
@@ -156,7 +170,7 @@ block content
                 span.visually-hidden Ползунок заливки цветом
             div.editor-tabs__item.editor-tabs__item--contrast
               label.editor-tabs__label
-                input.editor-tabs__input(type="range" min="0" max="100" value="51.5" name="range" step="0.5")
+                input.editor-tabs__input(type="range" min="0" max="100" value="51" name="range" step="0.5")
                 span.visually-hidden Ползунок установки контраста
         div.form__buttons
           button.form__button.form__button--submit(type="submit") Запостить
