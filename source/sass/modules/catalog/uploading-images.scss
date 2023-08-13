@@ -7,6 +7,11 @@
     padding-top: 44px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 4px;
+    margin-bottom: 28px;
+  }
+
   &__slogan {
     margin-bottom: 42px;
     padding-right: 20px;
@@ -20,6 +25,10 @@
       margin: 0 0 70px;
       font-size: 18px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 67px;
+    }
   }
 }
 
@@ -29,11 +38,21 @@
   background-color: $concrete;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0 48px;
     padding-top: 57px;
     padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 1fr auto;
+    grid-gap: 0 90px;
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 57px;
   }
 
   &__upload-image {
@@ -113,6 +132,11 @@
       margin: 0 0 0 -1px;
       border-top: none;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 0 0 1px;
+      align-self: end;
+    }
   }
 
   &__button {
@@ -129,6 +153,13 @@
       width: 260px;
       margin-bottom: 24px;
     }
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+      width: 183px;
+      margin: 0;
+      padding-left: 1px;
+    }
   }
 
   &__button:last-child {
@@ -143,6 +174,10 @@
   &__button--submit {
     color: $cerise-red;
     border: 3px solid $cerise-red;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 44px;
+    }
   }
 
   &__button--submit:hover {
@@ -225,6 +260,7 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+      margin-top: 6px;
     }
   }
 
@@ -238,26 +274,48 @@
       padding: 0 18px 25px 52px;
       border-bottom: 1px solid $ebony-clay-active;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 92px;
+    }
   }
 
   &__item:first-child {
     @media (min-width: $tablet-width) {
-      margin-top: 6px;
-      background: url("Images/icons/icon-crop.svg") no-repeat 1px 3px;
+      background: url("Images/icons/icon-crop-tablet.svg") no-repeat 1px 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 8px;
+      margin-top: -8px;
+      background: url("Images/icons/icon-crop.svg") no-repeat 0 0;
     }
   }
 
   &__item:nth-child(2) {
     @media (min-width: $tablet-width) {
       margin-top: 23px;
-      background: url("Images/icons/icon-fill.svg") no-repeat 0 4px;
+      background: url("Images/icons/icon-fill-tablet.svg") no-repeat 0 4px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 8px;
+      margin-top: 15px;
+      background: url("Images/icons/icon-fill.svg") no-repeat 0 0;
     }
   }
 
   &__item:last-child {
     @media (min-width: $tablet-width) {
       margin-top: 20px;
-      background: url("Images/icons/icon-contrast.svg") no-repeat  4px 6px;
+      background: url("Images/icons/icon-contrast-tablet.svg") no-repeat 4px 6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 2px;
+      margin-top: 18px;
+      background: url("Images/icons/icon-contrast.svg") no-repeat 6px 0;
+      border: none;
     }
   }
 
@@ -279,6 +337,10 @@
     @media (min-width: $tablet-width) {
       width: 202px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 288px;
+    }
   }
 
   &__input::-webkit-slider-runnable-track {
@@ -295,6 +357,10 @@
     border-radius: 50%;
     cursor: pointer;
     background-color: $white;
+
+    @media (min-width: $desktop-width) {
+      margin-top: -6px;
+    }
   }
 
   &__input::-webkit-slider-thumb:hover {
@@ -315,5 +381,9 @@
     border-radius: 50%;
     cursor: pointer;
     background-color: $white;
+
+    @media (min-width: $desktop-width) {
+      margin-top: -6px;
+    }
   }
 }

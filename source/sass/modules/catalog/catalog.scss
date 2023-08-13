@@ -9,6 +9,12 @@
     margin-top: -4px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-top: -165px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
   &__panorama-title {
     position: relative;
     width: 140px;
@@ -23,6 +29,10 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: -93px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: -90px;
     }
   }
 
@@ -40,6 +50,10 @@
 
   &__item {
     margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 54px;
+    }
   }
 
   &__item:last-child {
@@ -86,6 +100,11 @@
   &__link--panorama {
     margin-left: -20px;
     margin-right: -20px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: -130px;
+      margin-right: -130px;
+    }
   }
 
   &__link:focus {
@@ -108,6 +127,18 @@
       @media (min-width: $tablet-width) {
         display: block;
       }
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: $desktop-width) {
+        display: block;
+      }
     }
   }
 
@@ -124,6 +155,10 @@
       width: 300px;
       min-height: 155px;
       padding: 22px 30px 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 23px 31px 27px 27px;
     }
   }
 
@@ -220,6 +255,13 @@
       width: auto;
       min-height: 121px;
       padding: 22px 30px 10px;
+
+      @media (min-width: $desktop-width) {
+        min-height: 96px;
+        padding-top: 23px;
+        padding-left: 28px;
+        padding-right: 31px;
+      }
     }
 
     &__item:first-child &__author {
@@ -228,6 +270,10 @@
 
     &__item:first-child &__text {
       grid-column: 1 / 4;
+
+      @media (min-width: $desktop-width) {
+        margin-top: -1px;
+      }
 
       br {
         display: none;
@@ -239,6 +285,10 @@
       grid-row: 1 / 2;
       align-self: center;
       padding-top: 4px;
+
+      @media (min-width: $desktop-width) {
+        padding-top: 2px;
+      }
     }
 
     &__item:first-child &__button::before {
@@ -256,6 +306,19 @@
 
     &__item:nth-child(3) &__button {
       margin-bottom: 4px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &__item:first-child &__description {
+      min-height: 96px;
+      padding-top: 23px;
+      padding-left: 28px;
+      padding-right: 31px;
+    }
+
+    &__item:nth-child(3) &__button {
+      margin-bottom: 3px;
     }
   }
 }

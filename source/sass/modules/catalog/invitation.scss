@@ -11,6 +11,12 @@
       padding-top: 176px;
       background: $ebony-clay url("Images/backgrounds/back-tablet.jpg") no-repeat;
     }
+
+    @media (min-width: $desktop-width) {
+      height: 853px;
+      padding-top: 169px;
+      background: $ebony-clay url("Images/backgrounds/back-desktop.jpg") no-repeat;
+    }
   }
 
   &__title {
@@ -24,6 +30,11 @@
       margin-bottom: 128px;
       font-size: 50px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 89px;
+      padding-left: 1px;
+    }
   }
 
   &__description {
@@ -33,6 +44,10 @@
     @media (min-width: $tablet-width) {
       padding-top: 91px;
       padding-bottom: 77px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 89px;
     }
   }
 
@@ -49,6 +64,12 @@
       padding-left: 25px;
       padding-right: 25px;
       font-size: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 572px;
+      padding: 0;
+      margin: 0 auto;
     }
   }
 }
