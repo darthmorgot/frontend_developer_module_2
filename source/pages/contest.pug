@@ -10,10 +10,9 @@ block content
 
     section.invitation.container
       div.invitation__banner
-        h1.invitation__title.invitation__title--margin-bottom Конкурс на самое безбашенное #[br] путешествие с Пинк
-        div.invitation__description.invitation__description--padding-bottom
-          p.invitation__text.invitation__text--side-padding Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-            span Пожалуйста, заполните форму ниже:
+        h1.invitation__title.invitation__title--contest Конкурс на самое безбашенное #[br] путешествие с Пинк
+        div.invitation__description.invitation__description--contest
+          p.invitation__text.invitation__text--contest Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! #[span Пожалуйста, заполните форму ниже:]
 
     section.contest-form.container
       h2.visually-hidden Форма регистрации участника конкурса
@@ -22,8 +21,8 @@ block content
           label.user-form__label(for="surname") Фамилия:
           input#surname.user-form__input(type="text" name="surname" placeholder="Укажите фамилию *" required)
           label.user-form__label(for="name") Имя:
-          input#name.user-form__input.user-form__input--tablet(type="text" name="name" placeholder="Введите ваше имя *"
-            required)
+          input#name.user-form__input.user-form__input--tablet-desktop(type="text" name="name" placeholder="Введите " +
+          "ваше имя *" required)
           label.user-form__label(for="patronymic") Отчество:
           input#patronymic.user-form__input(type="text" name="patronymic" placeholder="Ну и отчество тоже")
         fieldset.user-form__user-application.user-application
@@ -90,7 +89,7 @@ block content
           "выражениях" rows="5")
         div.user-form__button-wrapper
           button.user-form__button(type="submit") Отправить форму
-          span.user-form__condition #[strong *] — обязательные поля
+          span.user-form__condition #[strong *] — Обязательные #[span для заполнения] поля
 
     section.popup.container
       div.popup__error.error
