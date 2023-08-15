@@ -1,37 +1,50 @@
 // Invitation for contest page
 .invitation {
-  &__title--margin-bottom {
+  &__title--contest {
     margin-bottom: 44px;
 
     @media (min-width: $tablet-width) {
       margin-top: 1px;
       margin-bottom: 59px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      margin-bottom: 89px;
+      padding-right: 1px;
+    }
   }
 
-  &__description--padding-bottom {
+  &__description--contest {
     @media (min-width: $tablet-width) {
       padding-bottom: 72px;
     }
   }
 
-  &__text {
-    span {
-      display: none;
-
-      @media (min-width: $tablet-width) {
-        display: block;
-      }
-    }
-  }
-
-  &__text--side-padding {
+  &__text--contest {
     padding-right: 0;
     padding-left: 0;
 
     @media (min-width: $tablet-width) {
       padding-left: 65px;
       padding-right: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 756px;
+      padding: 0;
+    }
+
+    span {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: inline-block;
+      }
     }
   }
 }
