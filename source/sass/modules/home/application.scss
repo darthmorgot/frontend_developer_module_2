@@ -5,7 +5,8 @@
     padding-top: 66px;
     padding-left: 20px;
     padding-right: 20px;
-    background: $ebony-clay url("Images/backgrounds/back-mobile-index.jpg") no-repeat;
+    background: url("Images/backgrounds/back-mobile-2.png") no-repeat bottom, url("Images/backgrounds/back-mobile-1.jpg") no-repeat center, $ebony-clay;
+    background-size: auto, cover;
 
     @media (min-width: $tablet-width) {
       height: 729px;
