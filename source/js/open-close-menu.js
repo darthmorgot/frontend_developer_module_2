@@ -1,11 +1,18 @@
 (function () {
   'use strict';
 
-  // Управление (открытие-закрытие) меню кнопкой-гамбургером
+  /**
+   * Управление (открытие-закрытие) меню кнопкой-гамбургером
+   */
   function openCloseMenu() {
+    let header = document.querySelector('.header');
+    let nav = document.querySelector('.nav');
     let btn = document.querySelector('.nav__menu-button');
     let navList = document.querySelector('.nav__list');
     let navTop = document.querySelector('.nav__top');
+
+    header.classList.remove('header--nojs');
+    nav.classList.remove('nav--nojs');
 
     btn.addEventListener('click', () => {
       for (let i = 0; i < btn.children.length - 1; i++) {
