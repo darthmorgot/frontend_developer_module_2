@@ -28,6 +28,30 @@
       margin: 0 73px 0 0;
       padding-left: 0;
     }
+
+    .desktop-logo {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      .desktop-logo {
+        display: none;
+      }
+
+      .tablet-logo {
+        display: inline;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      .tablet-logo {
+        display: none;
+      }
+
+      .desktop-logo {
+        display: inline;
+      }
+    }
   }
 
   &__logo:hover {
@@ -52,8 +76,9 @@
 .social-list {
   display: flex;
   justify-content: space-between;
+  width: 320px;
   padding: 0;
-  margin: 0 0 38px;
+  margin-bottom: 38px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
