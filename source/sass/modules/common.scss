@@ -14,7 +14,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 380px;
   min-height: 100%;
   margin: 0;
   padding: 0;
@@ -61,15 +60,15 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 320px;
+  max-width: 640px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
+    max-width: 940px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
