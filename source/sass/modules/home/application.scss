@@ -10,7 +10,8 @@
 
     @media (min-width: $tablet-width) {
       height: 729px;
-      background: $ebony-clay url("Images/backgrounds/back-tablet-index.jpg") no-repeat;
+      background: url("Images/backgrounds/back-tablet-2.png") no-repeat bottom, url("Images/backgrounds/back-tablet-1.jpg") no-repeat center, $ebony-clay;
+      background-size: auto, cover;
     }
 
     @media (min-width: $desktop-width) {
@@ -44,8 +45,15 @@
   }
 
   &__download {
-    padding: 28px 20px 31px;
     background-color: $mirage;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
+  }
+
+  &__wrapper {
+    padding: 28px 20px 31px;
 
     @media (min-width: $tablet-width) {
       width: 300px;
@@ -53,7 +61,6 @@
       margin-left: 20px;
       margin-top: -351px;
       margin-bottom: 114px;
-      background-color: transparent;
     }
 
     @media (min-width: $desktop-width) {
@@ -101,11 +108,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 280px;
     padding-left: 38px;
     padding-right: 38px;
     margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
 
     @media (min-width: $tablet-width) {
+      width: 300px;
       padding-left: 46px;
       padding-right: 50px;
       margin-bottom: 26px;
