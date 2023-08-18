@@ -9,27 +9,28 @@ block content
   main.main.main-container
     h1.visually-hidden Мобильное приложение Pink
 
-    section.application.container
+    section.application
       h2.visually-hidden Скачать мобильное приложение Pink
       div.application__banner
         h3.application__slogan Взгляните на жизнь иначе!
       div.application__download
-        a.application__button(href="https://www.apple.com/app-store/") Скачать приложение
-        div.application__available-systems
-          a.application__link(href="https://www.apple.com/app-store/")
-            img.application__brand-system(src=require("Images/brands/apple.png") width="47" height="56" alt="App Store")
-          a.application__link(href="https://play.google.com")
-            img.application__brand-system(src=require("Images/brands/android.png") width="43" height="47" alt="Google Play")
-          a.application__link(href="http://www.windowsphone.com/store")
-            img.application__brand-system(src=require("Images/brands/microsoft.png") width="44" height="41" alt="Windows Phone Store")
-        p.application__description Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        div.application__wrapper.container
+          a.application__button(href="https://www.apple.com/app-store/") Скачать приложение
+          div.application__available-systems
+            a.application__link(href="https://www.apple.com/app-store/")
+              img.application__brand-system(src=require("Images/brands/apple.png") width="47" height="56" alt="App Store")
+            a.application__link(href="https://play.google.com")
+              img.application__brand-system(src=require("Images/brands/android.png") width="43" height="47" alt="Google Play")
+            a.application__link(href="http://www.windowsphone.com/store")
+              img.application__brand-system(src=require("Images/brands/microsoft.png") width="44" height="41" alt="Windows Phone Store")
+          p.application__description Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
 
-    section.advantages.container
+    section.advantages
       h2.visually-hidden Наши преимущества
       div.advantages__slogan
         p.advantages__slogan-text Устали от серости мегаполиса?
         p.advantages__slogan-text Нам есть, что вам предложить!
-      div.advantages__wrapper
+      div.advantages__wrapper.container
         ul.advantages__list
           li.advantages__item
             h3.advantages__title Поднимает настроение
@@ -57,9 +58,9 @@ block content
         span и доказали, #[br] что положительный эффект от использования приложения длится целые сутки!
       a.effect__link(href="#") Узнать больше об исследовании
 
-    section.reviews.container
+    section.reviews
       h2.visually-hidden Отзывы о нас
-      div.reviews__slider.slider
+      div.reviews__slider.slider.container
         blockquote.slider__item.slider__item--active
           p.slider__text «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           span.slider__author-name Николай Петров
@@ -87,9 +88,9 @@ block content
               ".1.25-.22.31-.38a.8.8 0 0 0-.18-.9L2.05 20.5Z")
         +slider-toggles("reviews__toggles", "first")
 
-    section.price.container
+    section.price
       h2.visually-hidden Наши тарифы
-      div.price__slider
+      div.price__slider.container
         table.price__table.table-price
           tr
             th.table-price__mobile-off
@@ -147,9 +148,10 @@ block content
         li.contacts__item
           h3.contacts__title Приезжайте в гости:
           address.contacts__address ул. Большая Конюшенная, 19/8
-      iframe(class="contacts__map-mobile" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="320" height="200"
-        allowfullscreen)
-      iframe(class="contacts__map-tablet" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="660" height="374"
-        allowfullscreen)
-      iframe(class="contacts__map-desktop" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="1200" height="502"
-        allowfullscreen)
+      div.contacts__map-wrapper
+        iframe(class="contacts__map-mobile" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="320" height="200"
+          allowfullscreen)
+        iframe(class="contacts__map-tablet" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="660" height="374"
+          allowfullscreen)
+        iframe(class="contacts__map-desktop" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="1200" height="502"
+          allowfullscreen)
