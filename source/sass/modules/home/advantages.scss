@@ -16,8 +16,8 @@
       bottom: 0;
       width: 0;
       height: 0;
-      border-bottom: 32px solid $concrete;
-      border-left: 320px solid transparent;
+      border-bottom: 75px solid $concrete;
+      border-left: 750px solid transparent;
       z-index: 1;
 
       @media (min-width: $tablet-width) {
@@ -33,6 +33,7 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 46px;
+      padding-bottom: 81px;
     }
 
     @media (min-width: $desktop-width) {
@@ -132,11 +133,17 @@
       width: 300px;
       margin-right: 20px;
     }
-  }
 
-  &__item:last-child {
-    @media (min-width: $desktop-width) {
-      margin-right: 0;
+    &:nth-child(2) {
+      @media (min-width: $tablet-width) {
+        margin-bottom: 35px;
+      }
+    }
+
+    &:last-child {
+      @media (min-width: $desktop-width) {
+        margin-right: 0;
+      }
     }
   }
 
