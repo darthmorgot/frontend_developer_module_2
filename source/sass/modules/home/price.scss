@@ -1,7 +1,7 @@
 // Price
 .price {
   position: relative;
-  padding-top: 82px;
+  padding-top: 57px;
   padding-bottom: 45px;
   background-color: $concrete;
 
@@ -19,12 +19,12 @@
     content: "";
     display: block;
     position: absolute;
-    top: -19px;
+    top: -44px;
     right: 0;
     width: 0;
     height: 0;
-    border-bottom: 19px solid $concrete;
-    border-left: 320px solid transparent;
+    border-bottom: 44px solid $concrete;
+    border-left: 750px solid transparent;
     z-index: 1;
 
     @media (min-width: $tablet-width) {
@@ -68,10 +68,11 @@
 
 .table-price {
   position: relative;
-  left: -258px;
+  left: 50%;
   width: 836px;
   margin-bottom: 40px;
   border-spacing: 0;
+  transform: translateX(-50%);
 
   tr:nth-child(2) td {
     border-top-color: $white;
