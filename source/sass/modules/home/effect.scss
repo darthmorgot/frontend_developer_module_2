@@ -1,24 +1,34 @@
 // Effect
 .effect {
   display: none;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     display: block;
-    position: relative;
-    padding-top: 96px;
-    padding-left: 330px;
-    padding-bottom: 22px;
-    margin-top: -66px;
-    background: $white url("Images/backgrounds/back-watch-tablet.png") no-repeat 20px 54px;
-    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    padding-left: 500px;
-    padding-top: 129px;
-    padding-bottom: 112px;
-    background: $concrete url("Images/backgrounds/back-watch-desktop.png") no-repeat 131px 34px;
+    background-color: $concrete;
+  }
+
+  &__wrapper {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      padding-top: 96px;
+      padding-left: 330px;
+      padding-bottom: 46px;
+      margin-top: -66px;
+      background: $white url("Images/backgrounds/back-watch-tablet.png") no-repeat 20px 54px;
+      z-index: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      padding-left: 500px;
+      padding-top: 128px;
+      padding-bottom: 112px;
+      background: $concrete url("Images/backgrounds/back-watch-desktop.png") no-repeat 131px 33px;
+    }
   }
 
   &__slogan {
@@ -29,10 +39,6 @@
       font-size: 30px;
       font-weight: 700;
       line-height: 36px;
-
-      span {
-        display: block;
-      }
     }
 
     @media (min-width: $desktop-width) {
@@ -40,8 +46,8 @@
       margin-bottom: 25px;
       line-height: 30px;
 
-      span {
-        display: inline;
+      br {
+        display: none;
       }
     }
   }
@@ -52,12 +58,7 @@
       color: $ebony-clay;
       font-size: 14px;
 
-      span {
-        display: block;
-        padding-right: 38px;
-      }
-
-      br {
+      br:nth-child(2) {
         display: none;
       }
     }
@@ -68,11 +69,11 @@
       font-size: 18px;
       line-height: 30px;
 
-      span {
-        display: inline;
+      br {
+        display: none;
       }
 
-      br {
+      br:nth-child(2) {
         display: block;
       }
     }

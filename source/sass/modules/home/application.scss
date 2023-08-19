@@ -1,5 +1,17 @@
 // Application
 .application {
+  @media (min-width: $tablet-width) {
+    height: 729px;
+    background: url("Images/backgrounds/back-tablet-1.jpg") no-repeat center, $ebony-clay;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 853px;
+    background: url("Images/backgrounds/back-desktop-1.jpg") no-repeat center, $ebony-clay;
+    background-size: cover;
+  }
+
   &__banner {
     height: 462px;
     padding-top: 66px;
@@ -9,15 +21,17 @@
     background-size: auto, cover;
 
     @media (min-width: $tablet-width) {
+      width: 660px;
       height: 729px;
-      background: url("Images/backgrounds/back-tablet-2.png") no-repeat bottom, url("Images/backgrounds/back-tablet-1.jpg") no-repeat center, $ebony-clay;
-      background-size: auto, cover;
+      margin: 0 auto;
+      background: url("Images/backgrounds/back-tablet-2.png") no-repeat bottom;
     }
 
     @media (min-width: $desktop-width) {
+      width: 1200px;
       height: 853px;
       padding-left: 130px;
-      background: $ebony-clay url("Images/backgrounds/back-desktop-index.jpg") no-repeat;
+      background: url("Images/backgrounds/back-desktop-2.png") no-repeat 146px bottom;
     }
   }
 
@@ -48,7 +62,13 @@
     background-color: $mirage;
 
     @media (min-width: $tablet-width) {
+      width: 660px;
+      margin: 0 auto;
       background-color: transparent;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
     }
   }
 

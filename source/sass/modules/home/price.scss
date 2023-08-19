@@ -1,36 +1,34 @@
 // Price
 .price {
   position: relative;
-  padding-top: 57px;
+  padding-top: 63px;
   padding-bottom: 45px;
   background-color: $concrete;
 
   @media (min-width: $tablet-width) {
-    padding: 57px 22px 28px 20px;
+    padding: 23px 22px 28px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 96px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 57px 0 56px;
   }
 
   &::before {
     content: "";
     display: block;
     position: absolute;
-    top: -44px;
+    top: -38px;
     right: 0;
     width: 0;
     height: 0;
-    border-bottom: 44px solid $concrete;
-    border-left: 750px solid transparent;
+    border-bottom: 38px solid $concrete;
+    border-left: 660px solid transparent;
     z-index: 1;
 
     @media (min-width: $tablet-width) {
-      top: -40px;
-      border-bottom: 40px solid $concrete;
-      border-left: 660px solid transparent;
+      top: -74px;
+      border-bottom: 74px solid $concrete;
+      border-left: 1200px solid transparent;
     }
 
     @media (min-width: $desktop-width) {
@@ -219,7 +217,6 @@
 
 @media (min-width: $tablet-width) {
   .table-price {
-    position: static;
     width: 620px;
 
     th {
@@ -256,7 +253,12 @@
     }
 
     th:nth-child(2)::after {
-      left: -2px;
+      left: -1px;
+    }
+
+    th:nth-child(3)::after {
+      width: 153px;
+      left: 0;
     }
 
     th:nth-child(4)::after {
@@ -352,7 +354,6 @@
 @media (min-width: $desktop-width) {
   .table-price {
     width: 944px;
-    margin: 0 auto;
 
     th {
       padding-top: 16px;
@@ -380,7 +381,8 @@
       width: 235px;
     }
 
-    th:nth-child(2)::after {
+    th:nth-child(2)::after,
+    th:nth-child(3)::after {
       width: 234px;
     }
 

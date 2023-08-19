@@ -5,24 +5,24 @@
   &__slogan {
     position: relative;
     padding-top: 41px;
-    padding-bottom: 63px;
+    padding-bottom: 97px;
     background-color: $white;
 
     &::after {
       content: "";
       display: block;
       position: absolute;
-      left: 0;
+      right: 0;
       bottom: 0;
       width: 0;
       height: 0;
-      border-bottom: 75px solid $concrete;
-      border-left: 750px solid transparent;
+      border-bottom: 66px solid $concrete;
+      border-left: 660px solid transparent;
       z-index: 1;
 
       @media (min-width: $tablet-width) {
-        border-bottom: 53px solid $concrete;
-        border-left: 660px solid transparent;
+        border-bottom: 96px solid $concrete;
+        border-left: 1200px solid transparent;
       }
 
       @media (min-width: $desktop-width) {
@@ -33,7 +33,7 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 46px;
-      padding-bottom: 81px;
+      padding-bottom: 124px;
     }
 
     @media (min-width: $desktop-width) {
@@ -103,13 +103,15 @@
 
   &__list {
     margin: 0;
-    padding: 50px 20px 10px;
+    padding: 16px 20px 10px;
     list-style: none;
     text-align: center;
 
     @media (min-width: $tablet-width) {
+      margin-top: -20px;
+      padding: 0 0 0 42px;
       text-align: left;
-      padding: 23px 0 0 42px;
+      z-index: 1;
     }
 
     @media (min-width: $desktop-width) {
@@ -215,7 +217,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-top: -47px;
+      margin-top: -90px;
       order: -1;
       z-index: 1;
     }

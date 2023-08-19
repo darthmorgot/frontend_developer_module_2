@@ -1,24 +1,27 @@
 // Reviews
 .reviews {
-  position: relative;
   padding: 41px 20px 56px;
   margin-top: -43px;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    padding-top: 100px;
+    margin-bottom: 34px;
+    padding-top: 76px;
     padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 184px 130px 133px;
-    background: $white url("Images/backgrounds/back-quotes.png") no-repeat 561px 72px;
+    margin-bottom: 0;
+    background: $white url("Images/backgrounds/back-quotes.png") no-repeat center 72px;
   }
 }
 
 .slider {
+  position: relative;
+
   &__item {
     display: none;
     margin: 0 0 31px;
@@ -97,8 +100,8 @@
       display: flex;
       justify-content: space-between;
       position: absolute;
-      top: 213px;
-      width: 940px;
+      top: 29px;
+      width: 100%;
     }
   }
 

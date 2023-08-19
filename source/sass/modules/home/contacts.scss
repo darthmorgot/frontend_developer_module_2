@@ -144,6 +144,14 @@
     width: 320px;
     margin: 0 auto;
 
+    @media (min-width: $tablet-width) {
+      width: 660px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+    }
+
     &::before {
       content: "";
       display: block;
@@ -157,14 +165,12 @@
       z-index: 1;
 
       @media (min-width: $tablet-width) {
-        bottom: -91px;
         border-top: 68px solid $white;
         border-left: 330px solid transparent;
         border-right: 330px solid transparent;
       }
 
       @media (min-width: $desktop-width) {
-        bottom: -122px;
         border-top: 103px solid $white;
         border-left: 600px solid transparent;
         border-right: 600px solid transparent;

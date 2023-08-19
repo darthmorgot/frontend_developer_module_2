@@ -7,13 +7,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     padding-top: 36px;
-    padding-left: 17px;
+    padding-left: 16px;
     padding-right: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
-    padding: 70px 129px 87px;
+    padding: 70px 130px 87px 128px;
   }
 
   &__logo {
@@ -29,18 +28,12 @@
       padding-left: 0;
     }
 
-    .desktop-logo {
-      display: none;
+    @media (min-width: $desktop-width) {
+      margin-right: 236px;
     }
 
-    @media (min-width: $tablet-width) {
-      .desktop-logo {
-        display: none;
-      }
-
-      .tablet-logo {
-        display: inline;
-      }
+    .desktop-logo {
+      display: none;
     }
 
     @media (min-width: $desktop-width) {
@@ -88,7 +81,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 1px;
-    margin-right: 67px;
+    margin-right: 229px;
     width: 172px;
   }
 
@@ -168,7 +161,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 14px;
+      margin-right: 13px;
+      margin-left: 1px;
       padding-bottom: 3px;
       font-size: 18px;
     }
