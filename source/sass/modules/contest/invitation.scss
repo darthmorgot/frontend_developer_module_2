@@ -16,8 +16,14 @@
   }
 
   &__description--contest {
+    padding-bottom: 154px;
+
     @media (min-width: $tablet-width) {
-      padding-bottom: 72px;
+      padding-bottom: 206px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 308px;
     }
   }
 
