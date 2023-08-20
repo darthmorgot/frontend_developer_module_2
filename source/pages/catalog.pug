@@ -8,7 +8,7 @@ block variables
 block content
   main.main.main-container
 
-    section.invitation.container
+   section.invitation
       div.invitation__banner
         h1.invitation__title Фотографии #[br] пользователей
         div.invitation__description
@@ -125,10 +125,10 @@ block content
                 button.catalog__button(type="button") Нравится:
                   span 2560
 
-    section.uploading-images.container
+    section.uploading-images
       h2.visually-hidden Форма загрузки фотографий
       p.uploading-images__slogan Затмите их всех! #[br] Выкладывайте все, что накопилось в телефоне!
-      form.uploading-images__form.form(action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data")
+      form.uploading-images__form.form.container(action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data")
         div.form__upload-image
           label.form__label
             input.visually-hidden.form__input(type="file" name="image")
@@ -170,7 +170,7 @@ block content
                 span.visually-hidden Ползунок заливки цветом
             div.editor-tabs__item.editor-tabs__item--contrast
               label.editor-tabs__label
-                input.editor-tabs__input(type="range" min="0" max="100" value="51" name="range" step="0.5")
+                input.editor-tabs__input(type="range" min="0" max="100" value="50.5" name="range" step="0.5")
                 span.visually-hidden Ползунок установки контраста
         div.form__buttons
           button.form__button.form__button--submit(type="submit") Запостить
