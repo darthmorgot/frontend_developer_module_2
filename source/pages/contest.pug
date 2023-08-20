@@ -8,7 +8,7 @@ block variables
 block content
   main.main.main-container
 
-    section.invitation.container
+    section.invitation
       div.invitation__banner
         h1.invitation__title.invitation__title--contest Конкурс на самое безбашенное #[br] путешествие с Пинк
         div.invitation__description.invitation__description--contest
@@ -21,8 +21,7 @@ block content
           label.user-form__label(for="surname") Фамилия:
           input#surname.user-form__input(type="text" name="surname" placeholder="Укажите фамилию *" required)
           label.user-form__label(for="name") Имя:
-          input#name.user-form__input.user-form__input--tablet-desktop(type="text" name="name" placeholder="Введите " +
-          "ваше имя *" required)
+          input#name.user-form__input(type="text" name="name" placeholder="Введите ваше имя *" required)
           label.user-form__label(for="patronymic") Отчество:
           input#patronymic.user-form__input(type="text" name="patronymic" placeholder="Ну и отчество тоже")
         fieldset.user-form__user-application.user-application
