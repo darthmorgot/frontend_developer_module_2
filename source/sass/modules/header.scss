@@ -180,6 +180,10 @@
 
   &--nojs &__top--close-menu {
     background-color: $ebony-clay;
+
+    @media (min-width: $desktop-width) {
+      background-color: transparent;
+    }
   }
 
   &--nojs &__menu-button {
@@ -188,6 +192,10 @@
 
   &--nojs .toggle {
     display: block;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
   }
 }
 
