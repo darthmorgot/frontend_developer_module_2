@@ -17,8 +17,19 @@
     padding-top: 66px;
     padding-left: 20px;
     padding-right: 20px;
-    background: url("Images/backgrounds/back-mobile-2.png") no-repeat bottom, url("Images/backgrounds/back-mobile-1.jpg") no-repeat center, $ebony-clay;
+    background:
+      url("Images/backgrounds/mobile/back-mobile-2.png") no-repeat bottom,
+      url("Images/backgrounds/mobile/back-mobile-1.jpg") no-repeat center,
+      $ebony-clay;
     background-size: auto, cover;
+
+    @media (resolution >= 2dppx) {
+      background:
+        url("Images/backgrounds/mobile/back-mobile-2@2x.png") no-repeat bottom,
+        url("Images/backgrounds/mobile/back-mobile-1@2x.jpg") no-repeat center,
+        $ebony-clay;
+      background-size: 100%, cover;
+    }
 
     @media (min-width: $tablet-width) {
       width: 660px;
