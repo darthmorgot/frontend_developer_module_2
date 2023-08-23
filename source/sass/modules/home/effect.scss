@@ -18,8 +18,13 @@
       padding-left: 330px;
       padding-bottom: 46px;
       margin-top: -66px;
-      background: $white url("Images/backgrounds/back-watch-tablet.png") no-repeat 20px 54px;
+      background: $white url("Images/backgrounds/tablet/back-watch-tablet.png") no-repeat 20px 54px;
       z-index: 2;
+
+      @media (resolution >= 2dppx) {
+        background: $white url("Images/backgrounds/tablet/back-watch-tablet@2x.png") no-repeat 20px 54px;
+        background-size: 35%;
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -27,7 +32,11 @@
       padding-left: 500px;
       padding-top: 128px;
       padding-bottom: 112px;
-      background: $concrete url("Images/backgrounds/back-watch-desktop.png") no-repeat 131px 33px;
+      background: $concrete url("Images/backgrounds/desktop/back-watch-desktop.png") no-repeat 131px 33px;
+
+      @media (resolution >= 2dppx) {
+        background: $concrete url("Images/backgrounds/desktop/back-watch-desktop.png") no-repeat 131px 33px;
+      }
     }
   }
 

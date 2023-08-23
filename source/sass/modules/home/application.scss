@@ -2,13 +2,18 @@
 .application {
   @media (min-width: $tablet-width) {
     height: 729px;
-    background: url("Images/backgrounds/back-tablet-1.jpg") no-repeat center, $ebony-clay;
+    background: url("Images/backgrounds/tablet/back-tablet-1.jpg") no-repeat center, $ebony-clay;
     background-size: cover;
+
+    @media (resolution >= 2dppx) {
+      background: url("Images/backgrounds/tablet/back-tablet-1@2x.jpg") no-repeat center, $ebony-clay;
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop-width) {
     height: 853px;
-    background: url("Images/backgrounds/back-desktop-1.jpg") no-repeat center, $ebony-clay;
+    background: url("Images/backgrounds/desktop/back-desktop-1.jpg") no-repeat center, $ebony-clay;
     background-size: cover;
   }
 
@@ -35,14 +40,14 @@
       width: 660px;
       height: 729px;
       margin: 0 auto;
-      background: url("Images/backgrounds/back-tablet-2.png") no-repeat bottom;
+      background: url("Images/backgrounds/tablet/back-tablet-2.png") no-repeat bottom;
     }
 
     @media (min-width: $desktop-width) {
       width: 1200px;
       height: 853px;
       padding-left: 130px;
-      background: url("Images/backgrounds/back-desktop-2.png") no-repeat 146px bottom;
+      background: url("Images/backgrounds/desktop/back-desktop-2.png") no-repeat 146px bottom;
     }
   }
 

@@ -176,8 +176,13 @@
     left: -2px;
     width: 74px;
     height: 74px;
-    background: url("Images/backgrounds/hit-ribbon-mobile.png") no-repeat;
+    background: url("Images/backgrounds/mobile/hit-ribbon-mobile.png") no-repeat;
     z-index: 10;
+
+    @media (resolution >= 2dppx) {
+      background: url("Images/backgrounds/mobile/hit-ribbon-mobile@2x.png") no-repeat;
+      background-size: cover;
+    }
   }
 
   &__enable::after {
@@ -334,7 +339,12 @@
       left: 0;
       width: 59px;
       height: 61px;
-      background: url("Images/backgrounds/hit-ribbon-tablet.png") no-repeat;
+      background: url("Images/backgrounds/tablet/hit-ribbon-tablet.png") no-repeat;
+
+      @media (resolution >= 2dppx) {
+        background: url("Images/backgrounds/tablet/hit-ribbon-tablet@2x.png") no-repeat;
+        background-size: cover;
+      }
     }
 
     &__mobile-off {
@@ -429,7 +439,12 @@
     &__hit-ribbon::before {
       width: 74px;
       height: 74px;
-      background: url("Images/backgrounds/hit-ribbon-mobile.png") no-repeat;
+      background: url("Images/backgrounds/mobile/hit-ribbon-mobile.png") no-repeat;
+
+      @media (resolution >= 2dppx) {
+        background: url("Images/backgrounds/mobile/hit-ribbon-mobile@2x.png") no-repeat;
+        background-size: cover;
+      }
     }
 
     &__mobile-off {
