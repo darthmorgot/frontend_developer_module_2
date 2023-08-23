@@ -10,14 +10,14 @@
     @media (min-width: $tablet-width) {
       height: 729px;
       padding-top: 176px;
-      background: url("Images/backgrounds/back-tablet-1.jpg") no-repeat center, $ebony-clay;
+      background: url("Images/backgrounds/tablet/back-tablet-1.jpg") no-repeat center, $ebony-clay;
       background-size: cover;
     }
 
     @media (min-width: $desktop-width) {
       height: 853px;
       padding-top: 169px;
-      background: url("Images/backgrounds/back-desktop-1.jpg") no-repeat center, $ebony-clay;
+      background: url("Images/backgrounds/desktop/back-desktop-1.jpg") no-repeat center, $ebony-clay;
       background-size: cover;
     }
   }
