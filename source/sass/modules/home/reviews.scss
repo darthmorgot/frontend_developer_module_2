@@ -16,6 +16,11 @@
     padding: 184px 130px 133px;
     margin-bottom: 0;
     background: $white url("Images/backgrounds/desktop/back-quotes.png") no-repeat center 72px;
+
+    @media (resolution >= 2dppx) {
+      background: $white url("Images/backgrounds/desktop/back-quotes@2x.png") no-repeat center 72px;
+      background-size: 6.6%;
+    }
   }
 }
 
