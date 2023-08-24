@@ -35,7 +35,8 @@
       background: $concrete url("Images/backgrounds/desktop/back-watch-desktop.png") no-repeat 131px 33px;
 
       @media (resolution >= 2dppx) {
-        background: $concrete url("Images/backgrounds/desktop/back-watch-desktop.png") no-repeat 131px 33px;
+        background: $concrete url("Images/backgrounds/desktop/back-watch-desktop@2x.png") no-repeat 131px 33px;
+        background-size: 24.8%;
       }
     }
   }
