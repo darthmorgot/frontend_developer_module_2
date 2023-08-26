@@ -119,14 +119,8 @@
   }
 
   &__image {
-    &--mobile {
-      display: block;
-      margin: 0 auto;
-
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
-    }
+    display: block;
+    margin: 0 auto;
 
     &--tablet {
       display: none;
