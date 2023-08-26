@@ -19,7 +19,7 @@
       padding-bottom: 46px;
       margin-top: -66px;
       background: $white url("Images/backgrounds/tablet/back-watch-tablet.png") no-repeat 20px 54px;
-      z-index: 2;
+      z-index: 1;
 
       @media (resolution >= 2dppx) {
         background: $white url("Images/backgrounds/tablet/back-watch-tablet@2x.png") no-repeat 20px 54px;
