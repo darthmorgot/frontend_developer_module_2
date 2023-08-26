@@ -18,11 +18,12 @@ block content
           a.application__button(href="https://www.apple.com/app-store/") Скачать приложение
           div.application__available-systems
             a.application__link(href="https://www.apple.com/app-store/")
-              img.application__brand-system(src=require("Images/brands/apple.png") width="47" height="56" alt="App Store")
+              img.application__brand-system(src=require("Images/brands/apple.png") srcset=`${require("Images/brands/apple@2x.png")} 2x` width="47" height="56" alt="App Store")
             a.application__link(href="https://play.google.com")
-              img.application__brand-system(src=require("Images/brands/android.png") width="43" height="47" alt="Google Play")
+              img.application__brand-system(src=require("Images/brands/android.png") srcset=`${require("Images/brands/android@2x.png")} 2x` width="43" height="47"
+                alt="Google Play")
             a.application__link(href="http://www.windowsphone.com/store")
-              img.application__brand-system(src=require("Images/brands/microsoft.png") width="44" height="41" alt="Windows Phone Store")
+              img.application__brand-system(src=require("Images/brands/microsoft.png") srcset=`${require("Images/brands/microsoft@2x.png")} 2x` width="44" height="41" alt="Windows Phone Store")
           p.application__description Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
 
     section.advantages
@@ -41,16 +42,15 @@ block content
           li.advantages__item
             h3.advantages__title Заводит новых друзей
             p.advantages__description Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-        img.advantages__image.advantages__image--mobile(src=require("Images/content/mobile/advantages-mobile.png")
-          width="157" height="320" alt="Всем привет")
-        img.advantages__image.advantages__image--tablet(src=require("Images/content/tablet/advantages-tablet.png")
-          width="268" height="547" alt="Всем привет")
-        img.advantages__image.advantages__image--desktop(src=require("Images/content/desktop/advantages-desktop-1.png")
-          width="308" height="382" alt="Черно-белая картинка")
-        img.advantages__image.advantages__image--desktop(src=require("Images/content/desktop/advantages-desktop-2.png")
-          width="308" height="382" alt="Картинка с розовым фильтром")
-        img.advantages__image.advantages__image--desktop(src=require("Images/content/desktop/advantages-desktop-3.png")
-          width="308" height="382" alt="Всем привет")
+        div.advantages__image-wrapper
+          picture
+            source(media="(min-width: 677px)" srcset=`${require("Images/content/tablet/advantages-tablet.png")} 1x,
+            ${require("Images/content/tablet/advantages-tablet@2x.png")} 2x`)
+            img.advantages__image.advantages__image--no-desktop(src=require("Images/content/mobile/advantages-mobile.png")
+              srcset=`${require("Images/content/mobile/advantages-mobile@2x.png")} 2x` alt="Всем привет")
+          img.advantages__image.advantages__image--desktop(src=require("Images/content/desktop/advantages-desktop-1.png") srcset=`${require("Images/content/desktop/advantages-desktop-1@2x.png")} 2x` width="308" height="382" alt="Черно-белая картинка")
+          img.advantages__image.advantages__image--desktop(src=require("Images/content/desktop/advantages-desktop-2.png") srcset=`${require("Images/content/desktop/advantages-desktop-2@2x.png")} 2x` width="308" height="382" alt="Картинка с розовым фильтром")
+          img.advantages__image.advantages__image--desktop(src=require("Images/content/desktop/advantages-desktop-3.png") srcset=`${require("Images/content/desktop/advantages-desktop-3@2x.png")} 2x` width="308" height="382" alt="Всем привет")
 
     section.effect
       div.effect__wrapper.container

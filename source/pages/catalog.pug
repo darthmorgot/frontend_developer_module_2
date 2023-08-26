@@ -22,12 +22,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link.catalog__link--panorama(href="#")
-                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/panorama-mobile.jpg")
-                  width="320" height="137" alt="Вид на подвесной мост.")
-                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/panorama-tablet.jpg")
-                  width="660" height="509" alt="Вид на подвесной мост.")
-                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/panorama-desktop.jpg")
-                  width="1200" height="506" alt="Вид на подвесной мост.")
+                picture
+                  source(media="(min-width: 1217px)" srcset=`${require("Images/content/desktop/panorama-desktop.jpg")} 1x, ${require("Images/content/desktop/panorama-desktop@2x.jpg")} 2x`)
+                  source(media="(min-width: 677px)" srcset=`${require("Images/content/tablet/panorama-tablet.jpg")} 1x, ${require("Images/content/tablet/panorama-tablet@2x.jpg")} 2x`)
+                  img.catalog__image(src=require("Images/content/mobile/panorama-mobile.jpg") srcset=`${require("Images/content/mobile/panorama-mobile@2x.jpg")} 2x` alt="Вид на подвесной мост.")
               blockquote.catalog__description
                 span.catalog__author Анна
                 span.catalog__publication-time (5 минут назад)
