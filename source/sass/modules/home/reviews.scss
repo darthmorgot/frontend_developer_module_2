@@ -1,9 +1,11 @@
 // Reviews
 .reviews {
+  position: relative;
   padding: 41px 20px 56px;
   margin-top: -43px;
   margin-bottom: 19px;
   background-color: $white;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
