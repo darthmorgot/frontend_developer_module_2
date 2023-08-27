@@ -122,25 +122,8 @@
     display: block;
     margin: 0 auto;
 
-    &--tablet {
-      display: none;
-
-      @media (min-width: $tablet-width) {
-        display: block;
-        margin: 0 auto;
-      }
-
-      @media (min-width: $desktop-width) {
-        display: none;
-      }
-    }
-
-    &--desktop {
-      display: none;
-
-      @media (min-width: $desktop-width) {
-        display: block;
-      }
+    @media (min-width: $tablet-width) {
+      min-width: 300px;
     }
   }
 
