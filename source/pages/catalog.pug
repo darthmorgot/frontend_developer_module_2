@@ -35,12 +35,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/photo-1-mobile.jpg") width="280" height="180"
-                  alt="Фотосъемка белой машины.")
-                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-1-tablet.jpg")
-                  width="300" height="300" alt="Фотосъемка белой машины.")
-                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/photo-1-desktop.jpg")
-                  width="300" height="400" alt="Фотосъемка белой машины.")
+                picture
+                  source(media="(min-width: 1217px)" srcset=`${require("Images/content/desktop/photo-1-desktop.jpg")} 1x, ${require("Images/content/desktop/photo-1-desktop@2x.jpg")} 2x`)
+                  source(media="(min-width: 677px)" srcset=`${require("Images/content/tablet/photo-1-tablet.jpg")} 1x, ${require("Images/content/tablet/photo-1-tablet@2x.jpg")} 2x`)
+                  img.catalog__image(src=require("Images/content/mobile/photo-1-mobile.jpg") srcset=`${require("Images/content/mobile/photo-1-mobile@2x.jpg")} 2x` alt="Фотосъемка белой машины.")
               blockquote.catalog__description
                 span.catalog__author Левон
                 span.catalog__publication-time (5 часов назад)
@@ -50,12 +48,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/photo-2-mobile.jpg") width="280" height="180"
-                  alt="Барабанная установка.")
-                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-2-tablet.jpg")
-                  width="300" height="300" alt="Барабанная установка.")
-                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/photo-2-desktop.jpg")
-                  width="300" height="400" alt="Барабанная установка.")
+                picture
+                  source(media="(min-width: 1217px)" srcset=`${require("Images/content/desktop/photo-2-desktop.jpg")} 1x, ${require("Images/content/desktop/photo-2-desktop@2x.jpg")} 2x`)
+                  source(media="(min-width: 677px)" srcset=`${require("Images/content/tablet/photo-2-tablet.jpg")} 1x, ${require("Images/content/tablet/photo-2-tablet@2x.jpg")} 2x`)
+                  img.catalog__image(src=require("Images/content/mobile/photo-2-mobile.jpg") srcset=`${require("Images/content/mobile/photo-2-mobile@2x.jpg")} 2x` alt="Барабанная установка.")
               blockquote.catalog__description
                 span.catalog__author Антон
                 span.catalog__publication-time (12 часов назад)
@@ -65,12 +61,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/photo-3-mobile.jpg") width="280" height="180"
-                  alt="Вид на небо сквозь прозрачную крышу.")
-                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-3-tablet.jpg")
-                  width="300" height="300" alt="Вид на небо сквозь прозрачную крышу.")
-                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/photo-3-desktop.jpg")
-                  width="300" height="400" alt="Вид на небо сквозь прозрачную крышу.")
+                picture
+                  source(media="(min-width: 1217px)" srcset=`${require("Images/content/desktop/photo-3-desktop.jpg")} 1x, ${require("Images/content/desktop/photo-3-desktop@2x.jpg")} 2x`)
+                  source(media="(min-width: 677px)" srcset=`${require("Images/content/tablet/photo-3-tablet.jpg")} 1x, ${require("Images/content/tablet/photo-3-tablet@2x.jpg")} 2x`)
+                  img.catalog__image(src=require("Images/content/mobile/photo-3-mobile.jpg") srcset=`${require("Images/content/mobile/photo-3-mobile@2x.jpg")} 2x` alt="Вид на небо сквозь прозрачную крышу.")
               blockquote.catalog__description
                 span.catalog__author Борис
                 span.catalog__publication-time (20 часов назад)
@@ -80,12 +74,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/photo-4-mobile.jpg") width="280" height="180"
-                  alt="Фестиваль Кубанская бахча.")
-                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-4-tablet.jpg")
-                  width="300" height="300" alt="Фестиваль Кубанская бахча.")
-                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/photo-4-desktop.jpg")
-                  width="300" height="400" alt="Фестиваль Кубанская бахча.")
+                picture
+                  source(media="(min-width: 1217px)" srcset=`${require("Images/content/desktop/photo-4-desktop.jpg")} 1x, ${require("Images/content/desktop/photo-4-desktop@2x.jpg")} 2x`)
+                  source(media="(min-width: 677px)" srcset=`${require("Images/content/tablet/photo-4-tablet.jpg")} 1x, ${require("Images/content/tablet/photo-4-tablet@2x.jpg")} 2x`)
+                  img.catalog__image(src=require("Images/content/mobile/photo-4-mobile.jpg") srcset=`${require("Images/content/mobile/photo-4-mobile@2x.jpg")} 2x` alt="Фестиваль Кубанская бахча.")
               blockquote.catalog__description
                 span.catalog__author Сергей
                 span.catalog__publication-time (25 часов назад)
@@ -95,12 +87,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/photo-5-mobile.jpg") width="280" height="180"
-                  alt="Вид на ноги и горы.")
-                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-5-tablet.jpg")
-                  width="300" height="300" alt="Вид на ноги и горы.")
-                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/photo-5-desktop.jpg")
-                  width="300" height="400" alt="Вид на ноги и горы.")
+                picture
+                  source(media="(min-width: 1217px)" srcset=`${require("Images/content/desktop/photo-5-desktop.jpg")} 1x, ${require("Images/content/desktop/photo-5-desktop@2x.jpg")} 2x`)
+                  source(media="(min-width: 677px)" srcset=`${require("Images/content/tablet/photo-5-tablet.jpg")} 1x, ${require("Images/content/tablet/photo-5-tablet@2x.jpg")} 2x`)
+                  img.catalog__image(src=require("Images/content/mobile/photo-5-mobile.jpg") srcset=`${require("Images/content/mobile/photo-5-mobile@2x.jpg")} 2x` alt="Вид на ноги и горы.")
               blockquote.catalog__description
                 span.catalog__author Максим
                 span.catalog__publication-time (40 часов назад)
@@ -110,12 +100,10 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                img.catalog__image.catalog__image--mobile(src=require("Images/content/mobile/photo-6-mobile.jpg") width="280" height="180"
-                  alt="Вид на крыло самолета и закат.")
-                img.catalog__image.catalog__image--tablet(src=require("Images/content/tablet/photo-6-tablet.jpg")
-                  width="300" height="300" alt="Вид на крыло самолета и закат.")
-                img.catalog__image.catalog__image--desktop(src=require("Images/content/desktop/photo-6-desktop.jpg")
-                  width="300" height="400" alt="Вид на крыло самолета и закат.")
+                picture
+                  source(media="(min-width: 1217px)" srcset=`${require("Images/content/desktop/photo-6-desktop.jpg")} 1x, ${require("Images/content/desktop/photo-6-desktop@2x.jpg")} 2x`)
+                  source(media="(min-width: 677px)" srcset=`${require("Images/content/tablet/photo-6-tablet.jpg")} 1x, ${require("Images/content/tablet/photo-6-tablet@2x.jpg")} 2x`)
+                  img.catalog__image(src=require("Images/content/mobile/photo-6-mobile.jpg") srcset=`${require("Images/content/mobile/photo-6-mobile@2x.jpg")} 2x` alt="Вид на крыло самолета и закат.")
               blockquote.catalog__description
                 span.catalog__author Надежда
                 span.catalog__publication-time (45 часов назад)
@@ -132,10 +120,9 @@ block content
             input.visually-hidden.form__input(type="file" name="image")
             span.visually-hidden Выберите фотографию для загрузки
             div.form__input-image
-              img.form__image.form__image--mobile(src=require("Images/content/mobile/photo-7-mobile.jpg") width="280"
-                height="374" alt="Зимняя лесная дорога")
-              img.form__image.form__image--tablet(src=require("Images/content/desktop/photo-7-desktop.jpg") width="300"
-                height="400" alt="Зимняя лесная дорога")
+              picture
+                source(media="(min-width: 677px)" srcset=`${require("Images/content/desktop/photo-7-desktop.jpg")} 1x, ${require("Images/content/desktop/photo-7-desktop@2x.jpg")} 2x`)
+                img.catalog__image(src=require("Images/content/mobile/photo-7-mobile.jpg") srcset=`${require("Images/content/mobile/photo-7-mobile@2x.jpg")} 2x` alt="Зимняя лесная дорога.")
         div.form__editor.editor-tabs
           h2.visually-hidden Редактор изображений
           div.editor-tabs__panel
