@@ -22,6 +22,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-left: 1px;
+    color: $ebony-clay;
 
     @media (min-width: $tablet-width) {
       margin: 0 74px 0 0;
@@ -48,17 +49,12 @@
   }
 
   &__logo:hover {
-    path {
-      fill: $cerise-red;
-    }
+    color: $cerise-red;
   }
 
   &__logo:active {
+    color: $ebony-clay;
     opacity: 0.3;
-
-    path:not(:last-child) {
-      fill: $ebony-clay;
-    }
   }
 
   &__logo:focus {
@@ -170,6 +166,7 @@
 
   &__link {
     height: 34px;
+    color: $cerise-red;
 
     @media (min-width: $tablet-width) {
       margin-top: 1px;
@@ -177,17 +174,11 @@
   }
 
   &__link:hover {
-    path {
-      fill: $ebony-clay;
-    }
+    color: $ebony-clay;
   }
 
   &__link:active {
     opacity: 0.3;
-
-    path {
-      fill: $ebony-clay;
-    }
   }
 
   &__link:focus {

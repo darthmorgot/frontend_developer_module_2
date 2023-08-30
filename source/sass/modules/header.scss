@@ -203,18 +203,15 @@
   display: block;
   width: 74px;
   height: 23px;
+  color: $white;
 
   &:hover {
-    path {
-      fill: $cerise-red;
-    }
+    color: $cerise-red;
   }
 
   &:active {
-    path {
-      fill: $white;
-      opacity: 0.3;
-    }
+    color: $white;
+    opacity: 0.3;
   }
 
   &:focus {
