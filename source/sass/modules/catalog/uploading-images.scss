@@ -231,10 +231,7 @@
 
   &__switch {
     padding: 0;
-
-    path {
-      fill: $ebony-clay-light;
-    }
+    color: $ebony-clay-light;
   }
 
   &__switch:nth-child(2) {
@@ -242,22 +239,16 @@
   }
 
   &__switch:hover {
-    path {
-      fill: $ebony-clay-hover;
-    }
+    color: $ebony-clay-hover;
   }
 
   &__switch:active {
-    path {
-      fill: $ebony-clay-light;
-    }
+    color: $ebony-clay-light;
   }
 
   &__switch--active,
   &__switch--active:hover {
-    path {
-      fill: $cerise-red;
-    }
+    color: $cerise-red;
   }
 
   &__switch:focus {
