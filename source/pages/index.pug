@@ -18,17 +18,14 @@ block content
           a.application__button(href="https://www.apple.com/app-store/") Скачать приложение
           div.application__available-systems
             a.application__link(href="https://www.apple.com/app-store/")
-              svg(width="47" height="56")
+              svg(width="47" height="56" aria-label="App Store" focusable="false" role="img")
                 use(href=`${require("Images/brands/brands-sprite.svg")}#logo-apple`)
-              span.visually-hidden App Store
             a.application__link(href="https://play.google.com")
-              svg(width="43" height="47")
+              svg(width="43" height="47" aria-label="Google Play" focusable="false" role="img")
                 use(href=`${require("Images/brands/brands-sprite.svg")}#logo-android`)
-              span.visually-hidden Google Play
             a.application__link(href="http://www.windowsphone.com/store")
-              svg(width="44" height="41")
+              svg(width="44" height="41" aria-label="Windows Phone Store" focusable="false" role="img")
                 use(href=`${require("Images/brands/brands-sprite.svg")}#logo-microsoft`)
-              span.visually-hidden Windows Phone Store
           p.application__description Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
 
     section.advantages
@@ -49,13 +46,36 @@ block content
             p.advantages__description Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
         div.advantages__image-wrapper
           picture
-            source(media="(min-width: 677px)" srcset=`${require("Images/content/tablet/advantages-tablet.png")} 1x,
-            ${require("Images/content/tablet/advantages-tablet@2x.png")} 2x`)
-            img.advantages__image.advantages__image--no-desktop(src=require("Images/content/mobile/advantages-mobile.png")
-              srcset=`${require("Images/content/mobile/advantages-mobile@2x.png")} 2x` alt="Всем привет")
-          img.advantages__image.advantages__image--desktop(src=require("Images/content/desktop/advantages-desktop-1.png") srcset=`${require("Images/content/desktop/advantages-desktop-1@2x.png")} 2x` width="308" height="382" alt="Черно-белая картинка")
-          img.advantages__image.advantages__image--desktop(src=require("Images/content/desktop/advantages-desktop-2.png") srcset=`${require("Images/content/desktop/advantages-desktop-2@2x.png")} 2x` width="308" height="382" alt="Картинка с розовым фильтром")
-          img.advantages__image.advantages__image--desktop(src=require("Images/content/desktop/advantages-desktop-3.png") srcset=`${require("Images/content/desktop/advantages-desktop-3@2x.png")} 2x` width="308" height="382" alt="Всем привет")
+            source(
+              media="(min-width: 677px)"
+              srcset=`${require("Images/content/tablet/advantages-tablet.png")} 1x, ${require("Images/content/tablet/advantages-tablet@2x.png")} 2x`
+            )
+            img.advantages__image.advantages__image--no-desktop(
+              src=require("Images/content/mobile/advantages-mobile.png")
+              srcset=`${require("Images/content/mobile/advantages-mobile@2x.png")} 2x`
+              alt="Всем привет"
+            )
+          img.advantages__image.advantages__image--desktop(
+            src=require("Images/content/desktop/advantages-desktop-1.png")
+            srcset=`${require("Images/content/desktop/advantages-desktop-1@2x.png")} 2x`
+            width="308"
+            height="382"
+            alt="Черно-белая картинка"
+          )
+          img.advantages__image.advantages__image--desktop(
+            src=require("Images/content/desktop/advantages-desktop-2.png")
+            srcset=`${require("Images/content/desktop/advantages-desktop-2@2x.png")} 2x`
+            width="308"
+            height="382"
+            alt="Картинка с розовым фильтром"
+          )
+          img.advantages__image.advantages__image--desktop(
+            src=require("Images/content/desktop/advantages-desktop-3.png")
+            srcset=`${require("Images/content/desktop/advantages-desktop-3@2x.png")} 2x`
+            width="308"
+            height="382"
+            alt="Всем привет"
+          )
 
     section.effect
       div.effect__wrapper.container
@@ -81,16 +101,12 @@ block content
         div.slider__arrows
           button.slider__arrow.slider__arrow--prev(type="button")
             span.visually-hidden Назад
-            svg(xmlns="http://www.w3.org/2000/svg" width="22" height="41" viewBox="0 0 22 41" fill="none" aria-hidden="true" focusable="false" role="img")
-              path(fill="#283645" d="m2.04 20.5 19.7-19.09A.82.82 0 0 0 22 .83a.8.8 0 0 0-.25-.59.86.86 0 0 0-.61-.24" +
-              ".88.88 0 0 0-.6.24L.24 19.91a.83.83 0 0 0-.25.59.81.81 0 0 0 .25.59l20.28 19.67a.9.9 0 0 0 1.09.1c.14-" +
-              ".1.25-.22.31-.38a.8.8 0 0 0-.18-.9L2.05 20.5Z")
+            svg(width="22" height="41" aria-hidden="true" focusable="false" role="img")
+              use(href=`${require("Images/icons/icons-sprite.svg")}#icon-arrow`)
           button.slider__arrow.slider__arrow--next(type="button")
             span.visually-hidden Вперед
-            svg(xmlns="http://www.w3.org/2000/svg" width="22" height="41" viewBox="0 0 22 41" fill="none" aria-hidden="true" focusable="false" role="img")
-              path(fill="#283645" d="m2.04 20.5 19.7-19.09A.82.82 0 0 0 22 .83a.8.8 0 0 0-.25-.59.86.86 0 0 0-.61-.24" +
-              ".88.88 0 0 0-.6.24L.24 19.91a.83.83 0 0 0-.25.59.81.81 0 0 0 .25.59l20.28 19.67a.9.9 0 0 0 1.09.1c.14-" +
-              ".1.25-.22.31-.38a.8.8 0 0 0-.18-.9L2.05 20.5Z")
+            svg(width="22" height="41" aria-hidden="true" focusable="false" role="img")
+              use(href=`${require("Images/icons/icons-sprite.svg")}#icon-arrow`)
         +slider-toggles("reviews__toggles", "first")
 
     section.price
@@ -154,9 +170,6 @@ block content
           h3.contacts__title Приезжайте в гости:
           address.contacts__address ул. Большая Конюшенная, 19/8
       div.contacts__map-wrapper
-        iframe(class="contacts__map-mobile" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="320" height="200"
-          allowfullscreen)
-        iframe(class="contacts__map-tablet" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="660" height="374"
-          allowfullscreen)
-        iframe(class="contacts__map-desktop" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="1200" height="502"
-          allowfullscreen)
+        iframe(class="contacts__map-mobile" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="320" height="200" allowfullscreen)
+        iframe(class="contacts__map-tablet" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="660" height="374" allowfullscreen)
+        iframe(class="contacts__map-desktop" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="1200" height="502" allowfullscreen)
