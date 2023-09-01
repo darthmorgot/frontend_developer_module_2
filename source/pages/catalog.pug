@@ -22,7 +22,7 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link.catalog__link--panorama(href="#")
-                +catalog-picture("panorama", "Вид на подвесной мост.")
+                +catalog-picture("panorama", "Вид на подвесной мост.", "webp")
               blockquote.catalog__description
                 span.catalog__author Анна
                 span.catalog__publication-time (5 минут назад)
@@ -100,8 +100,15 @@ block content
             span.visually-hidden Выберите фотографию для загрузки
             div.form__input-image
               picture
-                source(media="(min-width: 677px)" srcset=`${require("Images/content/desktop/photo-7-desktop.jpg")} 1x, ${require("Images/content/desktop/photo-7-desktop@2x.jpg")} 2x`)
-                img.catalog__image(src=require("Images/content/mobile/photo-7-mobile.jpg") srcset=`${require("Images/content/mobile/photo-7-mobile@2x.jpg")} 2x` alt="Зимняя лесная дорога.")
+                source(
+                  media="(min-width: 677px)"
+                  srcset=`${require("Images/content/desktop/photo-7-desktop.jpg")} 1x, ${require("Images/content/desktop/photo-7-desktop@2x.jpg")} 2x`
+                )
+                img.catalog__image(
+                  src=require("Images/content/mobile/photo-7-mobile.jpg")
+                  srcset=`${require("Images/content/mobile/photo-7-mobile@2x.jpg")} 2x`
+                  alt="Зимняя лесная дорога."
+                )
         div.form__editor.editor-tabs
           h2.visually-hidden Редактор изображений
           div.editor-tabs__panel
