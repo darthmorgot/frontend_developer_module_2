@@ -116,10 +116,7 @@
     width: 22px;
     height: 41px;
     padding: 0;
-
-    path {
-      fill: $ebony-clay-light;
-    }
+    color: $ebony-clay-light;
 
     &--next {
       transform: rotate(180deg);
@@ -127,16 +124,12 @@
   }
 
   &__arrow:hover {
-    path {
-      fill: $ebony-clay-hover;
-    }
+    color: $ebony-clay-hover;
   }
 
   &__arrow:active,
   &__arrow:disabled {
-    path {
-      fill: $ebony-clay-active;
-    }
+    color: $ebony-clay-active;
   }
 
   &__arrow:focus {
