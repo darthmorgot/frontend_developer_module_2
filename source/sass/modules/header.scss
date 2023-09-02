@@ -55,6 +55,7 @@
 
   &__menu-button {
     padding: 0;
+    color: $white;
 
     @media (min-width: $tablet-width) {
       align-self: flex-end;
@@ -81,16 +82,11 @@
   }
 
   &__menu-button:hover {
-    path {
-      fill: $cerise-red;
-    }
+    color: $cerise-red;
   }
 
   &__menu-button:active {
-    path {
-      fill: $cerise-red;
-      opacity: 0.3;
-    }
+    color: $cerise-red-light;
   }
 
   &__menu-button:focus {
