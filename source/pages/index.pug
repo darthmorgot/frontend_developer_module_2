@@ -47,35 +47,59 @@ block content
         div.advantages__image-wrapper
           picture
             source(
+              type="image/webp"
+              media="(min-width: 677px)"
+              srcset=`${require("Images/generated-webp/advantages-tablet.webp")} 1x, ${require("Images/generated-webp/advantages-tablet@2x.webp")} 2x`
+            )
+            source(
               media="(min-width: 677px)"
               srcset=`${require("Images/content/tablet/advantages-tablet.png")} 1x, ${require("Images/content/tablet/advantages-tablet@2x.png")} 2x`
+            )
+            source(
+              type="image/webp"
+              srcset=`${require("Images/generated-webp/advantages-mobile.webp")} 1x, ${require("Images/generated-webp/advantages-mobile@2x.webp")} 2x`
             )
             img.advantages__image.advantages__image--no-desktop(
               src=require("Images/content/mobile/advantages-mobile.png")
               srcset=`${require("Images/content/mobile/advantages-mobile@2x.png")} 2x`
               alt="Всем привет"
             )
-          img.advantages__image.advantages__image--desktop(
-            src=require("Images/content/desktop/advantages-desktop-1.png")
-            srcset=`${require("Images/content/desktop/advantages-desktop-1@2x.png")} 2x`
-            width="308"
-            height="382"
-            alt="Черно-белая картинка"
-          )
-          img.advantages__image.advantages__image--desktop(
-            src=require("Images/content/desktop/advantages-desktop-2.png")
-            srcset=`${require("Images/content/desktop/advantages-desktop-2@2x.png")} 2x`
-            width="308"
-            height="382"
-            alt="Картинка с розовым фильтром"
-          )
-          img.advantages__image.advantages__image--desktop(
-            src=require("Images/content/desktop/advantages-desktop-3.png")
-            srcset=`${require("Images/content/desktop/advantages-desktop-3@2x.png")} 2x`
-            width="308"
-            height="382"
-            alt="Всем привет"
-          )
+          picture
+            source(
+              type="image/webp"
+              srcset=`${require("Images/generated-webp/advantages-desktop-1.webp")} 1x, ${require("Images/generated-webp/advantages-desktop-1@2x.webp")} 2x`
+            )
+            img.advantages__image.advantages__image--desktop(
+              src=require("Images/content/desktop/advantages-desktop-1.png")
+              srcset=`${require("Images/content/desktop/advantages-desktop-1@2x.png")} 2x`
+              width="308"
+              height="382"
+              alt="Черно-белая картинка"
+            )
+          picture
+            source(
+              type="image/webp"
+              srcset=`${require("Images/generated-webp/advantages-desktop-2.webp")} 1x, ${require("Images/generated-webp/advantages-desktop-2@2x.webp")} 2x`
+            )
+            img.advantages__image.advantages__image--desktop(
+              src=require("Images/content/desktop/advantages-desktop-2.png")
+              srcset=`${require("Images/content/desktop/advantages-desktop-2@2x.png")} 2x`
+              width="308"
+              height="382"
+              alt="Картинка с розовым фильтром"
+            )
+          picture
+            source(
+              type="image/webp"
+              srcset=`${require("Images/generated-webp/advantages-desktop-3.webp")} 1x, ${require("Images/generated-webp/advantages-desktop-3@2x.webp")} 2x`
+            )
+            img.advantages__image.advantages__image--desktop(
+              src=require("Images/content/desktop/advantages-desktop-3.png")
+              srcset=`${require("Images/content/desktop/advantages-desktop-3@2x.png")} 2x`
+              width="308"
+              height="382"
+              alt="Всем привет"
+            )
 
     section.effect
       div.effect__wrapper.container
