@@ -1,6 +1,5 @@
 const TerserPlugin = require('terser-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
-const ImageWebpPlugin = require('imagemin-webp-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -39,7 +38,6 @@ module.exports = {
           },
         },
       }),
-      new ImageWebpPlugin(),
     ],
   },
   performance: {
