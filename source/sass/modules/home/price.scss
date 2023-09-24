@@ -183,6 +183,11 @@
       background: url("Images/backgrounds/mobile/hit-ribbon-mobile@2x.png") no-repeat;
       background-size: cover;
     }
+
+    background-image: image-set(
+      url("Images/generated-webp/hit-ribbon-mobile.webp") type("image/webp") 1x,
+      url("Images/generated-webp/hit-ribbon-mobile@2x.webp") type("image/webp") 2x
+    );
   }
 
   &__enable::after {
@@ -345,6 +350,11 @@
         background: url("Images/backgrounds/tablet/hit-ribbon-tablet@2x.png") no-repeat;
         background-size: cover;
       }
+
+      background-image: image-set(
+        url("Images/generated-webp/hit-ribbon-tablet.webp") type("image/webp") 1x,
+        url("Images/generated-webp/hit-ribbon-tablet@2x.webp") type("image/webp") 2x
+      );
     }
 
     &__mobile-off {
@@ -445,6 +455,11 @@
         background: url("Images/backgrounds/mobile/hit-ribbon-mobile@2x.png") no-repeat;
         background-size: cover;
       }
+
+      background-image: image-set(
+        url("Images/generated-webp/hit-ribbon-mobile.webp") type("image/webp") 1x,
+        url("Images/generated-webp/hit-ribbon-mobile@2x.webp") type("image/webp") 2x
+      );
     }
 
     &__mobile-off {

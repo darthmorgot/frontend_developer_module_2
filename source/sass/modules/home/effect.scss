@@ -25,6 +25,11 @@
         background: $white url("Images/backgrounds/tablet/back-watch-tablet@2x.png") no-repeat 20px 54px;
         background-size: 35%;
       }
+
+      background-image: image-set(
+        url("Images/generated-webp/back-watch-tablet.webp") type("image/webp") 1x,
+        url("Images/generated-webp/back-watch-tablet@2x.webp") type("image/webp") 2x
+      );
     }
 
     @media (min-width: $desktop-width) {
@@ -38,6 +43,11 @@
         background: $concrete url("Images/backgrounds/desktop/back-watch-desktop@2x.png") no-repeat 131px 33px;
         background-size: 24.8%;
       }
+
+      background-image: image-set(
+        url("Images/generated-webp/back-watch-desktop.webp") type("image/webp") 1x,
+        url("Images/generated-webp/back-watch-desktop@2x.webp") type("image/webp") 2x
+      );
     }
   }
 

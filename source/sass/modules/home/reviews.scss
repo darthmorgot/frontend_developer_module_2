@@ -23,6 +23,11 @@
       background: $white url("Images/backgrounds/desktop/back-quotes@2x.png") no-repeat center 72px;
       background-size: 6.6%;
     }
+
+    background-image: image-set(
+      url("Images/generated-webp/back-quotes.webp") type("image/webp") 1x,
+      url("Images/generated-webp/back-quotes@2x.webp") type("image/webp") 2x
+    );
   }
 }
 

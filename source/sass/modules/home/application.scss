@@ -9,6 +9,11 @@
       background: url("Images/backgrounds/tablet/back-tablet-1@2x.jpg") no-repeat center, $ebony-clay;
       background-size: cover;
     }
+
+    background-image: image-set(
+      url("Images/generated-webp/back-tablet-1.webp") type("image/webp") 1x,
+      url("Images/generated-webp/back-tablet-1@2x.webp") type("image/webp") 2x
+    );
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +25,11 @@
       background: url("Images/backgrounds/desktop/back-desktop-1@2x.jpg") no-repeat center, $ebony-clay;
       background-size: cover;
     }
+
+    background-image: image-set(
+      url("Images/generated-webp/back-desktop-1.webp") type("image/webp") 1x,
+      url("Images/generated-webp/back-desktop-1@2x.webp") type("image/webp") 2x
+    );
   }
 
   &__banner {
@@ -41,6 +51,16 @@
       background-size: 100%, cover;
     }
 
+    background-image:
+      image-set(
+        url("Images/generated-webp/back-mobile-2.webp") type("image/webp") 1x,
+        url("Images/generated-webp/back-mobile-2@2x.webp") type("image/webp") 2x
+      ),
+      image-set(
+        url("Images/generated-webp/back-mobile-1.webp") type("image/webp") 1x,
+        url("Images/generated-webp/back-mobile-1@2x.webp") type("image/webp") 2x
+      );
+
     @media (min-width: $tablet-width) {
       width: 660px;
       height: 729px;
@@ -51,6 +71,11 @@
         background: url("Images/backgrounds/tablet/back-tablet-2@2x.png") no-repeat bottom;
         background-size: 100%;
       }
+
+      background-image: image-set(
+        url("Images/generated-webp/back-tablet-2.webp") type("image/webp") 1x,
+        url("Images/generated-webp/back-tablet-2@2x.webp") type("image/webp") 2x
+      );
     }
 
     @media (min-width: $desktop-width) {
@@ -63,6 +88,11 @@
         background: url("Images/backgrounds/desktop/back-desktop-2@2x.png") no-repeat 146px bottom;
         background-size: 87.5%;
       }
+
+      background-image: image-set(
+        url("Images/generated-webp/back-desktop-2.webp") type("image/webp") 1x,
+        url("Images/generated-webp/back-desktop-2@2x.webp") type("image/webp") 2x
+      );
     }
   }
 
