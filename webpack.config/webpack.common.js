@@ -11,8 +11,6 @@ const scriptPreset = require('./presets/script-preset-common.js');
 const imagePreset = require('./presets/image-preset-common.js');
 const fontPreset = require('./presets/font-preset-common.js');
 
-const spriteGeneratePreset = require('./presets/sprite-generate-preset-common.js');
-const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const ImageWebpPlugin = require('imagemin-webp-webpack-plugin');
 
 const devMode = process.env.BUILD_TYPE !== 'production';
@@ -36,7 +34,6 @@ module.exports = {
   plugins: [
     pugPlugin(devMode),
     fileManagerPlugin(devMode),
-    // new SpriteLoaderPlugin(),
     devMode ? new ImageWebpPlugin() : null,
   ],
   module: {
@@ -46,7 +43,6 @@ module.exports = {
       scriptPreset(),
       imagePreset(devMode),
       fontPreset(devMode),
-      // spriteGeneratePreset(),
     ],
   },
 };
