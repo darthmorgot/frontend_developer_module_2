@@ -8,13 +8,13 @@ const fileManagerPlugin = (mode) => {
         copy: [
           {
             source: path.build + '/assets/img/*.webp',
-            destination: mode ? path.src + '/img/generated-webp' : path.src + '/img/test',
+            destination: mode ? path.src + '/img/generated-webp' : path.src + '/img/delete',
           },
         ],
         delete: [
           path.build + '/assets/img/pink-favicon-32.webp',
           path.src + '/img/generated-webp/pink-favicon-32.webp',
-          path.src + '/img/test/',
+          path.src + '/img/delete/',
         ],
       },
     },
