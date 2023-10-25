@@ -114,15 +114,18 @@
   }
 
   &__link--twitter {
-    background: url("Images/icons/icon-twitter.svg") no-repeat center center;
+    background: url("Images/sprite.svg#icon-twitter") no-repeat center center;
+    background-size: 44%;
   }
 
   &__link--fb {
-    background: url("Images/icons/icon-facebook.svg") no-repeat 20px 15px;
+    background: url("Images/sprite.svg#icon-facebook") no-repeat center center;
+    background-size: 56%;
   }
 
   &__link--youtube {
-    background: url("Images/icons/icon-youtube.svg") no-repeat 19px 18px;
+    background: url("Images/sprite.svg#icon-youtube") no-repeat 17px center;
+    background-size: 39%;
   }
 
   &__link:hover {
