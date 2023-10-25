@@ -215,11 +215,12 @@
 
       @media (min-width: $desktop-width) {
         display: block;
-        margin-right: 12px;
+      }
+    }
 
-        &:last-child {
-          margin-right: 0;
-        }
+    &--margin {
+      @media (min-width: $desktop-width) {
+        margin: 0 12px;
       }
     }
   }
