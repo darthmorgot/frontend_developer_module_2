@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Личный проект «Pink» от HTML Academy, Профессия «Фронтенд-разработчик 2», Модуль 2. HTML и CSS. Адаптивная вёрстка и автоматизация",
   "scripts": {
-    "dev": "cross-env BUILD_TYPE=development webpack --config webpack.config/webpack.config.js",
+    "dev:webpack": "cross-env BUILD_TYPE=development webpack --config webpack.config/webpack.config.js",
     "build": "cross-env BUILD_TYPE=production webpack --config webpack.config/webpack.config.js",
-    "start": "cross-env BUILD_TYPE=development webpack serve --config webpack.config/webpack.config.js"
+    "start:webpack": "cross-env BUILD_TYPE=development webpack serve --config webpack.config/webpack.config.js",
+    "dev:gulp": "gulp sprite",
+    "dev": "npm run dev:gulp && npm run dev:webpack",
+    "start": "npm run dev:gulp && npm run start:webpack"
   },
   "author": "Master",
   "license": "ISC",
@@ -32,6 +35,9 @@
     "css-loader": "^6.8.1",
     "eslint": "^8.44.0",
     "filemanager-webpack-plugin": "^8.0.0",
+    "gulp": "^4.0.2",
+    "gulp-svg-sprite": "^2.0.3",
+    "gulp-webp": "^4.0.1",
     "image-minimizer-webpack-plugin": "^3.8.3",
     "imagemin": "^8.0.1",
     "imagemin-gifsicle": "^7.0.0",
@@ -51,7 +57,6 @@
     "sass-loader": "^13.3.2",
     "stylelint": "^15.10.1",
     "stylelint-config-standard-scss": "^10.0.0",
-    "svg-sprite-loader": "^6.0.11",
     "svgo-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.88.2",
