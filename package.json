@@ -6,7 +6,7 @@
     "dev:webpack": "cross-env BUILD_TYPE=development webpack --config webpack.config/webpack.config.js",
     "build": "cross-env BUILD_TYPE=production webpack --config webpack.config/webpack.config.js",
     "start:webpack": "cross-env BUILD_TYPE=development webpack serve --config webpack.config/webpack.config.js",
-    "dev:gulp": "gulp sprite",
+    "dev:gulp": "gulp getSpriteWebp",
     "dev": "npm run dev:gulp && npm run dev:webpack",
     "start": "npm run dev:gulp && npm run start:webpack"
   },
@@ -36,6 +36,7 @@
     "eslint": "^8.44.0",
     "filemanager-webpack-plugin": "^8.0.0",
     "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.3",
     "gulp-svg-sprite": "^2.0.3",
     "gulp-webp": "^4.0.1",
     "image-minimizer-webpack-plugin": "^3.8.3",
