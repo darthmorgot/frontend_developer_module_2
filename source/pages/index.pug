@@ -19,13 +19,13 @@ block content
           div.application__available-systems
             a.application__link(href="https://www.apple.com/app-store/")
               svg(width="47" height="56" aria-label="App Store" focusable="false" role="img")
-                use(href=`${require("Images/logo/logo-sprite.svg")}#logo-apple`)
+                use(href=`${require("Images/sprite.svg")}#logo-apple`)
             a.application__link(href="https://play.google.com")
               svg(width="43" height="47" aria-label="Google Play" focusable="false" role="img")
-                use(href=`${require("Images/logo/logo-sprite.svg")}#logo-android`)
+                use(href=`${require("Images/sprite.svg")}#logo-android`)
             a.application__link(href="http://www.windowsphone.com/store")
               svg(width="44" height="41" aria-label="Windows Phone Store" focusable="false" role="img")
-                use(href=`${require("Images/logo/logo-sprite.svg")}#logo-microsoft`)
+                use(href=`${require("Images/sprite.svg")}#logo-microsoft`)
           p.application__description Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
 
     section.advantages
@@ -126,12 +126,12 @@ block content
           button.slider__arrow.slider__arrow--prev(type="button")
             span.visually-hidden Назад
             svg(width="22" height="41" aria-hidden="true" focusable="false" role="img")
-              use(href=`${require("Images/icons/icons-sprite.svg")}#icon-arrow`)
+              use(href=`${require("Images/sprite.svg")}#icon-slider-arrow-left`)
           button.slider__arrow.slider__arrow--next(type="button")
             span.visually-hidden Вперед
             svg(width="22" height="41" aria-hidden="true" focusable="false" role="img")
-              use(href=`${require("Images/icons/icons-sprite.svg")}#icon-arrow`)
-        +slider-toggles("reviews__toggles", "first")
+              use(href=`${require("Images/sprite.svg")}#icon-slider-arrow-right`)
+        +slider-toggles("reviews__toggles", "reviews")
 
     section.price
       h2.visually-hidden Наши тарифы
@@ -178,7 +178,7 @@ block content
             td.table-price__enable
               span.table-price__mobile-on Комментарии
               span.visually-hidden Опция включена
-        +slider-toggles("price__toggles", "second")
+        +slider-toggles("price__toggles", "price")
 
     section.contacts.container
       h2.visually-hidden Контакты
