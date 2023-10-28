@@ -12,6 +12,12 @@ function sprite() {
   ])
     .pipe(changed('./source/img/'))
     .pipe(svgSprite({
+      shape: {
+        dimension: {
+          maxWidth: 32,
+          maxHeight: 32,
+        },
+      },
       mode: {
         stack: {
           dest: '',
