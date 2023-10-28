@@ -254,11 +254,13 @@
       @media (min-width: $tablet-width) {
         grid-row: 1/2;
         margin-bottom: 10px;
-        background: url("Images/icons/icon-phone.svg") no-repeat 457px center, linear-gradient(to left, $mercury 59px, transparent 59px);
+        background: url("Images/sprite.svg#icon-phone") no-repeat 457px center, linear-gradient(to left, $mercury 59px, transparent 59px);
+        background-size: 4%, 100%;
       }
 
       @media (min-width: $desktop-width) {
         background-position-x: 332px, 0;
+        background-size: 5.5%, 100%;
       }
     }
 
@@ -266,7 +268,8 @@
       @media (min-width: $tablet-width) {
         grid-row: 3/4;
         margin-bottom: 10px;
-        background: url("Images/icons/icon-mail.svg") no-repeat 458px center, linear-gradient(to left, $mercury 59px, transparent 59px);
+        background: url("Images/sprite.svg#icon-mail") no-repeat 458px center, linear-gradient(to left, $mercury 59px, transparent 59px);
+        background-size: 3.6%, 100%;
       }
 
       @media (min-width: $desktop-width) {
@@ -275,6 +278,7 @@
         padding-top: 21px;
         padding-bottom: 20px;
         background-position-x: 333px, 0;
+        background-size: 4.8%, 100%;
       }
     }
   }
@@ -610,11 +614,14 @@ fieldset {
   }
 
   &__input[type="checkbox"]:checked + &__mark {
-    background-image: url("Images/icons/icon-checkbox-on.svg");
+    background: url("Images/sprite.svg#icon-checkbox-on") no-repeat 7px center;
+    background-size: 64%;
+    background-position-y: 6px;
   }
 
   &__input[type="radio"]:checked + &__mark {
-    background-image: url("Images/icons/icon-radio-on.svg");
+    background: url("Images/sprite.svg#icon-radio-on") no-repeat center center;
+    background-size: 41%;
   }
 
   &__input:hover + &__mark {
