@@ -1,21 +1,21 @@
 mixin header-logo(link)
   a.header__logo.header-logo(href=link)
     svg(class="mobile-logo" width="74" height="23")
-      use(href=`${require("Images/logo/logo-sprite.svg")}#logo-header-mobile`)
+      use(href=`${require("Images/sprite.svg")}#logo-header-mobile`)
     svg(class="tablet-logo" width="145" height="40")
-      use(href=`${require("Images/logo/logo-sprite.svg")}#logo-header-tablet`)
+      use(href=`${require("Images/sprite.svg")}#logo-header-tablet`)
     svg(class="desktop-logo" width="147" height="40")
-      use(href=`${require("Images/logo/logo-sprite.svg")}#logo-header-desktop`)
+      use(href=`${require("Images/sprite.svg")}#logo-header-desktop`)
 
 mixin footer-logo(link)
   a.footer__logo.footer-logo(href=link)
     svg(class="tablet-logo" width="145" height="40")
-      use(href=`${require("Images/logo/logo-sprite.svg")}#logo-footer-tablet`)
+      use(href=`${require("Images/sprite.svg")}#logo-footer-tablet`)
     svg(class="desktop-logo" width="147" height="40")
-      use(href=`${require("Images/logo/logo-sprite.svg")}#logo-footer-desktop`)
+      use(href=`${require("Images/sprite.svg")}#logo-footer-desktop`)
 
 mixin slider-toggles(item, condition)
-  if condition === "first"
+  if condition === "reviews"
     ol(class=item).slider__toggles.toggles
       li.toggles__item
         button.toggles__btn.toggles__btn--active(type="button")
@@ -26,7 +26,7 @@ mixin slider-toggles(item, condition)
       li.toggles__item
         button.toggles__btn(type="button")
           span.visually-hidden Слайд 3
-  else if condition === "second"
+  else if condition === "price"
     ol(class=item).slider__toggles.toggles
       li.toggles__item
         button.toggles__btn(type="button")
