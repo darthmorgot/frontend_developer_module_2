@@ -115,17 +115,17 @@
 
   &__link--twitter {
     background: url("Images/sprite.svg#icon-twitter") no-repeat center center;
-    background-size: 44%;
+    background-size: 37%;
   }
 
   &__link--fb {
     background: url("Images/sprite.svg#icon-facebook") no-repeat center center;
-    background-size: 56%;
+    background-size: 37%;
   }
 
   &__link--youtube {
-    background: url("Images/sprite.svg#icon-youtube") no-repeat 17px center;
-    background-size: 39%;
+    background: url("Images/sprite.svg#icon-youtube") no-repeat 19px 17px;
+    background-size: 31%;
   }
 
   &__link:hover {
@@ -160,6 +160,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-top: 1px;
       margin-right: 13px;
       margin-left: 1px;
       padding-bottom: 3px;
