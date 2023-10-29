@@ -4,10 +4,11 @@
   "description": "Личный проект «Pink» от HTML Academy, Профессия «Фронтенд-разработчик 2», Модуль 2. HTML и CSS. Адаптивная вёрстка и автоматизация",
   "scripts": {
     "dev:webpack": "cross-env BUILD_TYPE=development webpack --config webpack.config/webpack.config.js",
-    "build": "cross-env BUILD_TYPE=production webpack --config webpack.config/webpack.config.js",
+    "build:webpack": "cross-env BUILD_TYPE=production webpack --config webpack.config/webpack.config.js",
     "start:webpack": "cross-env BUILD_TYPE=development webpack serve --config webpack.config/webpack.config.js",
     "dev:gulp": "gulp getSpriteWebp",
     "dev": "npm run dev:gulp && npm run dev:webpack",
+    "build": "npm run dev:gulp && npm run build:webpack",
     "start": "npm run dev:gulp && npm run start:webpack"
   },
   "author": "Master",
