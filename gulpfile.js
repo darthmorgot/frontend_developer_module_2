@@ -7,8 +7,6 @@ function sprite() {
   return src([
     './source/img/icons/*.svg',
     './source/img/logo/*.svg',
-    '!./source/img/icons/icons-sprite.svg',
-    '!./source/img/logo/logo-sprite.svg'
   ])
     .pipe(changed('./source/img/'))
     .pipe(svgSprite({
