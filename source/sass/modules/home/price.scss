@@ -195,7 +195,8 @@
     right: 17px;
     width: 31px;
     height: 21px;
-    background: url("Images/icons/icon-yes.svg") no-repeat;
+    background: url("Images/sprite.svg#icon-yes") no-repeat center center;
+    background-size: 100%;
   }
 
   tr:nth-child(3) &__enable::after,
@@ -208,7 +209,7 @@
     right: 19px;
     width: 27px;
     height: 27px;
-    background: url("Images/icons/icon-no.svg") no-repeat;
+    background: url("Images/sprite.svg#icon-no") no-repeat;
   }
 
   tr:nth-child(3) &__disable::after,
