@@ -44,16 +44,16 @@ mixin catalog-picture(name, alttext, ext)
       source(
         type="image/webp"
         media="(min-width: 1217px)"
-          srcset=`${require("Images/generated-webp/" + name + "-desktop." + ext)} 1x, ${require("Images/generated-webp/" + name + "-desktop@2x." + ext)} 2x`
+          srcset=`${require("Images/content/desktop/" + name + "-desktop." + ext)} 1x, ${require("Images/content/desktop/" + name + "-desktop@2x." + ext)} 2x`
       )
       source(
         type="image/webp"
         media="(min-width: 677px)"
-        srcset=`${require("Images/generated-webp/" + name + "-tablet." + ext)} 1x, ${require("Images/generated-webp/" + name + "-tablet@2x." + ext)} 2x`
+        srcset=`${require("Images/content/tablet/" + name + "-tablet." + ext)} 1x, ${require("Images/content/tablet/" + name + "-tablet@2x." + ext)} 2x`
       )
       source(
         type="image/webp"
-        srcset=`${require("Images/generated-webp/" + name + "-mobile." + ext)} 1x, ${require("Images/generated-webp/" + name + "-mobile@2x." + ext)} 2x`
+        srcset=`${require("Images/content/mobile/" + name + "-mobile." + ext)} 1x, ${require("Images/content/mobile/" + name + "-mobile@2x." + ext)} 2x`
       )
     source(
       media="(min-width: 1217px)"
