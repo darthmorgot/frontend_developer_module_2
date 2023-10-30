@@ -8,10 +8,6 @@
   &--nojs {
     position: static;
   }
-
-  @media (min-width: $desktop-width) {
-    position: static;
-  }
 }
 
 .nav {
@@ -253,6 +249,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 5px;
   }
 }

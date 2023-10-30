@@ -72,12 +72,6 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.main {
-  @media (min-width: $desktop-width) {
-    margin-top: -110px;
-  }
-}
-
 .main-container {
   flex-grow: 1;
 }
