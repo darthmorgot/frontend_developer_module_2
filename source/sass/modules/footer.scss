@@ -65,7 +65,8 @@
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 320px;
   padding: 0;
   margin-bottom: 38px;
@@ -91,7 +92,7 @@
   }
 
   &__item:first-child {
-    margin-left: 71px;
+    margin-right: 8px;
 
     @media (min-width: $tablet-width) {
       margin-left: 0;
@@ -99,7 +100,7 @@
   }
 
   &__item:last-child {
-    margin-right: 71px;
+    margin-left: 8px;
 
     @media (min-width: $tablet-width) {
       margin-right: 0;

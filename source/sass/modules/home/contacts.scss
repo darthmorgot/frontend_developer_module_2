@@ -10,7 +10,9 @@
 
   &__slogan {
     display: block;
-    margin-bottom: 33px;
+    margin-bottom: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: $ebony-clay;
     text-align: center;
     font-size: 24px;
@@ -99,6 +101,11 @@
     @media (min-width: $desktop-width) {
       margin-bottom: 21px;
     }
+  }
+
+  &__phone,
+  &__mail {
+    display: block;
   }
 
   &__phone,

@@ -4,8 +4,8 @@
 
   &__slogan {
     position: relative;
-    padding-top: 41px;
-    padding-bottom: 97px;
+    padding-top: 42px;
+    padding-bottom: 67px;
     background-color: $white;
 
     &::after {
@@ -58,7 +58,7 @@
   }
 
   &__slogan-text {
-    margin: 0;
+    margin: 0 0 29px;
     color: $ebony-clay;
     text-align: center;
     font-size: 24px;
@@ -76,8 +76,6 @@
   }
 
   &__slogan-text:nth-child(1) {
-    margin-bottom: 29px;
-
     @media (min-width: $tablet-width) {
       margin-bottom: -1px;
     }
@@ -108,7 +106,7 @@
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      margin-top: -20px;
+      margin-top: -49px;
       padding: 0 0 0 42px;
       text-align: left;
       z-index: 1;
@@ -189,7 +187,7 @@
   &__image-wrapper {
     @media (min-width: $tablet-width) {
       min-width: 268px;
-      margin-top: -90px;
+      margin-top: -119px;
       order: -1;
       z-index: 1;
     }

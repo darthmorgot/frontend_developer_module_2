@@ -29,6 +29,10 @@
       url("Images/backgrounds/desktop/back-quotes.webp") type("image/webp") 1x
     );
   }
+
+  &__toggles {
+    padding-left: 12px;
+  }
 }
 
 .slider {
@@ -138,11 +142,11 @@
     outline-offset: 2px;
   }
 
-  &__toggles li:nth-child(1) {
+  &__toggles li:nth-child(2n+1) {
     margin-right: 16px;
   }
 
-  &__toggles li:nth-child(2) {
+  &__toggles li:nth-child(2n) {
     margin-right: 19px;
   }
 }
@@ -150,8 +154,7 @@
 .toggles {
   display: flex;
   align-items: center;
-  width: 61px;
-  padding: 0;
+  justify-content: center;
   margin: 0 auto;
   list-style: none;
 

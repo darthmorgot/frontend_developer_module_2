@@ -47,19 +47,19 @@
   }
 
   &__toggles {
-    width: 56px;
     padding-bottom: 1px;
+    padding-left: 15px;
 
     @media (min-width: $tablet-width) {
       display: none;
     }
   }
 
-  &__toggles li:nth-child(1) {
+  &__toggles li:nth-child(2n+1) {
     margin-right: 16px;
   }
 
-  &__toggles li:nth-child(2) {
+  &__toggles li:nth-child(2n) {
     margin-right: 16px;
   }
 }
@@ -141,7 +141,11 @@
   }
 
   td {
-    padding: 12px 0 15px 20px;
+    padding: 12px 60px 15px 20px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 0;
+    }
   }
 
   td:nth-child(2) {
