@@ -67,13 +67,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 320px;
+  width: 178px;
   padding: 0;
   margin-bottom: 38px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    width: 178px;
     margin: 0 90px 0 0;
   }
 
@@ -83,28 +82,16 @@
     width: 172px;
   }
 
-  &__item {
-    @media (min-width: $tablet-width) {
-      &:last-child {
-        margin-right: 0;
-      }
-    }
+  &__item:nth-child(3n+1) {
+    margin-right: 8px;
   }
 
-  &__item:first-child {
+  &__item:nth-child(3n+2) {
     margin-right: 8px;
-
-    @media (min-width: $tablet-width) {
-      margin-left: 0;
-    }
   }
 
   &__item:last-child {
-    margin-left: 8px;
-
-    @media (min-width: $tablet-width) {
-      margin-right: 0;
-    }
+    margin-right: 0;
   }
 
   &__link {
