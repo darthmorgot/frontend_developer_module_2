@@ -1,19 +1,30 @@
 // Application
 .application {
   @media (min-width: $tablet-width) {
-    height: 729px;
-    background: url("Images/backgrounds/tablet/back-tablet-1.jpg") no-repeat center, $ebony-clay;
-    background-size: cover;
+    min-height: 729px;
+    background:
+      url("Images/backgrounds/tablet/back-tablet-2.png") no-repeat bottom,
+      url("Images/backgrounds/tablet/back-tablet-1.jpg") no-repeat center,
+      $ebony-clay;
+    background-size: auto, cover;
 
     @media (resolution >= 2dppx) {
-      background: url("Images/backgrounds/tablet/back-tablet-1@2x.jpg") no-repeat center, $ebony-clay;
-      background-size: cover;
+      background:
+        url("Images/backgrounds/tablet/back-tablet-2@2x.png") no-repeat bottom,
+        url("Images/backgrounds/tablet/back-tablet-1@2x.jpg") no-repeat center,
+        $ebony-clay;
+      background-size: 100%, cover;
     }
 
-    background-image: image-set(
-      url("Images/backgrounds/tablet/back-tablet-1@2x.webp") type("image/webp") 2x,
-      url("Images/backgrounds/tablet/back-tablet-1.webp") type("image/webp") 1x
-    );
+    background-image:
+      image-set(
+        url("Images/backgrounds/tablet/back-tablet-2@2x.webp") type("image/webp") 2x,
+        url("Images/backgrounds/tablet/back-tablet-2.webp") type("image/webp") 1x
+      ),
+      image-set(
+        url("Images/backgrounds/tablet/back-tablet-1@2x.webp") type("image/webp") 2x,
+        url("Images/backgrounds/tablet/back-tablet-1.webp") type("image/webp") 1x
+      );
   }
 
   @media (min-width: $desktop-width) {
@@ -60,19 +71,11 @@
 
     @media (min-width: $tablet-width) {
       width: 660px;
-      height: 729px;
+      min-height: 729px;
       margin: 0 auto;
-      background: url("Images/backgrounds/tablet/back-tablet-2.png") no-repeat bottom;
-
-      @media (resolution >= 2dppx) {
-        background: url("Images/backgrounds/tablet/back-tablet-2@2x.png") no-repeat bottom;
-        background-size: 100%;
-      }
-
-      background-image: image-set(
-        url("Images/backgrounds/tablet/back-tablet-2@2x.webp") type("image/webp") 2x,
-        url("Images/backgrounds/tablet/back-tablet-2.webp") type("image/webp") 1x
-      );
+      padding-top: 180px;
+      padding-bottom: 381px;
+      background: none;
     }
 
     @media (min-width: $desktop-width) {
@@ -103,7 +106,6 @@
 
     @media (min-width: $tablet-width) {
       width: 300px;
-      margin-top: 138px;
       padding-left: 28px;
       padding-right: 28px;
       font-size: 40px;
@@ -135,10 +137,9 @@
 
     @media (min-width: $tablet-width) {
       width: 300px;
-      padding: 0;
       margin-left: 20px;
       margin-top: -351px;
-      margin-bottom: 114px;
+      padding: 0 0 114px;
     }
 
     @media (min-width: $desktop-width) {
