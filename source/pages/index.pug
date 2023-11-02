@@ -36,14 +36,20 @@ block content
       div.advantages__wrapper.container
         ul.advantages__list
           li.advantages__item
-            h3.advantages__title Поднимает настроение
-            p.advantages__description Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            +advantages-picture("1", "Черно-белая картинка")
+            div.advantages__info
+              h3.advantages__title Поднимает настроение
+              p.advantages__description Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
           li.advantages__item
-            h3.advantages__title Меняет мир вокруг
-            p.advantages__description Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы #[span усилить эффект]
+            +advantages-picture("2", "Картинка с розовым фильтром")
+            div.advantages__info
+              h3.advantages__title Меняет мир вокруг
+              p.advantages__description Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы #[span усилить эффект]
           li.advantages__item
-            h3.advantages__title Заводит новых друзей
-            p.advantages__description Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            +advantages-picture("3", "Всем привет")
+            div.advantages__info
+              h3.advantages__title Заводит новых друзей
+              p.advantages__description Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
         div.advantages__image-wrapper
           picture
             source(
@@ -62,42 +68,6 @@ block content
             img.advantages__image.advantages__image--no-desktop(
               src=require("Images/content/mobile/advantages-mobile.png")
               srcset=`${require("Images/content/mobile/advantages-mobile@2x.png")} 2x`
-              alt="Всем привет"
-            )
-          picture
-            source(
-              type="image/webp"
-              srcset=`${require("Images/content/desktop/advantages-desktop-1.webp")} 1x, ${require("Images/content/desktop/advantages-desktop-1@2x.webp")} 2x`
-            )
-            img.advantages__image.advantages__image--desktop(
-              src=require("Images/content/desktop/advantages-desktop-1.png")
-              srcset=`${require("Images/content/desktop/advantages-desktop-1@2x.png")} 2x`
-              width="308"
-              height="382"
-              alt="Черно-белая картинка"
-            )
-          picture
-            source(
-              type="image/webp"
-              srcset=`${require("Images/content/desktop/advantages-desktop-2.webp")} 1x, ${require("Images/content/desktop/advantages-desktop-2@2x.webp")} 2x`
-            )
-            img.advantages__image.advantages__image--desktop.advantages__image--margin(
-              src=require("Images/content/desktop/advantages-desktop-2.png")
-              srcset=`${require("Images/content/desktop/advantages-desktop-2@2x.png")} 2x`
-              width="308"
-              height="382"
-              alt="Картинка с розовым фильтром"
-            )
-          picture
-            source(
-              type="image/webp"
-              srcset=`${require("Images/content/desktop/advantages-desktop-3.webp")} 1x, ${require("Images/content/desktop/advantages-desktop-3@2x.webp")} 2x`
-            )
-            img.advantages__image.advantages__image--desktop(
-              src=require("Images/content/desktop/advantages-desktop-3.png")
-              srcset=`${require("Images/content/desktop/advantages-desktop-3@2x.png")} 2x`
-              width="308"
-              height="382"
               alt="Всем привет"
             )
 
