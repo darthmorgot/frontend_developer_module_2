@@ -68,3 +68,17 @@ mixin catalog-picture(name, alttext, ext)
       srcset=`${require("Images/content/mobile/" + name + "-mobile@2x.jpg")} 2x`
       alt=alttext
     )
+
+mixin advantages-picture(num, alttext)
+  picture
+    source(
+      type="image/webp"
+      srcset=`${require("Images/content/desktop/advantages-desktop-" + num + ".webp")} 1x, ${require("Images/content/desktop/advantages-desktop-" + num + "@2x.webp")} 2x`
+    )
+    img.advantages__image.advantages__image--desktop(
+      src=require("Images/content/desktop/advantages-desktop-" + num + ".png")
+      srcset=`${require("Images/content/desktop/advantages-desktop-" + num + "@2x.png")} 2x`
+      width="308"
+      height="382"
+      alt=alttext
+    )
