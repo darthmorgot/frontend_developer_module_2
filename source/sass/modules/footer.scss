@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 130px 87px 128px;
+    padding: 70px 129px 87px 128px;
   }
 
   &__logo {
@@ -31,7 +31,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 236px;
+      margin-right: 232px;
     }
 
     .desktop-logo {
@@ -78,16 +78,24 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 1px;
-    margin-right: 229px;
-    width: 172px;
+    margin-right: 227px;
+    width: 178px;
   }
 
   &__item:nth-child(3n+1) {
     margin-right: 8px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 5px;
+    }
   }
 
   &__item:nth-child(3n+2) {
     margin-right: 8px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 5px;
+    }
   }
 
   &__item:last-child {
@@ -133,7 +141,6 @@
 .copyright {
   display: flex;
   justify-content: center;
-  align-items: center;
 
   &__text {
     margin-right: 15px;
@@ -149,7 +156,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 1px;
+      margin-top: 17px;
       margin-right: 13px;
       margin-left: 1px;
       padding-bottom: 3px;
@@ -163,6 +170,10 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 11px;
     }
   }
 
