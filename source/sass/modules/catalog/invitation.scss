@@ -1,7 +1,6 @@
 // Invitation for catalog page
 .invitation {
   &__banner {
-    height: 462px;
     padding-top: 94px;
     background: url("Images/backgrounds/mobile/back-mobile-1.jpg") no-repeat center, $ebony-clay;
     background-size: cover;
@@ -18,7 +17,6 @@
     );
 
     @media (min-width: $tablet-width) {
-      height: 729px;
       padding-top: 176px;
       background: url("Images/backgrounds/tablet/back-tablet-1.jpg") no-repeat center, $ebony-clay;
       background-size: cover;
@@ -35,7 +33,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      height: 853px;
       padding-top: 169px;
       background: url("Images/backgrounds/desktop/back-desktop-1.jpg") no-repeat center, $ebony-clay;
       background-size: cover;
@@ -71,12 +68,12 @@
   }
 
   &__description {
-    padding: 44px 20px 121px;
+    padding: 44px 20px 91px;
     background-color: $white;
 
     @media (min-width: $tablet-width) {
       padding-top: 91px;
-      padding-bottom: 168px;
+      padding-bottom: 138px;
     }
 
     @media (min-width: $desktop-width) {

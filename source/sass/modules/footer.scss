@@ -144,19 +144,19 @@
 
   &__text {
     margin-right: 15px;
-    padding-top: 3px;
+    padding-top: 9px;
     padding-left: 1px;
     color: $ebony-clay;
     font-size: 14px;
     line-height: 18px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 0;
+      padding-top: 18px;
       margin-right: 15px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 17px;
+      margin-top: -1px;
       margin-right: 13px;
       margin-left: 1px;
       padding-bottom: 3px;
@@ -169,7 +169,7 @@
     color: $cerise-red;
 
     @media (min-width: $tablet-width) {
-      margin-top: 1px;
+      margin-top: 11px;
     }
 
     @media (min-width: $desktop-width) {
