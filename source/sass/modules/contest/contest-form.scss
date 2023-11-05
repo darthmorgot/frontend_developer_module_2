@@ -336,6 +336,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       margin-left: 20px;
       margin-right: 19px;
     }
