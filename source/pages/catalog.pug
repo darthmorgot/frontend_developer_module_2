@@ -32,7 +32,7 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                +catalog-picture("photo-1", "Фотосъемка белой машины.", "webp")
+                +catalog-picture("photo-1", "Фотосъемка белой машины.", "webp", "lazy")
               blockquote.catalog__description
                 span.catalog__author Левон
                 span.catalog__publication-time (5 часов назад)
@@ -42,7 +42,7 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                +catalog-picture("photo-2", "Барабанная установка.", "webp")
+                +catalog-picture("photo-2", "Барабанная установка.", "webp", "lazy")
               blockquote.catalog__description
                 span.catalog__author Антон
                 span.catalog__publication-time (12 часов назад)
@@ -52,7 +52,7 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                +catalog-picture("photo-3", "Вид на небо сквозь прозрачную крышу.", "webp")
+                +catalog-picture("photo-3", "Вид на небо сквозь прозрачную крышу.", "webp", "lazy")
               blockquote.catalog__description
                 span.catalog__author Борис
                 span.catalog__publication-time (20 часов назад)
@@ -62,7 +62,7 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                +catalog-picture("photo-4", "Фестиваль Кубанская бахча.", "webp")
+                +catalog-picture("photo-4", "Фестиваль Кубанская бахча.", "webp", "lazy")
               blockquote.catalog__description
                 span.catalog__author Сергей
                 span.catalog__publication-time (25 часов назад)
@@ -72,7 +72,7 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                +catalog-picture("photo-5", "Вид на ноги и горы.", "webp")
+                +catalog-picture("photo-5", "Вид на ноги и горы.", "webp", "lazy")
               blockquote.catalog__description
                 span.catalog__author Максим
                 span.catalog__publication-time (40 часов назад)
@@ -82,7 +82,7 @@ block content
           li.catalog__item
             figure.catalog__card
               a.catalog__link(href="#")
-                +catalog-picture("photo-6", "Вид на крыло самолета и закат.", "webp")
+                +catalog-picture("photo-6", "Вид на крыло самолета и закат.", "webp", "lazy")
               blockquote.catalog__description
                 span.catalog__author Надежда
                 span.catalog__publication-time (45 часов назад)
@@ -116,6 +116,7 @@ block content
                 img.catalog__image(
                   src=require("Images/content/mobile/photo-7-mobile.jpg")
                   srcset=`${require("Images/content/mobile/photo-7-mobile@2x.jpg")} 2x`
+                  loading="lazy"
                   alt="Зимняя лесная дорога."
                 )
         div.form__editor.editor-tabs
