@@ -15,12 +15,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/darthmorgot/frontend_developer_module_2"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/darthmorgot/frontend_developer_module_2/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/darthmorgot/frontend_developer_module_2#readme",
   "private": true,
   "browserslist": [
     "defaults"
