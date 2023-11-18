@@ -68,6 +68,8 @@ block content
             img.advantages__image.advantages__image--no-desktop(
               src=require("Images/content/mobile/advantages-mobile.png")
               srcset=`${require("Images/content/mobile/advantages-mobile@2x.png")} 2x`
+              width="157"
+              height="320"
               alt="Всем привет"
             )
 
@@ -164,6 +166,27 @@ block content
           h3.contacts__title Приезжайте в гости:
           address.contacts__address ул. Большая Конюшенная, 19/8
       div.contacts__map-wrapper
-        iframe(class="contacts__map-mobile" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="320" height="200" allowfullscreen)
-        iframe(class="contacts__map-tablet" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="660" height="374" allowfullscreen)
-        iframe(class="contacts__map-desktop" src="https://yandex.ru/map-widget/v1/-/CKauEWN-" width="1200" height="502" allowfullscreen)
+        iframe(
+          class="contacts__map-mobile"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aedaa7afcafa7610eda18516adfd2b4e57810aec4f2b59f46356a4c5d7246a467&amp;source=constructor"
+          width="320"
+          height="200"
+          loading="lazy"
+          title="Карта с указанным адресом"
+        )
+        iframe(
+          class="contacts__map-tablet"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aedaa7afcafa7610eda18516adfd2b4e57810aec4f2b59f46356a4c5d7246a467&amp;source=constructor"
+          width="660"
+          height="374"
+          loading="lazy"
+          title="Карта с указанным адресом"
+        )
+        iframe(
+          class="contacts__map-desktop"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aedaa7afcafa7610eda18516adfd2b4e57810aec4f2b59f46356a4c5d7246a467&amp;source=constructor"
+          width="1200"
+          height="502"
+          loading="lazy"
+          title="Карта с указанным адресом"
+        )
