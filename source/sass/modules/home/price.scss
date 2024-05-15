@@ -28,13 +28,12 @@
     @media (min-width: $tablet-width) {
       top: -74px;
       border-bottom: 74px solid $concrete;
-      border-left: 1200px solid transparent;
+      border-left: 100vw solid transparent;
     }
 
     @media (min-width: $desktop-width) {
       top: -100px;
       border-bottom: 100px solid $concrete;
-      border-left: 1200px solid transparent;
     }
   }
 

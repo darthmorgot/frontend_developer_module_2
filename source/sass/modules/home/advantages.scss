@@ -22,12 +22,11 @@
 
       @media (min-width: $tablet-width) {
         border-bottom: 96px solid $concrete;
-        border-left: 1200px solid transparent;
+        border-left: 100vw solid transparent;
       }
 
       @media (min-width: $desktop-width) {
         border-bottom: 100px solid $concrete;
-        border-left: 1200px solid transparent;
       }
     }
 
