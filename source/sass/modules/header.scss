@@ -99,7 +99,10 @@
     box-shadow: 0 1px 0 0 $black;
 
     @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
       align-items: center;
+      padding-bottom: 5px;
       margin-left: 155px;
       background-color: transparent;
       box-shadow: none;
@@ -249,7 +252,5 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 5px;
   }
 }
