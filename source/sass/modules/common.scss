@@ -60,15 +60,15 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  max-width: 640px;
+  max-width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 940px;
+    max-width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
+    max-width: 940px;
   }
 }
 
