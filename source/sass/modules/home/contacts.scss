@@ -150,7 +150,7 @@
   &__map-wrapper {
     position: relative;
     width: 320px;
-    margin: 0 auto;
+    margin: 0 -20px;
 
     @media (min-width: $tablet-width) {
       width: 660px;
@@ -186,38 +186,118 @@
     }
   }
 
-  &__map-mobile {
-    display: block;
-    border: none;
+  &__map-mask {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 320px;
+    height: 200px;
+    background-color: $white;
+    background-image:
+      image-set(
+        url("Images/map/map-mobile@1x.webp") 1x,
+        url("Images/map/map-mobile@2x.webp") 2x,
+        url("Images/map/map-mobile@1x.jpg") 1x,
+        url("Images/map/map-mobile@2x.jpg") 2x
+      );
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-50%);
 
-    @media (min-width: $tablet-width) {
-      display: none;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 95px;
+      left: 44.5%;
+      width: 36px;
+      height: 36px;
+      background-image: url("Images/sprite.svg#icon-map-pin");
+
+      @media (min-width: $tablet-width) {
+        top: 215px;
+        left: 49.5%;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 245px;
+        left: 49.7%;
+      }
     }
-  }
 
-  &__map-tablet {
-    display: none;
 
     @media (min-width: $tablet-width) {
-      display: block;
-      border: none;
+      width: 660px;
+      height: 374px;
+      background-image:
+        image-set(
+          url("Images/map/map-tablet@1x.webp") 1x,
+          url("Images/map/map-tablet@2x.webp") 2x,
+          url("Images/map/map-tablet@1x.jpg") 1x,
+          url("Images/map/map-tablet@2x.jpg") 2x
+        );
     }
 
     @media (min-width: $desktop-width) {
-      display: none;
+      width: 1200px;
+      height: 502px;
+      background-image:
+        image-set(
+          url("Images/map/map-desktop@1x.webp") 1x,
+          url("Images/map/map-desktop@2x.webp") 2x,
+          url("Images/map/map-desktop@1x.jpg") 1x,
+          url("Images/map/map-desktop@2x.jpg") 2x
+        );
     }
   }
 
-  &__map-desktop {
-    display: none;
+  &__map {
+    width: 320px;
+    height: 200px;
+    margin: 0 auto;
 
     @media (min-width: $tablet-width) {
-      display: none;
+      width: 660px;
+      height: 374px;
     }
 
     @media (min-width: $desktop-width) {
-      display: block;
-      border: none;
+      width: 1200px;
+      height: 502px;
     }
   }
+
+  //&__map-mobile {
+  //  display: block;
+  //  border: none;
+
+  //  @media (min-width: $tablet-width) {
+  //    display: none;
+  //  }
+  //}
+
+  //&__map-tablet {
+  //  display: none;
+
+  //  @media (min-width: $tablet-width) {
+  //    display: block;
+  //    border: none;
+  //  }
+
+  //  @media (min-width: $desktop-width) {
+  //    display: none;
+  //  }
+  //}
+
+  //&__map-desktop {
+  //  display: none;
+
+  //  @media (min-width: $tablet-width) {
+  //    display: none;
+  //  }
+
+  //  @media (min-width: $desktop-width) {
+  //    display: block;
+  //    border: none;
+  //  }
+  //}
 }
