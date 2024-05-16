@@ -43,12 +43,12 @@ mixin catalog-picture(name, alttext, ext, loading)
     if ext
       source(
         type="image/webp"
-        media="(min-width: 1217px)"
+        media="(min-width: 1200px)"
           srcset=`${require("Images/content/desktop/" + name + "-desktop." + ext)} 1x, ${require("Images/content/desktop/" + name + "-desktop@2x." + ext)} 2x`
       )
       source(
         type="image/webp"
-        media="(min-width: 677px)"
+        media="(min-width: 660px)"
         srcset=`${require("Images/content/tablet/" + name + "-tablet." + ext)} 1x, ${require("Images/content/tablet/" + name + "-tablet@2x." + ext)} 2x`
       )
       source(
@@ -56,11 +56,11 @@ mixin catalog-picture(name, alttext, ext, loading)
         srcset=`${require("Images/content/mobile/" + name + "-mobile." + ext)} 1x, ${require("Images/content/mobile/" + name + "-mobile@2x." + ext)} 2x`
       )
     source(
-      media="(min-width: 1217px)"
+      media="(min-width: 1200px)"
       srcset=`${require("Images/content/desktop/" + name + "-desktop.jpg")} 1x, ${require("Images/content/desktop/" + name + "-desktop@2x.jpg")} 2x`
     )
     source(
-      media="(min-width: 677px)"
+      media="(min-width: 660px)"
       srcset=`${require("Images/content/tablet/" + name + "-tablet.jpg")} 1x, ${require("Images/content/tablet/" + name + "-tablet@2x.jpg")} 2x`
     )
     if loading
