@@ -38,7 +38,7 @@
   &__list {
     position: relative;
     padding: 0;
-    margin: 0 0 34px;
+    margin: 0 auto 34px;
     list-style: none;
 
     @media (min-width: $tablet-width) {
@@ -51,7 +51,7 @@
     @media (min-width: $desktop-width) {
       justify-content: center;
       margin-bottom: 19px;
-      margin-left: 17px;
+      padding-left: 17px;
     }
   }
 
@@ -149,39 +149,39 @@
 
   &__map-wrapper {
     position: relative;
-    width: 320px;
-    margin: 0 -20px;
+    //width: 320px;
 
     @media (min-width: $tablet-width) {
-      width: 660px;
+      //width: 660px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 1200px;
+      //width: 1200px;
     }
 
     &::before {
       content: "";
       display: block;
       position: absolute;
-      right: 0;
+      right: 50%;
       width: 0;
       height: 0;
       border-top: 33px solid $white;
-      border-left: 160px solid transparent;
-      border-right: 160px solid transparent;
+      border-left: 47vw solid transparent;
+      border-right: 47vw solid transparent;
       z-index: 1;
+      transform: translateX(50%);
 
       @media (min-width: $tablet-width) {
         border-top: 68px solid $white;
-        border-left: 330px solid transparent;
-        border-right: 330px solid transparent;
+        border-left: 48.7vw solid transparent;
+        border-right: 48.7vw solid transparent;
       }
 
       @media (min-width: $desktop-width) {
         border-top: 103px solid $white;
-        border-left: 600px solid transparent;
-        border-right: 600px solid transparent;
+        border-left: 49.3vw solid transparent;
+        border-right: 49.3vw solid transparent;
       }
     }
   }
@@ -190,7 +190,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    width: 320px;
+    width: 100%;
     height: 200px;
     background-color: $white;
     background-image:
@@ -214,19 +214,19 @@
       background-image: url("Images/sprite.svg#icon-map-pin");
 
       @media (min-width: $tablet-width) {
-        top: 215px;
-        left: 49.5%;
+        top: 194px;
+        left: 47.3%;
       }
 
       @media (min-width: $desktop-width) {
-        top: 245px;
-        left: 49.7%;
+        top: 264px;
+        left: 48.5%;
       }
     }
 
 
     @media (min-width: $tablet-width) {
-      width: 660px;
+      //max-width: 660px;
       height: 374px;
       background-image:
         image-set(
@@ -238,7 +238,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 1200px;
+      //width: 1200px;
       height: 502px;
       background-image:
         image-set(
@@ -251,53 +251,18 @@
   }
 
   &__map {
-    width: 320px;
+    width: 100%;
     height: 200px;
     margin: 0 auto;
 
     @media (min-width: $tablet-width) {
-      width: 660px;
+      //max-width: 660px;
       height: 374px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 1200px;
+      //width: 1200px;
       height: 502px;
     }
   }
-
-  //&__map-mobile {
-  //  display: block;
-  //  border: none;
-
-  //  @media (min-width: $tablet-width) {
-  //    display: none;
-  //  }
-  //}
-
-  //&__map-tablet {
-  //  display: none;
-
-  //  @media (min-width: $tablet-width) {
-  //    display: block;
-  //    border: none;
-  //  }
-
-  //  @media (min-width: $desktop-width) {
-  //    display: none;
-  //  }
-  //}
-
-  //&__map-desktop {
-  //  display: none;
-
-  //  @media (min-width: $tablet-width) {
-  //    display: none;
-  //  }
-
-  //  @media (min-width: $desktop-width) {
-  //    display: block;
-  //    border: none;
-  //  }
-  //}
 }
