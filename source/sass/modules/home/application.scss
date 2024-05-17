@@ -81,7 +81,7 @@
       );
 
     @media (min-width: $tablet-width) {
-      width: 660px;
+      max-width: 660px;
       min-height: 729px;
       margin: 0 auto;
       padding-top: 180px;
@@ -90,7 +90,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 1200px;
+      max-width: 1200px;
       min-height: 853px;
       padding-left: 130px;
       padding-bottom: 430px;
@@ -123,13 +123,13 @@
     background-color: $mirage;
 
     @media (min-width: $tablet-width) {
-      width: 660px;
+      max-width: 660px;
       margin: 0 auto;
       background-color: transparent;
     }
 
     @media (min-width: $desktop-width) {
-      width: 1200px;
+      max-width: 1200px;
     }
   }
 
