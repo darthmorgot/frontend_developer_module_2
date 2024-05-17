@@ -8,12 +8,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     padding-top: 36px;
-    padding-left: 16px;
-    padding-right: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 129px 87px 128px;
+    padding: 70px 0 87px 1px;
   }
 
   &__logo {
@@ -26,7 +24,7 @@
     color: $ebony-clay;
 
     @media (min-width: $tablet-width) {
-      margin: 0 74px 0 0;
+      margin: 0 74px 0 -3px;
       padding-left: 0;
     }
 
@@ -69,7 +67,7 @@
   flex-wrap: wrap;
   width: 178px;
   padding: 0;
-  margin-bottom: 38px;
+  margin: 0 0 38px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -77,9 +75,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 1px;
-    margin-right: 227px;
     width: 178px;
+    margin-right: 227px;
+    padding-top: 1px;
+    padding-left: 1px;
   }
 
   &__item:nth-child(3n+1) {
