@@ -150,10 +150,10 @@ block content
               span.visually-hidden Опция включена
         +slider-toggles("price__toggles", "price")
 
-    section.contacts.container
+    section.contacts
       h2.visually-hidden Контакты
       span.contacts__slogan Остались вопросы? Свяжитесь с нами!
-      ul.contacts__list
+      ul.contacts__list.container
         li.contacts__item
           h3.contacts__title Звоните:
           a.contacts__phone(href="tel:+78125556666") +7 (812) 555-66-66
@@ -166,28 +166,3 @@ block content
       div.contacts__map-wrapper
         div.contacts__map-mask
         div.contacts__map#map
-
-        //iframe(
-        //  class="contacts__map-mobile"
-        //  src="https://yandex.ru/map-widget/v1/?um=constructor%3Aedaa7afcafa7610eda18516adfd2b4e57810aec4f2b59f46356a4c5d7246a467&amp;source=constructor"
-        //  width="320"
-        //  height="200"
-        //  loading="lazy"
-        //  title="Карта с указанным адресом"
-        //)
-        //iframe(
-        //  class="contacts__map-tablet"
-        //  src="https://yandex.ru/map-widget/v1/?um=constructor%3Aedaa7afcafa7610eda18516adfd2b4e57810aec4f2b59f46356a4c5d7246a467&amp;source=constructor"
-        //  width="660"
-        //  height="374"
-        //  loading="lazy"
-        //  title="Карта с указанным адресом"
-        //)
-        //iframe(
-        //  class="contacts__map-desktop"
-        //  src="https://yandex.ru/map-widget/v1/?um=constructor%3Aedaa7afcafa7610eda18516adfd2b4e57810aec4f2b59f46356a4c5d7246a467&amp;source=constructor"
-        //  width="1200"
-        //  height="502"
-        //  loading="lazy"
-        //  title="Карта с указанным адресом"
-        //)
