@@ -16,10 +16,12 @@ html(lang="ru")
     link(rel="preload" href=require("Fonts/opensans.woff") as="font" type="font/woff" crossorigin="anonymous")
     link(rel="preload" href=require("Fonts/opensansbold.woff") as="font" type="font/woff" crossorigin="anonymous")
     link(rel="preload" href=require("Fonts/opensanslight.woff") as="font" type="font/woff" crossorigin="anonymous")
+    link(href=require("../vendor/leaflet/leaflet.css"))
     link(href=require("../sass/style.scss") rel="stylesheet")
     link(href=require(pageStyle) rel="stylesheet")
   body
     include includes/header
     block content
     include includes/footer
+    script(src=require("../vendor/leaflet/leaflet.js"))
     script(src=require("../index.js") async)
