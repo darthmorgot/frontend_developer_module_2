@@ -1,4 +1,12 @@
 // Catalog
+.catalog.container {
+  max-width: none;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+  }
+}
+
 .catalog {
   margin-top: -41px;
   padding-left: 20px;
