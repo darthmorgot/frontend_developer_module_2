@@ -1,4 +1,12 @@
 // Contest-form
+.contest-form.container {
+  max-width: none;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+  }
+}
+
 .contest-form {
   margin-top: -56px;
   margin-bottom: 16px;
